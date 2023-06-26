@@ -1,0 +1,40 @@
+.pie {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    border: 2px solid #F4F4FE;
+    box-shadow: inset 0 0 0 12px #FFFFFF,
+                inset 0 0 0 14px #F4F4FE;
+    padding: 4px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .pie__chart {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        right: 0;
+        bottom: 0;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+    }
+
+    .pie__counter {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--text-dark);
+    }
+
+    .pie__label {
+        position: relative;
+        margin-top: 1px;
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--text-dark-60pct);
+    }

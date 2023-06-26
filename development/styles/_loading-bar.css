@@ -1,0 +1,33 @@
+.loading-bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    height: 40px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--color-theme-primary-normal);
+    cursor: default;
+}
+    .loading-bar__spinner {
+        width: 20px;
+        height: 20px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .loading-bar__label {
+        margin-left: 6px;
+        margin-right: 6px;
+        cursor: default;
+    }
+
+
+.loading-bar--highlight {
+    background-color: var(--neutral-color-3);
+}

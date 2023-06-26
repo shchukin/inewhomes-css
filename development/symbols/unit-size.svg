@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>plan copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-272.000000, -240.000000)" fill-rule="nonzero">
+            <g id="PLAN-Copy" transform="translate(272.000000, 239.000000)">
+                <path d="M0,6.4453125 L22,6.4453125 L22,22 L0,22 L0,6.4453125 Z M1.33203125,7.75811221 L1.33203125,20.7667639 L20.6679688,20.7667639 L20.6679688,7.75811221 L1.33203125,7.75811221 Z" id="Combined-Shape" fill="#3C4044"></path>
+                <rect id="Rectangle-2" fill="#FFFFFF" x="7.21875" y="3.8671875" width="14.78125" height="4.3828125"></rect>
+                <path d="M5.88671875,1.58984375 L7.21875,1.58984375 C7.21875,6.46416929 7.21875,9.30107833 7.21875,10.1005709 C7.21875,11.2998097 5.88671875,11.2998097 5.88671875,10.1005709 C5.88671875,9.30107833 5.88671875,6.46416929 5.88671875,1.58984375 Z" id="Rectangle-3" fill="#3C4044"></path>
+                <path d="M11.9023438,7.5168457 C11.9023438,6.26000977 13.234375,6.26000977 13.234375,7.5168457 C13.234375,8.77368164 13.234375,11.2121582 13.234375,12.5441895 C13.234375,13.8762207 11.9023438,13.7043457 11.9023438,12.5441895 C11.9023438,11.3840332 11.9023438,8.77368164 11.9023438,7.5168457 Z" id="Rectangle-3-Copy-6" fill="#3C4044"></path>
+                <rect id="Rectangle-3-Copy-4" fill="#3C4044" x="20.6679688" y="1.58984375" width="1.33203125" height="11.9023437"></rect>
+                <path d="M5.88671875,16.3295693 C5.88671875,15.2391019 7.21875,15.2391019 7.21875,16.3295693 C7.21875,17.0565476 7.21875,18.9466912 7.21875,22 L5.88671875,22 C5.88671875,18.9466912 5.88671875,17.0565476 5.88671875,16.3295693 Z" id="Rectangle-3-Copy" fill="#3C4044"></path>
+                <rect id="Rectangle-3-Copy-2" fill="#3C4044" x="5.88671875" y="1.58984375" width="16.1132812" height="1.24609375"></rect>
+                <rect id="Rectangle-3-Copy-5" fill="#3C4044" x="11.9023438" y="9.41015625" width="10.0976562" height="1.24609375"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

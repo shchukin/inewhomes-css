@@ -1,0 +1,129 @@
+.input {
+    display: flex;           /* need for shortened case with .label included */
+    flex-direction: column;  /* so .label and .input__widget will not go on one line */
+}
+    .input__widget {
+        width: 100%;
+        height: 44px;
+        vertical-align: top;
+        padding: 12px 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 2px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--text-dark);
+    }
+
+    @media (min-width: 992px) {
+
+        .input__widget {
+            font-size: 15px;
+        }
+    }
+
+    .input__widget:hover {
+        border-color: #C0C0D1;
+    }
+
+    .input__widget:focus,
+    .input__widget:active {
+        border-color: #C0C0D1;
+    }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input__widget::-webkit-input-placeholder       { font-style: normal; color: #BFBDC6; }
+    .input__widget::-moz-placeholder                { font-style: normal; color: #BFBDC6; opacity: 1; }
+    .input__widget:-ms-input-placeholder            { font-style: normal; color: #BFBDC6; }
+
+    .input__widget:hover::-webkit-input-placeholder       { font-style: normal; color: #B0B0C2; }
+    .input__widget:hover::-moz-placeholder                { font-style: normal; color: #B0B0C2; opacity: 1; }
+    .input__widget:hover:-ms-input-placeholder            { font-style: normal; color: #B0B0C2; }
+    /* stylelint-enable */
+
+
+
+.input--textarea {
+
+}
+    .input--textarea .input__widget {
+        vertical-align: top;
+        height: auto; /* user rows="" attribute */
+        min-height: 44px; /* one row */
+        resize: vertical;
+    }
+
+
+.input--select {
+
+}
+    .input--select .input__widget {
+        cursor: pointer;
+    }
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+
+    .input--select {
+
+    }
+        .input--select .input__widget {
+            -webkit-appearance: none;
+               -moz-appearance: none;
+            padding-right: 38px;
+            background-image: url("../vectors/input-select.svg"),
+                              linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 27px, #ebebeb 27px, #ebebeb 28px, rgba(0, 0, 0, 0) 28px, rgba(0, 0, 0, 0));
+            background-size: 9px 6px, auto;
+            background-repeat: no-repeat, no-repeat;
+            background-position: right 9px center, center center;
+        }
+}
+
+
+.input--error {
+
+}
+    .input--error .input__widget {
+        border-color: var(--color-brand-accent);
+    }
+
+
+.input--smaller {
+
+}
+    .input--smaller .input__widget {
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .input--smaller.input--textarea .input__widget {
+        min-height: 40px;
+    }
+
+
+.input--shortened-hard {
+
+}
+    .input--shortened-hard .input__widget {
+        max-width: 310px;
+    }
+
+
+.input--slightly-shortened {
+
+}
+    .input--slightly-shortened .input__widget {
+        max-width: 440px;
+    }
+
+    @media (min-width: 768px) {
+        .input--slightly-shortened .input__widget {
+            max-width: 520px;
+        }
+    }

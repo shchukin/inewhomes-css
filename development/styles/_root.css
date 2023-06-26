@@ -1,0 +1,152 @@
+/* stylelint-disable declaration-colon-space-after */
+:root {
+
+    /* Basic brand settings */
+
+    --font-primary: "Graphik Web", sans-serif;
+    --font-primary-bold: 500;
+
+    --font-heading: "Frank Ruhl Libre", serif;
+    --font-heading-bold: 700;
+
+    --color-brand-primary: #523EA7;
+    --color-brand-accent: #FF492D;
+    --color-gold: #FFC59C;
+
+
+    /* Themes */
+
+    --color-theme-primary-normal: var(--color-brand-primary);
+    --color-theme-primary-hover: #6D58C6;
+    --color-theme-primary-active: #514587; /* in the new design, get rid of the color on click */
+
+    --color-theme-secondary-normal: var(--color-brand-accent);
+    --color-theme-secondary-hover: #FF563C;
+    --color-theme-secondary-active: var(--color-brand-accent); /* in the new design, get rid of the color on click */
+
+    --color-theme-neutral-normal: var(--neutral-color-3);
+    --color-theme-neutral-hover: #E3E3F6;
+    --color-theme-neutral-active: var(--neutral-color-3); /* in the new design, get rid of the color on click */
+
+    --color-light-normal: #FFFFFF;
+    --color-light-hover: #FBFBFE;
+
+    --color-ghost-normal: rgba(169, 138, 255, 0.2);
+    --color-ghost-normal-50pct: rgba(169, 138, 255, 0.1);
+    --color-ghost-hover: rgba(82, 62, 167, 0.6);
+    --color-ghost-active: rgba(82, 62, 167, 0.8);
+
+    --shadow-theme-primary-high:   2px 2px 8px rgba(30, 0, 157, 0.12);
+    --shadow-theme-primary-medium: 1px 1px 6px rgba(30, 0, 157, 0.12);
+    --shadow-theme-primary-low:    1px 1px 4px rgba(30, 0, 157, 0.12);
+
+    --shadow-theme-secondary-high:   2px 2px 8px rgba(138, 18, 0, 0.12);
+    --shadow-theme-secondary-medium: 1px 1px 6px rgba(138, 18, 0, 0.12);
+    --shadow-theme-secondary-low:    1px 1px 4px rgba(138, 18, 0, 0.12);
+
+    --shadow-light-high: var(--shadow-theme-primary-high);
+    --shadow-light-medium: var(--shadow-theme-primary-medium);
+
+    --shadow-high: 2px 2px 40px rgba(0, 0, 0, 0.12);
+    --shadow-normal: 2px 2px 20px rgba(23, 0, 120, 0.08);
+
+    --text-primary: var(--color-brand-primary);
+    --text-primary-80pct: rgba(82, 62, 167, 0.8);
+    --text-primary-60pct: rgba(82, 62, 167, 0.6);
+    --text-primary-40pct: rgba(82, 62, 167, 0.4);
+
+    --text-secondary: var(--color-brand-accent);
+    --text-secondary-80pct: rgba(255, 73, 45, 0.8);
+    --text-secondary-60pct: rgba(255, 73, 45, 0.6);
+    --text-secondary-40pct: rgba(255, 73, 45, 0.4);
+
+    --text-dark: #23212C;
+    --text-dark-80pct: rgba(48, 41, 78, 0.8);
+    --text-dark-60pct: rgba(48, 41, 78, 0.6);
+    --text-dark-40pct: rgba(48, 41, 78, 0.4);
+
+    --text-light: #E1E1F5;
+    --text-light-60pct: rgba(225, 225, 245, 0.6);
+    --text-light-50pct: rgba(225, 225, 245, 0.5);
+
+    --neutral-neutral: #30294E;
+    --neutral-neutral-80pct: rgba(48, 41, 78, 0.8);
+    --neutral-neutral-60pct: rgba(48, 41, 78, 0.6);
+    --neutral-neutral-50pct: rgba(48, 41, 78, 0.5);
+    --neutral-neutral-40pct: rgba(48, 41, 78, 0.4);
+    --neutral-neutral-32pct: rgba(48, 41, 78, 0.32);
+    --neutral-neutral-20pct: rgba(48, 41, 78, 0.2);
+    --neutral-neutral-08pct: rgba(48, 41, 78, 0.08);
+
+    --neutral-color-1: #C0C0D1;
+    --neutral-color-2: #E1E1F5;
+    --neutral-color-3: #F4F4FB;
+
+    /* logo, body text, headings, etc. */
+
+    --body-font-family: var(--font-primary);
+    --body-font-size: 15px;
+    --body-font-line: 24px;
+    --body-color: var(--text-dark);
+
+    --body-mobile-font-size: 16px;
+    --body-mobile-font-line: var(--body-font-line);
+
+    --heading-font-color: var(--body-color);
+
+    --link-color: var(--color-brand-accent);
+    --link-decoration: #FFDBD5;
+
+    --overlay: rgba(0, 0, 0, 0.6);
+
+    --logo-width: 104px;
+    --logo-height: 34px;
+
+    --easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
+
+    --transition-hover: 0.1s ease;
+    --transition-show: 0.5s var(--easeOutCirc);
+    --transition-slideSlow: 1s var(--easeOutCubic);
+    --transition-slideFast: 0.5s var(--easeOutCubic);
+
+
+
+    /* Other */
+
+    --color-faded: #868392; /* no variable in Figma */
+    --color-note: #BFBDC6;
+
+    --image-fallback: #ededf4;
+    --map-fallback: #B3D8FE;
+
+    --shadow-low: 1px 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --header-shadow: 0 4px 12px 0 rgba(79, 79, 102, 0.1);
+    --cards-shadow-normal: 1px 1px 8px rgba(48, 41, 78, 0.1);
+    --cards-shadow-hover: 1px 1px 8px rgba(82, 62, 167, 0.16);
+
+    --button-pading-default: 15px;
+
+    --menu-height: 52px; /* complex menu */
+    --header-height: 60px;
+    --filters-height: 60px;
+
+    --options-mobile-height: 60px;
+    --options-desktop-height: 64px;
+    --apply-filter-height: 50px;
+    --request-height: 74px;
+
+    --container-padding: 15px;
+    --container-padding-larger: 20px;
+
+
+    --filters-button-width: 84px;
+}
+/* stylelint-enable declaration-colon-space-after */
+
+
+
+@keyframes slide {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

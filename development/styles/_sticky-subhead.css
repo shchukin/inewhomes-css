@@ -1,0 +1,30 @@
+.sticky-subhead {
+    position: sticky;
+    z-index: 100; /* overlap what is below on the page */
+    transform: translate3d(0, 0, 0);
+    left: 0;
+    right: 0;
+    top: -1px; /* It is important that exactly -1px, and not zero:
+                  https://stackoverflow.com/questions/16302483/event-to-detect-when-positionsticky-is-triggered/57991537#57991537
+                  This is compensated by the fact that the pixel of the border will just be behind the screen.
+                  If we ever change it to top: 0; then the border can be moved from here
+                  to .complex__header as border-bottom: 1px solid var(--neutral-neutral-08pct);
+                */
+    border-top: 1px solid transparent; /* a border that ends up behind the screen when stick */
+    background-color: #FFFFFF;
+}
+
+.sticky-subhead--sticked {
+    box-shadow: var(--shadow-normal);
+}
+
+@media (min-width: 992px) {
+
+    .sticky-subhead {
+
+    }
+
+    .fixed-head .sticky-subhead {
+        top: var(--header-height);
+    }
+}

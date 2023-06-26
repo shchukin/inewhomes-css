@@ -1,0 +1,16 @@
+/* Overrides */
+
+.gallery .flickity-prev-next-button,
+.gallery .flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+.gallery .flickity-prev-next-button svg {
+    -webkit-filter: drop-shadow(0 0 15px rgb(100, 105, 113));
+    filter: drop-shadow(0 0 15px rgb(100, 105, 113));
+    overflow: visible;
+}
+
+.gallery .flickity-prev-next-button .arrow {
+    fill: #ffffff;
+}

@@ -1,0 +1,38 @@
+.partner {
+    width: 100%; /* Make it stretch so when there is not enough space */
+    height: 100%; /* logo could shrink */
+    max-width: 150px;
+    max-height: 74px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+    .partner__logo {
+        vertical-align: top;
+        width: auto;
+        height: 100%;
+    }
+
+    /* if object fit supported: */
+    @supports (object-fit: contain) {
+        .partner__logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+
+
+
+.partner--smaller {
+    max-width: 130px;
+    max-height: 64px;
+}
+
+.partner--larger {
+    max-width: 170px;
+    max-height: 84px;
+}

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed-head search-page search-has-filters">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../vendors/flickity/flickity.min.css?1687670085">
+        <link rel="stylesheet" href="../vendors/fancybox/jquery.fancybox.min.css?1687670085">
+        <link rel="stylesheet" href="../vendors/rateyo/jquery.rateyo.min.css?1687670085">
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687670085">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687670085">
+        <link rel="stylesheet" href="../styles/style.css?1687670085">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <link rel="canonical" href="https://shchukin.github.io/inewhomes-css/production">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+
+        <!--[if IE]>
+            <div class="browserupgrade">
+                You are using an <strong>outdated</strong> browser.
+                Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </div>
+        <![endif]-->
+
+        <header class="header">
+            <div class="header__panel">
+                <a class="header__emblem logo" href="index.html">
+                    iNewHomes
+                </a>
+            </div>
+        </header>
+
+        <section class="search">
+            <button class="search__show" type="button">
+                <span class="visuallyhidden">Show</span>
+                search
+                <span class="visuallyhidden">form</span>
+            </button>
+            <button class="search__hide" type="button">
+                Cancel
+                <span class="visuallyhidden">search form</span>
+            </button>
+            <form class="search__body">
+                <input class="search__input" type="text" placeholder="Search City, Project, Developer, etc" autocomplete="off">
+                <svg class="search__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1687670085#search"></use>
+                </svg>
+                <button class="search__cleartype" type="button">Clear search query</button>
+            </form>
+            <div class="search__dropdown">
+                <div class="search__filter">
+                    <div class="search__ribbon">
+                        <button class="search__action search__action--current" type="button">All</button>
+                        <button class="search__action" type="button">Locations (135)</button>
+                        <button class="search__action" type="button">Developments (6)</button>
+                        <button class="search__action" type="button">Companies (2)</button>
+                    </div>
+                </div>
+                <div class="search__results">
+                    <div class="nothing">
+                        <b class="nothing__heading">
+                            No matching results found for Small Isles.
+                        </b>
+                        <div class="nothing__suggest">
+                            Did you mean <a class="link" href="#">Small island</a>?
+                        </div>
+                        <div class="nothing__spelling">
+                            Please check the spelling, try clearing the search box, or try reformatting to match these examples:
+                        </div>
+                        <table class="nothing__sample spreadsheet">
+                            <tbody class="spreadsheet__body">
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">City:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Seattle</a> or <a class="link" href="#">Seattle, WA</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Address:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">123 Main St, Seattle, WA</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Zip:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">98115</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">County:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Miami Dade County</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">State:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Florida</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Project:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Aurora Sunny Isles Beach</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Company:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Dezer Development Group</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="nothing__map">
+                            <a class="link" href="#">Search by map</a>
+                        </div>
+                    </div>
+
+                    <!-- temp -->
+                    <br><br>or:<br><br><br>
+                    <!--/temp -->
+
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687670085#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation">
+            <div class="navigation__overlay" role="presentation">
+                Close Menu
+            </div>
+            <div class="navigation__dropdown">
+                <nav class="navigation__menu">
+                    <div class="navigation__item">
+                        <a class="navigation__link navigation__link--has-submenu" href="search.html">Buy</a>
+                        <button class="navigation__show-submenu" type="button">Expand Buy submenu</button>
+                        <div class="navigation__submenu">
+                            <a class="navigation__sublink" href="#">Homes for sale</a>
+                            <a class="navigation__sublink" href="#">Commercial for sale</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item">
+                        <a class="navigation__link" href="search.html">Rent</a>
+                    </div>
+                    <div class="navigation__item">
+                        <a class="navigation__link" href="states.html">Cities</a>
+                    </div>
+                    <div class="navigation__item">
+                        <a class="navigation__link navigation__link--has-submenu" href="developers.html">For Developers</a>
+                        <button class="navigation__show-submenu" type="button">Expand For Developers submenu</button>
+                        <div class="navigation__submenu">
+                            <a class="navigation__sublink" href="developers.html">For Developers</a>
+                            <a class="navigation__sublink" href="agents.html">For Agents</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item">
+                        <a class="navigation__link" href="blog.html">Blog</a>
+                    </div>
+                    <div class="navigation__item">
+                        <a class="navigation__link navigation__link--has-submenu" href="about.html">About</a>
+                        <button class="navigation__show-submenu" type="button">Expand For About submenu</button>
+                        <div class="navigation__submenu">
+                            <a class="navigation__sublink" href="about.html">About</a>
+                            <a class="navigation__sublink" href="contacts.html">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item navigation__item--profile">
+                        <a class="navigation__link navigation__link--has-submenu" href="#">
+                            <img class="navigation__avatar" srcset="../temp/avatar-a-44x44@2x.png 2x" src="../temp/avatar-a-44x44.png" alt="">
+                        </a>
+                        <div class="navigation__submenu">
+                            <a class="navigation__sublink" href="#">Account</a>
+                            <a class="navigation__sublink" href="#">Profile</a>
+                            <a class="navigation__sublink" href="#">Security</a>
+                            <a class="navigation__sublink navigation__sublink--logout" href="#">Log out</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <button class="navigation__toggle" type="button">
+                <span class="navigation__open-menu">Menu</span>
+                <span class="navigation__burger" role="presentation"></span>
+            </button>
+        </div>
+
+        <form class="options">
+            <div class="options__panel">
+                <div class="options__related">
+                    <button class="options__handler" type="button">
+                        <span class="options__handler-label">Filters</span>
+                    </button>
+                </div>
+                <div class="options__filters">
+                    <h2 class="visuallyhidden">Filters</h2>
+                    <div class="options__bar">
+                        <div class="options__list">
+                            <div class="options__container">
+                                <div class="options__ribbon">
+                                    <div class="filter">
+                                        <div class="param">
+                                            <h3 class="param__label">
+                                                Listing type
+                                            </h3>
+                                            <div class="param__widget">
+                                                <div class="switch">
+                                                    <label class="switch__item">
+                                                        <input class="switch__widget" type="radio" name="listing-type" checked>
+                                                        <span class="switch__label">Buy</span>
+                                                    </label>
+                                                    <label class="switch__item">
+                                                        <input class="switch__widget" type="radio" name="listing-type">
+                                                        <span class="switch__label">Rent</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter">
+                                        <div class="dropdown dropdown--default-skin dropdown--as-filter">
+                                            <button class="dropdown__handler" type="button" title="Click to show home type dropdown">
+                                                <span class="visuallyhidden">Show</span>
+                                                Home type
+                                                <span class="visuallyhidden">dropdown</span>
+                                            </button>
+                                            <div class="dropdown__menu">
+                                                <div class="param">
+                                                    <h3 class="param__label">
+                                                        Home type
+                                                    </h3>
+                                                    <div class="param__widget">
+                                                        <div class="check-list">
+                                                            <div class="check-list__item">
+                                                                <label class="choice choice--checkbox">
+                                                                    <input class="choice__input" type="checkbox">
+                                                                    <i class="choice__icon" role="presentation"></i>
+                                                                    <span class="choice__label">Any</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-list__item">
+                                                                <label class="choice choice--checkbox">
+                                                                    <input class="choice__input" type="checkbox">
+                                                                    <i class="choice__icon" role="presentation"></i>
+                                                                    <span class="choice__label">Condo</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-list__item">
+                                                                <label class="choice choice--checkbox">
+                                                                    <input class="choice__input" type="checkbox">
+                                                                    <i class="choice__icon" role="presentation"></i>
+                                                                    <span class="choice__label">Townhouse</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-list__item">
+                                                                <label class="choice choice--checkbox">
+                                                                    <input class="choice__input" type="checkbox">
+                                                                    <i class="choice__icon" role="presentation"></i>
+                                                                    <span class="choice__label">House</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter">
+                                        <div class="dropdown dropdown--default-skin dropdown--as-filter">
+                                            <button class="dropdown__handler" type="button" title="Click to show price dropdown">
+                                                <span class="visuallyhidden">Show</span>
+                                                Price
+                                                <span class="visuallyhidden">dropdown</span>
+                                            </button>
+                                            <div class="dropdown__menu">
+                                                <div class="param">
+                                                    <h3 class="param__label">
+                                                        Price
+                                                    </h3>
+                                                    <div class="param__widget">
+                                                        <div class="range">
+                                                            <div class="range__widget">
+                                                                <div class="input input--smaller input--select">
+                                                                    <select class="input__widget">
+                                                                        <option>No min</option>
+                                                                        <option>Lorem</option>
+                                                                        <option>Ipsum</option>
+                                                                        <option>Dolor</option>
+                                                                        <option>Sit amen</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="range__widget">
+                                                                <div class="input input--smaller input--select">
+                                                                    <select class="input__widget">
+                                                                        <option>No max</option>
+                                                                        <option>Lorem</option>
+                                                                        <option>Ipsum</option>
+                                                                        <option>Dolor</option>
+                                                                        <option>Sit amen</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter">
+                                        <div class="dropdown dropdown--default-skin dropdown--as-filter">
+                                            <button class="dropdown__handler" type="button" title="Click to show beds dropdown">
+                                                <span class="visuallyhidden">Show</span>
+                                                Beds
+                                                <span class="visuallyhidden">dropdown</span>
+                                            </button>
+                                            <div class="dropdown__menu">
+                                                <div class="param">
+                                                    <h3 class="param__label">
+                                                        Beds
+                                                    </h3>
+                                                    <div class="param__widget">
+                                                        <div class="switch">
+                                                            <label class="switch__item switch__item--free-width">
+                                                                <input class="switch__widget" type="radio" name="beds" checked>
+                                                                <span class="switch__label">Any</span>
+                                                            </label>
+                                                            <label class="switch__item switch__item--free-width">
+                                                                <input class="switch__widget" type="radio" name="beds">
+                                                                <span class="switch__label">Studio</span>
+                                                            </label>
+                                                            <label class="switch__item">
+                                                                <input class="switch__widget" type="radio" name="beds">
+                                                                <span class="switch__label">1</span>
+                                                            </label>
+                                                            <label class="switch__item">
+                                                                <input class="switch__widget" type="radio" name="beds">
+                                                                <span class="switch__label">2</span>
+                                                            </label>
+                                                            <label class="switch__item">
+                                                                <input class="switch__widget" type="radio" name="beds">
+                                                                <span class="switch__label">3</span>
+                                                            </label>
+                                                            <label class="switch__item">
+                                                                <input class="switch__widget" type="radio" name="beds">
+                                                                <span class="switch__label">4+</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="options__more">
+                                <div class="dropdown dropdown--default-skin dropdown--as-filter">
+                                    <button class="dropdown__handler" type="button" title="Click to show square feet range dropdown">
+                                        <span class="visuallyhidden">Show</span>
+                                        More filters
+                                    </button>
+                                    <div class="dropdown__menu">
+                                        <div class="filter">
+                                            <div class="dropdown dropdown--default-skin dropdown--as-filter">
+                                                <button class="dropdown__handler" type="button" title="Click to show square feet range dropdown">
+                                                    <span class="visuallyhidden">Show</span>
+                                                    Square feet range
+                                                    <span class="visuallyhidden">dropdown</span>
+                                                </button>
+                                                <div class="dropdown__menu">
+                                                    <div class="param">
+                                                        <h3 class="param__label">
+                                                            Square feet range
+                                                        </h3>
+                                                        <div class="param__widget">
+                                                            <div class="range">
+                                                                <div class="range__widget">
+                                                                    <div class="input input--select input--smaller">
+                                                                        <select class="input__widget">
+                                                                            <option>No min</option>
+                                                                            <option>Lorem</option>
+                                                                            <option>Ipsum</option>
+                                                                            <option>Dolor</option>
+                                                                            <option>Sit amen</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="range__widget">
+                                                                    <div class="input input--select input--smaller">
+                                                                        <select class="input__widget">
+                                                                            <option>No max</option>
+                                                                            <option>Lorem</option>
+                                                                            <option>Ipsum</option>
+                                                                            <option>Dolor</option>
+                                                                            <option>Sit amen</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="options__actions">
+                            <button class="options__reset" type="reset">
+                                Reset filters
+                            </button>
+                            <div class="options__apply">
+                                <div class="strut">
+                                    <div class="strut__loader loading-bar loading-bar--highlight" title="Loading in progress, please wait">
+                                        <svg class="loading-bar__spinner indicator" width="30" height="30" title="Loading...">
+                                            <use xlink:href="../symbols/symbols.svg?1687670085#indicator"></use>
+                                        </svg>
+                                        <span class="loading-bar__label">Loading...</span>
+                                    </div>
+                                    <button class="strut__action button button--smaller" type="button">
+                                        View 143 homes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <main class="main">
+            <div class="main__wrap"><!-- There is no .container on this page -->
+                <div class="main__body">
+                    <!-- There is no breadcrumbs on this page -->
+                    <div class="results">
+                        <div class="results__data">
+                            <div class="results__wrapper results__wrapper--active"><!-- to show: .results__wrapper--active -->
+                                <h1 class="results__heading">
+                                    Miami-Dade County, FL New Homes For Sale
+                                </h1>
+                                <section class="results__output">
+                                    <h2 class="visuallyhidden">List of result:</h2>
+                                    <div class="catalog">
+                                        <div class="catalog__amount">
+                                            Showing 40 of 10,695 results for sale
+                                        </div>
+                                        <div class="catalog__sort">
+                                            <div class="sort">
+                                                <label class="sort__label" for="sort">
+                                                    Sort by:
+                                                </label>
+                                                <select class="sort__widget morph" id="sort">
+                                                    <option>Recommended</option>
+                                                    <option>Newest</option>
+                                                    <option>Price (High to Low)</option>
+                                                    <option>Price (Low to High)</option>
+                                                    <option>Square Feet (High to Low)</option>
+                                                    <option>Square Feet (Low to High)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__list">
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-a@2x.jpg 2x" src="../temp/venue-a.jpg" alt="L’‎Atelier Miami Beach">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            L’‎Atelier Miami Beach
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            Sales pending
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-b@2x.jpg 2x" src="../temp/venue-b.jpg" alt="15530 Florida 909, North Miami Beach, FL 33160">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Townhouse
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            New North Town C
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            15530 Florida 909, North Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            Sold out
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="placeholder" title="No image found">No image found</div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo, Townhouse, House
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            The Water Bay Hanan
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status venue__status--active">
+                                                            from $1,100,000
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-b@2x.jpg 2x" src="../temp/venue-b.jpg" alt="New North Town C">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Townhouse
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            New North Town C
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            15530 Florida 909, North Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            Sold out
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-c@2x.jpg 2x" src="../temp/venue-c.jpg" alt="The Water Bay Hanan">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo, Townhouse, House
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            The Water Bay Hanan
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status venue__status--active">
+                                                            from $1,100,000
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="complex.html" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-a@2x.jpg 2x" src="../temp/venue-a.jpg" alt="L’‎Atelier Miami Beach">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            L’‎Atelier Miami Beach
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            Sales pending
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="complex.html" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-a@2x.jpg 2x" src="../temp/venue-a.jpg" alt="L’‎Atelier Miami Beach">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            L’‎Atelier Miami Beach
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            Sales pending
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-b@2x.jpg 2x" src="../temp/venue-b.jpg" alt="New North Town C">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Townhouse
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            New North Town C
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            15530 Florida 909, North Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status venue__status--active">
+                                                            Now selling
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <a class="venue venue--horizontal-on-mobile" href="#" target="_blank">
+                                                    <div class="venue__gallery">
+                                                        <div class="fit">
+                                                            <img class="fit__image" srcset="../temp/venue-c@2x.jpg 2x" src="../temp/venue-c.jpg" alt="L’‎Atelier Miami Beach">
+                                                        </div>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            Condo, Townhouse, House
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            The Water Bay Hanan
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            6901 Collins Avenue, Miami Beach, FL 33160
+                                                        </div>
+                                                        <div class="venue__status venue__status--active">
+                                                            from $1,100,000
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                        </div>
+                                        <div class="catalog__navigation">
+                                            <ul class="pagination">
+                                                <li class="pagination__item pagination__item--prev pagination__item--disabled">
+                                                    <a class="pagination__link" href="#">Previous page</a>
+                                                </li>
+                                                <li class="pagination__item pagination__item--current">
+                                                    <a class="pagination__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item pagination__item--separator pagination__item--disabled">
+                                                    <a class="pagination__link" href="#">…</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">20</a>
+                                                </li>
+                                                <li class="pagination__item pagination__item--next">
+                                                    <a class="pagination__link" href="#">Next page</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="catalog__total">
+                                            Showing 40 of 10,695 results for sale
+                                        </div>
+                                        <!-- temp -->
+                                        <br><br><center><b>or:</b></center><br><br>
+                                        <!--/temp -->
+                                        <div class="catalog__emptiness">
+                                            <div class="null null--advanced null--search-results">
+                                                <div class="null__heading">Sorry, nothing found</div>
+                                                <div class="null__note">We can’‎t find any developments in this location.<br> Zoom out or use filter options to expand your search.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="results__placeholder"><!-- to show: .results__placeholder--active -->
+                                <div class="results__heading">
+                                    <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                </div>
+                                <section class="results__output">
+                                    <h2 class="visuallyhidden">List of result:</h2>
+                                    <div class="catalog">
+                                        <div class="catalog__amount">
+                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                        </div>
+                                        <div class="catalog__sort">
+                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                        </div>
+                                        <div class="catalog__list">
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <article class="catalog__item">
+                                                <div class="venue venue--loading">
+                                                    <div class="venue__gallery">
+                                                        <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                    </div>
+                                                    <div class="venue__body">
+                                                        <div class="venue__type">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <h3 class="venue__heading">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </h3>
+                                                        <div class="venue__address">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                        <div class="venue__status">
+                                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="catalog__navigation">
+                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                        </div>
+                                        <div class="catalog__total">
+                                            <span class="content-placeholder" title="Loading... Please wait">Loading...</span>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="results__footer">
+                                <footer class="inner-footer">
+                                    <div class="inner-footer__copyright">
+                                        © 2019 iNewHomes. All rights reserved.
+                                    </div>
+                                    <div class="inner-footer__menu">
+                                        <a class="inner-footer__action link" href="policy.html">Privacy Policy</a>
+                                        <a class="inner-footer__action link" href="terms.html">Terms of Use</a>
+                                    </div>
+                                </footer>
+                            </div>
+                            <div class="results__loading"><!-- to show: .results__loading--active -->
+                                <div class="loader" title="Loading data. Please wait a moment.">
+                                    <svg class="loader__icon indicator" width="30" height="30">
+                                        <use xlink:href="../symbols/symbols.svg?1687670085#indicator"></use>
+                                    </svg>
+                                    <div class="loader__message">Loading results</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results__map">
+                            <div class="map">
+                                <iframe style="width: 100%; height: 100%; border: none; vertical-align: top;" class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/view?zoom=5&center=27.6648,-81.5158&key=AIzaSyBf-LZpktZ0pITdkTHBE95a0euPqfH7LZU"></iframe>
+                                <div class="map__results map__results--active"><!-- to show: .map__results--active -->
+                                    10,695 Results
+                                </div>
+                                 <div class="map__loading loading-bar" title="Loading in progress, please wait"><!-- to show: .map__loading--active -->
+                                    <svg class="loading-bar__spinner indicator" width="30" height="30">
+                                        <use xlink:href="../symbols/symbols.svg?1687670085#indicator"></use>
+                                    </svg>
+                                    <span class="loading-bar__label">Loading...</span>
+                                </div>
+                                <div class="map__navigation zoom">
+                                    <!-- Buttons can go with "disabled" attribute -->
+                                    <button class="zoom__action zoom__action--plus" type="button">Zoom in</button>
+                                    <button class="zoom__action zoom__action--minus" type="button" disabled>Zoom out</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results__actions">
+                            <button class="results__handler" type="button">
+                                <span class="results__toggle-map">Show map</span>
+                                <span class="visuallyhidden">or</span>
+                                <span class="results__toggle-list">Show list</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer is inside .results on this page -->
+            </div>
+        </main>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js?1687670085"></script>
+        <script src="../scripts/_dropdown.js?1687670085"></script>
+        <script src="../scripts/_options.js?1687670085"></script>
+        <script src="../scripts/_results.js?1687670085"></script>
+        <script src="../scripts/_search.js?1687670085"></script>
+        <script src="../scripts/_gallery.js?1687670085"></script>
+        <script src="../scripts/_clipped.js?1687670085"></script>
+        <script src="../scripts/_popup.js?1687670085"></script>
+        <script src="../scripts/_share.js?1687670085"></script>
+        <script src="../scripts/_strut.js?1687670085"></script>
+        <script src="../scripts/_slideshow.js?1687670085"></script>
+        <script src="../scripts/_jumbotron.js?1687670085"></script>
+        <script src="../scripts/_carousel.js?1687670085"></script>
+        <script src="../scripts/_morph.js?1687670085"></script>
+        <script src="../scripts/_anchor.js?1687670085"></script>
+        <script src="../scripts/_faq.js?1687670085"></script>
+        <script src="../scripts/_sticky-subhead.js?1687670085"></script>
+        <script src="../scripts/_menu.js?1687670085"></script>
+        <script src="../scripts/_rating.js?1687670085"></script>
+        <script src="../scripts/_smooth-scroll.js?1687670085"></script>
+        <script src="../scripts/_company.js?1687670085"></script>
+
+    </body>
+</html>
+
+
+

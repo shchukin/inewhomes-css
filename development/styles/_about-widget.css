@@ -1,0 +1,25 @@
+.about-widget {
+    padding-bottom: 30px;
+}
+    .about-widget__description {
+
+    }
+
+    .about-widget__gallery {
+        margin-top: 20px;
+    }
+
+
+@media (min-width: 768px) {
+
+    .about-widget {
+        padding-bottom: 0;
+    }
+        .about-widget__description {
+
+        }
+
+        .about-widget__gallery {
+
+        }
+}

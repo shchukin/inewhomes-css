@@ -1,0 +1,38 @@
+.overview {
+    padding-top: 34px;
+}
+    .overview__wrap {
+
+    }
+        .overview__heading {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.2px;
+            color: var(--heading-font-color)
+        }
+
+        .overview__body {
+
+        }
+
+
+@media (min-width: 768px) {
+
+    .overview {
+        padding-top: 56px;
+    }
+        .overview__wrap {
+
+        }
+            .overview__heading {
+
+            }
+
+            .overview__body {
+
+            }
+}

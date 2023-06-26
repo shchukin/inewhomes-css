@@ -1,0 +1,14 @@
+.category-listing {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .category-listing__item {
+        margin-top: 4px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .category-listing__item:first-child {
+        margin-top: 0;
+    }

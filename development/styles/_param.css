@@ -1,0 +1,32 @@
+.param {
+
+}
+    .param__label {
+        display: block;
+        vertical-align: top;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: var(--font-primary-bold);
+        font-size: 13px;
+        line-height: 17px;
+        color: var(--text-dark);
+    }
+
+    .param__widget {
+        margin-top: 9px;
+    }
+
+
+@media (min-width: 768px) {
+
+    .options__ribbon .param {
+
+    }
+        .options__ribbon .param__label {
+            display: none;
+        }
+
+        .options__ribbon .param__widget {
+            margin-top: 0;
+        }
+}

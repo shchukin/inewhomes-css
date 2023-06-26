@@ -1,0 +1,16 @@
+.volume-separator {
+    position: relative;
+    overflow: hidden;
+    height: 10px;
+    background-color: var(--neutral-color-3);
+}
+
+.volume-separator::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    right: 0;
+    height: 1px;
+    box-shadow: 0 2px 4px rgba(30, 0, 157, 0.04);
+}

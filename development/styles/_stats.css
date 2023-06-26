@@ -1,0 +1,114 @@
+.stats {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+    .stats__item {
+        flex-shrink: 0;
+        border-top: 1px solid var(--neutral-neutral-08pct);
+        border-left: 1px solid var(--neutral-neutral-08pct);
+    }
+
+    .stats__item--units {
+        order: 1;
+        width: 35%;
+        border-left: none;
+        border-top: none;
+        padding-top: 3px;
+        padding-bottom: 10px;
+    }
+
+    .stats__item--stories {
+        order: 3;
+        width: 35%;
+        border-left: none;
+        padding-top: 13px;
+    }
+
+    .stats__item--bedrooms {
+        order: 2;
+        width: 65%;
+        border-top: none;
+        padding-top: 3px;
+        padding-bottom: 10px;
+    }
+
+    .stats__item--sq-ft-range {
+        order: 4;
+        width: 65%;
+        padding-top: 13px;
+    }
+
+        .stats__term {
+            display: block;
+            font-weight: inherit;
+            font-size: 13px;
+            line-height: 17px;
+            color: var(--text-dark-60pct);
+            text-align: center;
+        }
+
+        .stats__description {
+            display: block;
+            margin-top: 7px;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+
+@media (min-width: 576px) {
+
+    .stats {
+        flex-wrap: nowrap;
+    }
+        .stats__item {
+            border-top: none;
+            border-left: 1px solid var(--neutral-neutral-08pct);
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .stats__item:first-child {
+            border-left: none;
+        }
+
+        .stats__item--units {
+            order: 1;
+            width: 21.0959%;
+        }
+
+        .stats__item--stories {
+            order: 2;
+            width: 21.0959%;
+        }
+
+        .stats__item--bedrooms {
+            order: 3;
+            width: 21.0959%;
+        }
+
+        .stats__item--sq-ft-range {
+            order: 4;
+            width: 36.7123%;
+        }
+            .stats__term {
+
+            }
+
+            .stats__description {
+
+            }
+}
+
+
+
+
+
+
+
+
+
+

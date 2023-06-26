@@ -1,0 +1,20 @@
+.extra-interest {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+
+    .extra-interest {
+        padding-top: 83px;
+        padding-bottom: 83px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .extra-interest {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}

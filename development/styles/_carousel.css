@@ -1,0 +1,327 @@
+.carousel {
+    position: relative;
+}
+    .carousel__container {
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        /*scroll-snap-type: x mandatory; -- We could try to snap it to the edge or the center of item */
+    }
+
+    @media (min-width: 576px) {
+
+        .carousel__container {
+            margin-left: calc(-1 * var(--container-padding-larger));
+            margin-right: calc(-1 * var(--container-padding-larger));
+        }
+    }
+
+        .carousel__ribbon {
+            display: inline-flex;
+            align-items: stretch;
+            vertical-align: top;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+            width: 100%; /* This may looks weird at first but it is necessary that we can use relative width on items (width in percents) (1) */
+        }
+
+        @media (min-width: 576px) {
+
+            .carousel__ribbon {
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+            /* Because of Because of (1) we can't use padding-right, so we add this as a spacing on the right */
+            .carousel--skin-venue .carousel__ribbon::after {
+                content: "";
+                flex-shrink: 0;
+                display: block;
+                width: var(--container-padding);
+            }
+
+            @media (min-width: 576px) {
+
+                .carousel--skin-venue .carousel__ribbon::after {
+                    width: var(--container-padding-larger);
+                }
+            }
+
+
+            .carousel__item {
+                box-sizing: content-box;
+                flex-shrink: 0;
+                width: 270px; /* random default */
+                margin-right: var(--container-padding);
+                /*scroll-snap-align: start; We could snap to the left edge of the tile */
+            }
+
+            @media (min-width: 576px) {
+
+                .carousel__item {
+                    margin-right: var(--container-padding-larger);
+                }
+            }
+
+            .carousel__item:last-child {
+                margin-right: 0;
+            }
+
+    .carousel__control {
+        display: none; /* swipe by finger */
+    }
+
+
+
+@media (min-width: 992px) {
+
+    .carousel {
+
+    }
+        .carousel__container {
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+        }
+            .carousel__ribbon {
+                padding-left: 0;
+                padding-right: 0;
+            }
+                .carousel__item {
+                    width: calc(25% - 15px); /* 4 items -- random default */
+                    /*scroll-snap-align: start;*/
+                }
+
+    .carousel__control {
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+        margin: -42px;
+        border: none;
+        background-color: transparent;
+        width: 84px;
+        height: 84px;
+        padding: 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+    .carousel__control--prev {
+        left: 0;
+    }
+
+    .carousel__control--next {
+        right: 0;
+    }
+        .carousel__control::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            background-color: #FFFFFF;
+            box-shadow: var(--shadow-theme-primary-high);
+            border-radius: 50%;
+        }
+
+        .carousel__control:hover::before {
+            box-shadow: var(--shadow-theme-primary-medium);
+        }
+
+        .carousel__control:active::before {
+            box-shadow: var(--shadow-theme-primary-low);
+        }
+
+        .carousel__arrow {
+            fill: var(--color-theme-secondary-normal);
+        }
+
+    .carousel__control--disabled {
+        opacity: 0;
+        visibility: hidden;
+    }
+        .carousel__arrow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+
+    /* hide scrollbar and show controls if JavaScript works */
+    .carousel--initialized {
+
+    }
+        .carousel--initialized .carousel__control {
+            display: block;
+        }
+}
+
+
+/* Disable snapping when scrolling */
+/*.carousel--being-scrolled-by-arrow .carousel__container {*/
+/*    scroll-snap-type: none; !* turn off snapping *!*/
+/*}*/
+/*.carousel--being-scrolled-by-arrow .carousel__item {*/
+/*    scroll-snap-align: none; !* turn off snapping *!*/
+/*}*/
+
+
+
+
+
+.carousel--skin-venue {
+
+}
+    /* padding due to shadows being clipped by overflow */
+    .carousel--skin-venue .carousel__container {
+        margin-top: -7px;
+        margin-bottom: -9px;
+    }
+        .carousel--skin-venue .carousel__ribbon {
+            padding-top: 7px;
+            padding-bottom: 9px;
+        }
+
+        @media (min-width: 992px) {
+
+            .carousel--skin-venue .carousel__container {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+                .carousel--skin-venue .carousel__ribbon {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                    /* Because of Because of (1) we can't use padding-right, so we add this as a spacing on the right */
+                    .carousel--skin-venue .carousel__ribbon::after {
+                        content: "";
+                        flex-shrink: 0;
+                        display: block;
+                        width: 6px;
+                    }
+        }
+
+
+    /* Items widths */
+
+    .carousel--skin-venue .carousel__item {
+        width: 292px;
+    }
+
+    @media (max-width: 359px) {
+
+        .carousel--skin-venue .carousel__item {
+            width: 270px;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .carousel--skin-venue .carousel__item {
+            width: 344px;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .carousel--skin-venue .carousel__item {
+            width: calc(25% - 15px);
+        }
+    }
+
+
+
+
+.carousel--skin-posts {
+
+}
+    /* padding due to shadows being clipped by overflow */
+    .carousel--skin-posts .carousel__container {
+        margin-top: -7px;
+        margin-bottom: -9px;
+    }
+        .carousel--skin-posts .carousel__ribbon {
+            padding-top: 7px;
+            padding-bottom: 9px;
+        }
+
+        @media (min-width: 992px) {
+
+            .carousel--skin-posts .carousel__container {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+                .carousel--skin-posts .carousel__ribbon {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                    /* Because of Because of (1) we can't use padding-right, so we add this as a spacing on the right */
+                    .carousel--skin-posts .carousel__ribbon::after {
+                        content: "";
+                        flex-shrink: 0;
+                        display: block;
+                        width: 6px;
+                    }
+        }
+
+
+    /* Items widths */
+
+    .carousel--skin-posts .carousel__item {
+        width: 292px;
+    }
+
+    @media (max-width: 359px) {
+
+        .carousel--skin-posts .carousel__item {
+            width: 270px;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .carousel--skin-posts .carousel__item {
+            width: 344px;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .carousel--skin-posts .carousel__item {
+            width: calc(33.3333% - 13px);
+            margin-right: 20px;
+        }
+
+        .carousel--skin-posts .carousel__item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .carousel--skin-posts .carousel__item {
+            width: calc(33.3333% - 20px);
+            margin-right: 30px;
+        }
+
+        .carousel--skin-posts .carousel__item:last-child {
+            margin-right: 0;
+        }
+    }

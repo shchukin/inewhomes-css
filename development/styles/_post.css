@@ -1,0 +1,161 @@
+.post {
+
+}
+
+@media (max-width: 767px) {
+    .post {
+        padding-bottom: 55px;
+    }
+}
+
+    .post__content {
+
+    }
+        .post__article {
+
+        }
+            .post__entry {
+
+            }
+                .post__heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    line-height: initial;
+                }
+
+                .post__featured-image {
+                    margin-top: 24px;
+                    width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                    background-color: var(--image-fallback);
+                }
+
+                @media (min-width: 576px) and (max-width: 991px) {
+                    .post__featured-image {
+                        max-width: 564px;
+                    }
+                }
+
+                .post__info {
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                @media (min-width: 576px) and (max-width: 991px) {
+                    .post__info {
+                        max-width: 564px;
+                    }
+                }
+                    .post__category {
+                        font-size: 17px;
+                        line-height: 26px;
+                    }
+
+                    .post__date {
+                        margin-top: 1px;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+
+                .post__text {
+                    margin-top: 30px;
+                }
+
+            .post__footer {
+                margin-top: 30px;
+            }
+                .post__share {
+                    margin-left: -5px;
+                }
+
+                .post__publisher {
+                    margin-top: 32px;
+                }
+
+    .post__sidebar {
+
+    }
+
+
+@media (min-width: 992px) {
+
+    .post {
+        display: flex;
+        align-items: flex-start;
+        gap: 36px;
+    }
+        .post__content {
+            flex-grow: 1;
+        }
+            .post__article {
+
+            }
+                .post__entry {
+
+                }
+                    .post__heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*line-height: initial;*/
+                    }
+
+                    .post__featured-image {
+                        /*margin-top: 24px;*/
+                        /*width: 100%;*/
+                        /*height: auto;*/
+                        /*vertical-align: top;*/
+                        /*background-color: var(--image-fallback);*/
+                    }
+
+                    .post__info {
+                        /*margin-top: 15px;*/
+                        /*display: flex;*/
+                        /*justify-content: space-between;*/
+                    }
+                        .post__category {
+                            /*font-size: 17px;*/
+                            /*line-height: 26px;*/
+                        }
+
+                        .post__date {
+                            /*margin-top: 1px;*/
+                            /*font-size: 15px;*/
+                            /*line-height: 24px;*/
+                        }
+
+                    .post__text {
+                        /*margin-top: 30px;*/
+                    }
+
+                .post__footer {
+                    /*margin-top: 30px;*/
+                }
+                    .post__share {
+                        /*margin-left: -5px;*/
+                    }
+
+                    .post__publisher {
+                        /*margin-top: 32px;*/
+                    }
+
+        .post__sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+}
+
+@media (min-width: 1200px) {
+
+    .post {
+        gap: 50px;
+    }
+        .post__content {
+
+        }
+
+        .post__sidebar {
+            width: 350px;
+        }
+}

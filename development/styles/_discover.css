@@ -1,0 +1,325 @@
+.discover {
+
+}
+    .discover__wrap {
+
+    }
+        .discover__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        .discover__type {
+            margin-top: 19px;
+        }
+
+        .discover__featured {
+            margin-top: 20px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-left: calc(-1 * var(--container-padding));
+            margin-right: calc(-1 * var(--container-padding));
+        }
+
+        @media (min-width: 576px) {
+            .discover__featured {
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+            }
+        }
+            .discover__featured-ribbon {
+                display: inline-flex;
+                align-items: flex-start;
+                padding-left: var(--container-padding);
+                padding-right: var(--container-padding);
+            }
+
+            @media (min-width: 576px) {
+
+                .discover__featured-ribbon {
+                    padding-left: var(--container-padding-larger);
+                    padding-right: var(--container-padding-larger);
+                }
+            }
+
+                .discover__tile {
+                    width: 174px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                .discover__tile:first-child {
+                    margin-left: 0;
+                }
+
+                .discover__tile:last-child {
+                    margin-right: 0;
+                }
+
+        .discover__index {
+            margin-top: 25px;
+            font-size: 16px;
+            line-height: 24px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-left: calc(-1 * var(--container-padding));
+            margin-right: calc(-1 * var(--container-padding));
+        }
+
+        @media (min-width: 576px) {
+            .discover__index {
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+            }
+        }
+
+            .discover__states-ribbon {
+                display: block;
+                vertical-align: top;
+                min-width: 616px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-left: var(--container-padding);
+                padding-right: var(--container-padding);
+                list-style: none;
+                column-count: 4;
+                column-gap: 10px;
+            }
+
+            @media (min-width: 576px) {
+
+                .discover__states-ribbon {
+                    padding-left: var(--container-padding-larger);
+                    padding-right: var(--container-padding-larger);
+                }
+            }
+                .discover__state {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+
+
+        .discover__building-types {
+            margin-top: 25px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-left: calc(-1 * var(--container-padding));
+            margin-right: calc(-1 * var(--container-padding));
+        }
+
+        @media (min-width: 576px) {
+
+            .discover__building-types {
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+            }
+        }
+
+            .discover__buildings-ribbon {
+                display: inline-flex;
+                vertical-align: top;
+                padding-left: var(--container-padding);
+                padding-right: var(--container-padding);
+            }
+
+            @media (min-width: 576px) {
+                .discover__buildings-ribbon {
+                    padding-left: var(--container-padding-larger);
+                    padding-right: var(--container-padding-larger);
+                }
+            }
+
+                .discover__shortcut {
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    width: 235px;
+                }
+
+                .discover__shortcut:first-child {
+                    margin-left: 0;
+                }
+
+                .discover__shortcut:last-child {
+                    margin-right: 0;
+                }
+
+
+@media (min-width: 768px) {
+
+    .discover {
+
+    }
+        .discover__wrap {
+
+        }
+            .discover__heading {
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+            }
+
+            .discover__type {
+                /*margin-top: 19px;*/
+            }
+
+            .discover__type .subnav__ribbon {
+                min-width: 100%;
+                justify-content: center;
+            }
+
+            .discover__featured {
+                margin-top: 41px;
+                margin-left: 0;
+                margin-right: 0;
+                overflow: visible;
+            }
+                .discover__featured-ribbon {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: -5px;
+                    margin-right: -5px;
+                    display: flex;
+                }
+                    .discover__tile {
+                        flex-grow: 1;
+                        flex-basis: 0;
+                        flex-shrink: 0;
+                        margin-left: 5px !important;  /* important is because */
+                        margin-right: 5px !important; /* of first child */
+                    }
+
+                    .discover__tile:first-child {
+
+                    }
+
+                    .discover__tile:last-child {
+
+                    }
+
+            .discover__index {
+                margin-top: 25px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+                .discover__states-ribbon {
+                    display: block;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                    .discover__state {
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                    }
+
+
+            .discover__building-types {
+                margin-top: 25px;
+                margin-left: 0;
+                margin-right: 0;
+                overflow: visible;
+            }
+                .discover__buildings-ribbon {
+                    display: flex;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+
+                .discover__building-types--columns-4 .discover__buildings-ribbon {
+                    margin-left: -5px;
+                    margin-right: -5px;
+                }
+                    .discover__shortcut {
+                        margin-left: 10px !important;  /* important is because */
+                        margin-right: 10px !important; /* of first child */
+                        width: auto;
+                        flex-grow: 1;
+                        flex-basis: 0;
+                    }
+
+                    .discover__building-types--columns-4 .discover__shortcut {
+                        margin-left: 5px !important;  /* important is because */
+                        margin-right: 5px !important; /* of first child */
+                    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .discover {
+
+    }
+        .discover__wrap {
+
+        }
+            .discover__heading {
+                font-size: 42px;
+                line-height: 42px;
+            }
+
+            .discover__type {
+                /*margin-top: 19px;*/
+            }
+
+            .discover__featured {
+                margin-top: 30px;
+            }
+                .discover__featured-ribbon {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+                    .discover__tile {
+                        margin-left: 10px !important;  /* important here is because */
+                        margin-right: 10px !important; /* of first child */
+                    }
+
+
+            .discover__index {
+                /*margin-top: 25px;*/
+            }
+                .discover__states-ribbon {
+
+                }
+                    .discover__state {
+                        padding-top: 4px;
+                        padding-bottom: 4px;
+                    }
+
+
+            .discover__building-types {
+                margin-top: 25px;
+                margin-left: 0;
+                margin-right: 0;
+                overflow: visible;
+            }
+                .discover__buildings-ribbon {
+                    display: flex;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+
+                .discover__building-types--columns-4 .discover__buildings-ribbon {
+                    margin-left: -5px;
+                    margin-right: -5px;
+                }
+                    .discover__shortcut {
+                        margin-left: 10px !important;  /* important is because */
+                        margin-right: 10px !important; /* of first child */
+                        width: auto;
+                        flex-grow: 1;
+                        flex-basis: 0;
+                    }
+
+                    .discover__building-types--columns-4 .discover__shortcut {
+                        margin-left: 5px !important;  /* important is because */
+                        margin-right: 5px !important; /* of first child */
+                    }
+}

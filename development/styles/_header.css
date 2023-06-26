@@ -1,0 +1,139 @@
+.header {
+    position: relative;
+    z-index: 24000;
+    height: var(--header-height); /* Hold some space under the position fixed header */
+}
+    .header__panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--header-height);
+        background-color: #ffffff;
+        box-shadow: var(--header-shadow);
+        padding: 7px var(--container-padding);
+        transition: background var(--transition-show),
+                    box-shadow var(--transition-show); /* for the gradient header on the main page */
+        backface-visibility: hidden; /* trigger GPU acceleration for animation performance */
+    }
+
+    @media (min-width: 576px) {
+
+        .header__panel {
+            padding-left: var(--container-padding-larger);
+            padding-right: var(--container-padding-larger);
+        }
+    }
+        .header__emblem {
+            margin-top: -7px;
+            margin-bottom: -7px;
+            margin-left: calc(-1 * var(--container-padding));
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            border-left: var(--container-padding) solid transparent;
+            border-right: var(--container-padding) solid transparent;
+        }
+
+
+@media (min-width: 576px) {
+
+    .header__emblem {
+        margin-left: calc(-1 * var(--container-padding-larger));
+        border-left-width: var(--container-padding-larger);
+        border-right-width: var(--container-padding-larger);
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .header {
+
+    }
+        .header__panel {
+            position: relative;
+        }
+            .header__emblem {
+
+            }
+}
+
+@media (min-width: 1200px) {
+
+    .header {
+
+    }
+        .header__panel {
+
+        }
+            .header__emblem {
+
+            }
+}
+
+
+
+/* More about .static-head & .fixed-head: https://www.notion.so/969306d1b50e4182b9bcc2aaa4480afc */
+
+.fixed-head {
+
+}
+
+    @media (min-width: 992px) {
+
+        .fixed-head .header__panel {
+            position: fixed;
+        }
+    }
+
+
+.static-head {
+
+}
+
+@media (max-width: 1099px) {
+
+    .static-head .header__panel {
+        position: static;
+    }
+}
+
+.search-visible-on-mobile {
+
+}
+
+    @media (max-width: 767px) {
+
+        .search-visible-on-mobile .header {
+            display: none;
+        }
+    }
+
+
+
+/* Header gradient */
+
+
+    .page-with-jumbotron:not(.jumbotron-scrolled) .header__panel, /* either jumbotron is not scrolled */
+    .page-with-jumbotron:not(.fixed-head) .header__panel {        /* either header is not fixed */
+        background-color: rgba(45, 36, 83, 0.3);
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0086472) 6.67%, rgba(255, 255, 255, 0.03551) 13.33%, rgba(255, 255, 255, 0.0816599) 20%, rgba(255, 255, 255, 0.147411) 26.67%, rgba(255, 255, 255, 0.231775) 33.33%, rgba(255, 255, 255, 0.331884) 40%, rgba(255, 255, 255, 0.442691) 46.67%, rgba(255, 255, 255, 0.557309) 53.33%, rgba(255, 255, 255, 0.668116) 60%, rgba(255, 255, 255, 0.768225) 66.67%, rgba(255, 255, 255, 0.852589) 73.33%, rgba(255, 255, 255, 0.91834) 80%, rgba(255, 255, 255, 0.96449) 86.67%, rgba(255, 255, 255, 0.991353) 93.33%, #FFFFFF 100%);
+        background-size: 320px 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+        /* backdrop-filter: blur(4px); */
+    }
+        .page-with-jumbotron:not(.jumbotron-scrolled) .navigation__link, /* either jumbotron is not scrolled */
+        .page-with-jumbotron:not(.fixed-head) .navigation__link, /* either header is not fixed */
+        .page-with-jumbotron:not(.fixed-head) .navigation__item--login .navigation__link,
+        .page-with-jumbotron:not(.fixed-head) .navigation__item--login .navigation__link.button {
+            color: #FFFFFF !important; /* important is needed to override hover in .navigation__item--login */
+        }
+
+
+
+.header--no-gradient .header__panel {
+    background-image: none !important;
+}

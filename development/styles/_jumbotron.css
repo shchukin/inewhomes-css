@@ -1,0 +1,282 @@
+/* The jumbotron's canonical height is 610px. If the screen height is slightly larger, for example 630px,
+    then with this setup we see a jumbotron and a 20px white stripe below it, which is strange.
+    Therefore, we give the jumbotron some vertical stretch from 610px to 710px.
+    So if the screen is 1px - 100px higher than the jumbotron, then the jumbotron adjusts
+    to it. If the screen is much larger, then the jumbotron returns to its
+    standard 610px. It's all done by percentage height (1a), centering (1b)
+    and media query (1c).
+
+    On the other (smaller) side, we stretch in the same way, but only by 50px, and up to 560px.
+    This is done with the same centering and the same percentage height (2a) and (2b).
+
+    At extremely small heights below 559px we remove ".jumbotron__or? layer
+    and change the paddings. This is done by a media query (3a)
+    and the lowest limit of 480px d (3b).
+  */
+
+.jumbotron {
+    position: relative;
+    margin-top: calc(-1 * var(--header-height));
+    display: flex;
+    align-items: center;     /* (1b) (2a) */
+    justify-content: center;
+    padding: 60px var(--container-padding) 100px;
+    height: 100%;            /* (1a) (2b) */
+    min-height: 480px;       /* (3b) */
+    background-color: #6d74b2;
+}
+    .jumbotron__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .jumbotron__inner {
+        width: 100%;
+        text-align: center;
+    }
+        .jumbotron__heading {
+            position: relative;
+            margin: 0 auto;
+            padding-bottom: 4px;
+            max-width: 486px;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+            text-align: center;
+            pointer-events: none; /* so that through the heading we still can swipe the slider */
+        }
+
+        .jumbotron__heading--smaller {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        @media (max-width: 359px) {
+
+            .jumbotron__heading {
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            .jumbotron__heading--smaller {
+                font-size: 30px;
+                line-height: 32px;
+            }
+        }
+
+
+        .jumbotron__find {
+            max-width: 600px;
+            margin: 20px auto 0;
+            text-align: left;
+        }
+            .jumbotron__search-menu {
+                position: relative;
+                z-index: 200;
+                display: inline-flex;
+                align-items: stretch;
+            }
+                .jumbotron__search-tab {
+                    border: none;
+                    padding: 11px 20px;
+                    background-color: var(--color-theme-primary-normal);
+                    font-family: inherit;
+                    font-weight: var(--font-primary-bold);
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: background-color var(--transition-hover),
+                                color var(--transition-hover);
+                }
+
+                .jumbotron__search-tab:hover {
+                    background-color: var(--color-theme-primary-hover);
+                }
+
+                .jumbotron__search-tab:active {
+                    background-color: var(--color-theme-primary-active);
+                }
+
+                .jumbotron__search-tab:first-child {
+                    border-top-left-radius: 3px;
+                }
+
+                .jumbotron__search-tab:last-child {
+                    border-top-right-radius: 3px;
+                }
+
+                .jumbotron__search-tab--current,
+                .jumbotron__search-tab--current:hover,
+                .jumbotron__search-tab--current:active {
+                    background-color: #FFFFFF;
+                    color: #523EA7;
+                    cursor: default;
+                }
+                .jumbotron__search-menu ~ .search .search__body,
+                .jumbotron__search-menu ~ .search .search__input {
+                    border-top-left-radius: 0;
+                }
+
+
+        .jumbotron__or {
+            margin: 10px auto 0;
+            width: 20px; /* so that it does not overlap the clickable area on the slider */
+            position: relative;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: rgba(255, 255, 255, 0.7);
+            pointer-events: none; /* so that through the "or" we still can swipe the slider */
+        }
+
+        .jumbotron__map {
+            margin-top: 12px;
+            position: relative;
+        }
+
+
+@media (max-height: 559px) and (max-width: 575px) {
+
+    .jumbotron {
+
+    }
+
+        .jumbotron__heading {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        .jumbotron__heading--smaller {
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+        .jumbotron__or {
+            display: none;
+        }
+
+        .jumbotron__map {
+            margin-top: 20px;
+        }
+}
+
+@media (min-height: 710px) { /* (1c) */
+
+    .jumbotron {
+        height: 610px;
+    }
+}
+
+@media (min-width: 576px) { /* (3a) */
+
+    .jumbotron {
+
+    }
+        .jumbotron__inner {
+
+        }
+            .jumbotron__heading {
+                max-width: 600px;
+                font-size: 52px;
+                line-height: 58px;
+            }
+
+            .jumbotron__heading--smaller {
+                font-size: 42px;
+                line-height: 46px;
+            }
+
+            .jumbotron__find {
+                position: relative;
+            }
+}
+
+@media (min-width: 768px) {
+
+    .jumbotron {
+        margin-top: calc(-1 * var(--header-height));
+        padding-top: 100px;
+        padding-bottom: 64px;
+    }
+        .jumbotron__inner {
+
+        }
+            .jumbotron__heading {
+                max-width: 900px;
+            }
+
+            .jumbotron__heading--smaller {
+                font-size: 52px;
+                line-height: 58px;
+            }
+
+            .jumbotron__heading--highlight {
+                background-image: url("../images/jumbotron-heading.png");
+                background-size: 331px 23px;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+
+            @media (min-resolution: 2dppx) {
+
+                .jumbotron__heading--highlight {
+                    background-image: url("../images/jumbotron-heading@2x.png");
+                }
+            }
+
+            .jumbotron__find {
+                margin-top: 30px;
+                max-width: 660px;
+            }
+}
+
+
+
+/* When the search is expanded, everything is removed from the page: */
+
+@media (max-width: 767px) {
+
+    .search-visible-on-mobile .jumbotron {
+        display: block;
+        margin-top: 0;
+        padding: 0;
+        height: auto;
+        background: none;
+    }
+        .search-visible-on-mobile .jumbotron__inner {
+            max-width: none;
+            width: auto;
+        }
+
+        .search-visible-on-mobile .jumbotron__background {
+            display: none;
+        }
+
+        .search-visible-on-mobile .jumbotron__heading {
+            display: none;
+        }
+
+        .search-visible-on-mobile .jumbotron__or {
+            display: none;
+        }
+
+        .search-visible-on-mobile .jumbotron__map {
+            display: none;
+        }
+
+        .search-visible-on-mobile .jumbotron__find {
+            margin-top: 0;
+            max-width: none;
+        }
+            .search-visible-on-mobile .jumbotron__search-menu {
+                display: none;
+            }
+}

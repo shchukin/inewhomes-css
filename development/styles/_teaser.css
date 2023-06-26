@@ -1,0 +1,111 @@
+.teaser {
+    display: block;
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
+    box-shadow: var(--cards-shadow-normal);
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    text-align: left;
+}
+    .teaser__preview {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        border-radius: 4px; /* Cut .fit and .placeholder */
+        overflow: hidden;
+        transition: opacity var(--transition-hover);
+    }
+
+    .teaser:hover .teaser__preview {
+        opacity: 0.86;
+    }
+        .teaser__preview .content-placeholder {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 6px solid #FFFFFF;
+            border-bottom: none;
+            border-radius: 0;
+        }
+            .teaser__preview .content-placeholder::before {
+                top: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+
+            .teaser__preview .content-placeholder::after {
+                top: 0;
+                bottom: 0;
+            }
+
+    .teaser__note {
+        display: block;
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 24px;
+        color: var(--neutral-neutral-40pct);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+        .teaser__note .content-placeholder {
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    .teaser__heading {
+        margin: 11px 24px 0;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        transition: color var(--transition-hover);
+    }
+
+    .teaser:hover .teaser__heading {
+        color: var(--color-theme-primary-normal);
+    }
+
+        .teaser__heading .content-placeholder {
+            width: 100%;
+            height: 42px;
+        }
+
+        @media (min-width: 992px) {
+
+            .teaser__heading .content-placeholder {
+                height: 60px;
+            }
+        }
+
+
+@media (min-width: 992px) {
+
+    .teaser {
+
+    }
+        .teaser__preview {
+
+        }
+            .teaser__preview .fit__image {
+
+            }
+
+        .teaser__note {
+
+        }
+
+        .teaser__heading {
+            /*margin: 10px 24px 0;*/
+            font-size: 25px;
+            line-height: 30px;
+        }
+}

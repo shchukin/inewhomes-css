@@ -1,0 +1,87 @@
+.subnav {
+    margin-left: calc(-1 * var(--container-padding));
+    margin-right: calc(-1 * var(--container-padding));
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 576px) {
+    .subnav {
+        margin-left: calc(-1 * var(--container-padding-larger));
+        margin-right: calc(-1 * var(--container-padding-larger));
+    }
+}
+
+    .subnav__ribbon {
+        display: inline-flex;
+        align-items: stretch;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+        @media (min-width: 576px) {
+            .subnav__ribbon {
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+
+        .subnav__link {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            font-weight: var(--font-primary-bold);
+            padding: 10px 15px 15px;
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            line-height: 21px;
+            color: var(--neutral-neutral);
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color var(--transition-hover);
+        }
+
+        .subnav__link:first-child {
+            margin-left: -15px;
+        }
+
+        .subnav__link:last-child {
+            margin-right: -15px;
+        }
+            .subnav__link::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 15px;
+                right: 15px;
+                bottom: 0;
+                height: 2px;
+                background-color: var(--color-theme-secondary-normal);
+                border-radius: 1px;
+                opacity: 0;
+                transition: opacity var(--transition-hover);
+            }
+
+
+        .subnav__link:hover,
+        .subnav__link--current {
+            color: var(--color-theme-secondary-normal);
+        }
+            .subnav__link:hover::after,
+            .subnav__link--current::after {
+                opacity: 1;
+            }
+
+@media (min-width: 992px) {
+
+    .subnav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+        .subnav__ribbon {
+            padding-left: 0;
+            padding-right: 0;
+        }
+}

@@ -1,0 +1,493 @@
+.complex {
+    padding-top: 7px;
+}
+    .complex__breadcrumbs {
+
+    }
+
+    .complex__header {
+
+    }
+        .complex__head-wrap {
+            position: relative;
+            border-bottom: 24px solid transparent;
+        }
+            .complex__logo {
+                margin-top: -2px;
+                display: inline-block;
+                vertical-align: top;
+            }
+                .complex__emblem {
+                    vertical-align: top;
+                    width: 130px;
+                    height: 64px;
+                }
+
+                .complex__heading {
+                    margin-top: 11px;
+                    margin-bottom: 0;
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-bold);
+                    font-size: 32px;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                    color: var(--heading-font-color);
+                }
+
+                .complex__address {
+                    margin-top: 4px;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: var(--text-dark-60pct);
+                }
+
+
+    .complex__rating {
+        margin-top: 7px;
+        padding: 0;
+    }
+
+    .complex__website {
+        margin-top: 16px;
+        font-weight: var(--font-primary-bold);
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .complex__share,
+    .complex__share.share {
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+    }
+
+
+
+    .complex__navigation {
+
+    }
+        .complex__nav-border {
+            box-shadow: 0 -1px 0 var(--neutral-neutral-08pct);
+        }
+
+    .complex__gallery {
+
+    }
+
+    .complex__body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        .complex__content {
+            order: 3;
+            margin: 0 calc(-1 * var(--container-padding));
+            padding: 15px var(--container-padding) 30px;
+        }
+
+        @media (min-width: 576px) {
+            .complex__content {
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+            .complex__param {
+                margin-top: 32px;
+                border-top: 1px solid #ededf4;
+                padding-top: 30px;
+            }
+
+            .complex__param:first-child {
+                margin-top: 0;
+                border-top: none;
+                padding-top: 0;
+            }
+
+            .visuallyhidden + .complex__widget {
+                margin-top: 0;
+            }
+                .complex__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .complex__widget {
+                    margin-top: 23px;
+                }
+
+                .complex__widget .tabset--style1 > label {
+                    border-bottom-color: var(--neutral-neutral-08pct);
+                }
+
+                .complex__widget .tabset--style1 .tab-panel {
+                    border-top: none;
+                }
+
+                .complex__widget .faq {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+        .complex__sidebar {
+            order: 1;
+            margin: 0 calc(-1 * var(--container-padding)) 10px;
+            padding: 15px var(--container-padding);
+        }
+
+        @media (min-width: 576px) {
+            .complex__sidebar {
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+
+
+        .complex__border {
+            order: 2;
+            margin-left: calc(-1 * var(--container-padding));
+            margin-right: calc(-1 * var(--container-padding));
+        }
+
+        @media (min-width: 576px) {
+
+            .complex__border {
+                order: 2;
+                margin-left: calc(-1 * var(--container-padding-larger));
+                margin-right: calc(-1 * var(--container-padding-larger));
+            }
+        }
+
+    .complex__recommended {
+
+    }
+
+@media (min-width: 576px) {
+
+    .complex {
+
+    }
+        .complex__breadcrumbs {
+
+        }
+
+        .complex__header {
+            margin-top: 6px;
+        }
+            .complex__head-wrap {
+                position: relative;
+                padding-right: 158px;
+            }
+                .complex__logo {
+                    position: absolute;
+                    right: 0;
+                    bottom: 77px;
+                }
+                    .complex__emblem {
+
+                    }
+
+                    .complex__heading {
+                        margin-top: 0;
+                    }
+
+                    .complex__address {
+
+                    }
+
+                    .complex__rating {
+
+                    }
+
+        .complex__navigation {
+
+        }
+            .complex__nav-border {
+
+            }
+
+        .complex__gallery {
+
+        }
+
+        .complex__body {
+
+        }
+            .complex__content {
+
+            }
+                .complex__param {
+
+                }
+
+                .complex__param--no-separator {
+
+                }
+
+                    .complex__sub-heading {
+
+                    }
+
+                    .complex__widget {
+                        margin-top: 24px;
+                    }
+
+    .complex__recommended {
+
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .complex {
+        border-top-width: 2px;
+        background-color: transparent;
+    }
+        .complex__breadcrumbs {
+
+        }
+
+        .complex__header {
+            margin-top: 13px;
+        }
+            .complex__head-wrap {
+                border-bottom-width: 33px;
+            }
+                .complex__logo {
+
+                }
+
+                .complex__heading {
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+
+                .complex__address {
+                    margin-top: 6px;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+
+                .complex__rating {
+                    margin-top: 11px;
+                }
+
+                .complex__website {
+
+                }
+
+        .complex__navigation {
+
+        }
+            .complex__nav-border {
+
+            }
+
+        .complex__gallery {
+
+        }
+
+        .complex__body {
+            padding-top: 30px; /* because of anchor */
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+            .complex__content {
+                order: 1;
+                flex-shrink: 0;
+                width: 64.9736%;
+                margin-left: 0;
+                margin-right: 2.7473%;
+                padding: 0;
+                box-shadow: none;
+            }
+                .complex__param {
+
+                }
+
+                .complex__param--summary {
+
+                }
+
+                .complex__param--summary + .complex__param {
+                    margin-top: 21px;
+                }
+
+                    .complex__sub-heading {
+
+                    }
+
+                    .complex__widget {
+
+                    }
+
+            .complex__sidebar {
+                order: 2;
+                flex-shrink: 0;
+                width: 32.2791%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .complex__border {
+                display: none;
+            }
+
+    .complex__recommended {
+
+    }
+}
+
+@media (min-width: 992px) {
+
+    .complex {
+
+    }
+        .complex__breadcrumbs {
+
+        }
+
+        .complex__header {
+
+        }
+            .complex__head-wrap {
+
+            }
+                .complex__logo {
+
+                }
+
+                .complex__heading {
+
+                }
+
+                .complex__address {
+
+                }
+
+                .complex__rating {
+
+                }
+
+                .complex__website {
+
+                }
+
+        .complex__navigation {
+
+        }
+            .complex__nav-border {
+
+            }
+
+        .complex__gallery {
+
+        }
+
+        .complex__body {
+
+        }
+            .complex__content {
+                width: 573px;
+                margin-right: 40px;
+            }
+                .complex__param {
+
+                }
+                    .complex__sub-heading {
+
+                    }
+
+                    .complex__widget {
+
+                    }
+
+            .complex__sidebar {
+                width: 287px;
+            }
+
+    .complex__recommended {
+
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .complex {
+
+    }
+        .complex__breadcrumbs {
+
+        }
+
+        .complex__header {
+
+        }
+            .complex__head-wrap {
+
+            }
+                .complex__logo {
+
+                }
+
+                .complex__website__heading {
+
+                }
+
+                .complex__head-wrap__address {
+
+                }
+
+                .complex__rating {
+
+                }
+
+                .complex__website {
+
+                }
+
+        .complex__gallery {
+
+        }
+
+        .complex__navigation {
+
+        }
+            .complex__nav-border {
+
+            }
+
+        .complex__body {
+
+        }
+            .complex__content {
+                width: 733px;
+                margin-right: 40px;
+            }
+                .complex__param {
+
+                }
+                    .complex__sub-heading {
+
+                    }
+
+                    .complex__widget {
+
+                    }
+
+           .complex__sidebar {
+               width: 367px;
+           }
+
+    .complex__recommended {
+
+    }
+}

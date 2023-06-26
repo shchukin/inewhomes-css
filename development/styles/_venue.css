@@ -1,0 +1,339 @@
+.venue {
+    position: relative;
+    display: block;
+    background-color: #FFFFFF;
+    box-shadow: var(--cards-shadow-normal);
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: left;
+    transition: box-shadow var(--transition-hover),
+                opacity var(--transition-hover);
+}
+
+.venue:not(.venue--loading):hover {
+    /*box-shadow: var(--cards-shadow-hover);*/
+}
+
+.venue:not(.venue--loading):active {
+    /*box-shadow: var(--cards-shadow-normal);*/
+    opacity: 0.8;
+}
+
+.venue--loading {
+    cursor: default;
+}
+    .venue__gallery {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        transition: opacity var(--transition-hover);
+    }
+
+    .venue:hover .venue__gallery {
+        opacity: 0.86;
+    }
+        .venue__gallery .fit__image {
+            border-radius: 4px;
+        }
+
+        .venue__gallery .placeholder {
+            border-radius: 4px;
+        }
+
+        .venue__gallery .placeholder {
+            border-radius: 4px;
+        }
+
+        .venue__gallery .content-placeholder {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 6px solid #FFFFFF;
+            border-bottom: none;
+            border-radius: 0;
+        }
+            .venue__gallery .content-placeholder::before {
+                top: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+
+            .venue__gallery .content-placeholder::after {
+                top: 0;
+                bottom: 0;
+            }
+
+        .venue__badge {
+            position: absolute;
+            right: 4px;
+            bottom: 4px;
+            max-width: 130px;
+            padding: 3px 7px 4px;
+            background-color: var(--neutral-neutral-80pct);
+            border-radius: 3px;
+            font-weight: var(--font-primary-bold);
+            font-size: 12px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+
+
+    .venue__body {
+        position: relative;
+        height: 100%;
+        padding: 10px 12px 14px;
+    }
+        .venue__type {
+            width: 100%;
+            font-size: 13px;
+            line-height: 17px;
+            color: #523EA7;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+            .venue__type .content-placeholder {
+                width: 100px;
+            }
+
+        .venue__heading {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-weight: var(--font-primary-bold);
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--heading-font-color);
+            letter-spacing: 0.2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+            .venue__heading .content-placeholder {
+
+            }
+
+        .venue__address {
+            margin-top: 7px;
+            font-size: 13px;
+            line-height: 17px;
+            color: var(--color-faded);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+            .venue__address .content-placeholder {
+
+            }
+
+        .venue__status {
+            margin-top: 16px;
+            font-size: 15px;
+            line-height: 18px;
+            color: var(--color-faded);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: right;
+            opacity: 0.8;
+        }
+            .venue__status .content-placeholder {
+                width: 100px;
+                margin-left: auto;
+            }
+
+        .venue__status--active {
+            opacity: 1;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: var(--font-primary-bold);
+            color: #51409c;
+        }
+
+
+
+@media (min-width: 768px) {
+
+    .venue {
+
+    }
+        .venue__gallery {
+
+        }
+
+        .venue__body {
+            padding-top: 13px;
+        }
+            .venue__type {
+
+            }
+
+            .venue__heading {
+                margin-top: 6px;
+            }
+
+            .venue__address {
+                margin-top: 8px;
+            }
+
+            .venue__status {
+                margin-top: 17px;
+                text-align: right;
+            }
+
+            .venue__status--active {
+
+            }
+}
+
+
+
+@media (max-width: 575px) {
+
+    .venue--horizontal-on-mobile {
+        height: 112px;
+        padding-left: 40%;
+        box-shadow: none !important; /* !important is to drop hover effects */
+        border-radius: 0;
+        text-decoration: none;
+    }
+        .venue--horizontal-on-mobile .venue__gallery {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40%;
+            height: 100%;
+            padding-bottom: 0;
+        }
+            .venue--horizontal-on-mobile .fit__image,
+            .venue--horizontal-on-mobile .placeholder,
+            .venue--horizontal-on-mobile .placeholder {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border: none;
+            }
+            .venue--horizontal-on-mobile .venue__gallery .content-placeholder {
+
+            }
+
+        .venue--horizontal-on-mobile .venue__body {
+            padding: 2px 15px 0;
+        }
+            .venue--horizontal-on-mobile .venue__type {
+                font-size: 14px;
+                line-height: 24px;
+            }
+                .venue--horizontal-on-mobile .venue__type .content-placeholder {
+
+                }
+
+            .venue--horizontal-on-mobile .venue__heading {
+                margin-top: 2px;
+                font-size: 17px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+            }
+                .venue--horizontal-on-mobile .venue__heading .content-placeholder {
+
+                }
+
+            .venue--horizontal-on-mobile .venue__address {
+                margin-top: 0;
+                font-size: 14px;
+                line-height: 24px;
+            }
+                .venue--horizontal-on-mobile .venue__address .content-placeholder {
+
+                }
+
+            .venue--horizontal-on-mobile .venue__status {
+                margin-top: 2px;
+                text-align: left;
+                font-size: 17px;
+                line-height: 28px;
+            }
+                .venue--horizontal-on-mobile .venue__status .content-placeholder {
+                    margin-left: 0;
+                }
+
+            .venue--horizontal-on-mobile .venue__status--active {
+
+            }
+}
+
+
+
+@media (min-width: 768px) {
+
+    .venue {
+
+    }
+        .venue__gallery {
+
+        }
+
+        .venue__body {
+            padding-top: 13px;
+        }
+            .venue__type {
+
+            }
+
+            .venue__heading {
+                margin-top: 6px;
+            }
+
+            .venue__address {
+                margin-top: 8px;
+            }
+
+            .venue__status {
+                margin-top: 17px;
+                text-align: right;
+            }
+
+            .venue__status--active {
+
+            }
+}
+
+
+
+
+.venue--map {
+    width: 200px;
+}
+    .venue--map .venue__gallery {
+
+    }
+
+    .venue--map .venue__body {
+
+    }
+        .venue--map .venue__type {
+
+        }
+
+        .venue--map .venue__heading {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .venue--map .venue__address {
+            display: none;
+        }
+
+        .venue--map .venue__status {
+            left: 0;
+            bottom: 2px;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        .venue--map .venue__status--active {
+            font-size: 14px;
+            line-height: 17px;
+        }

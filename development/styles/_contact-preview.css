@@ -1,0 +1,36 @@
+.contact-preview {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--neutral-color-3);
+    text-align: center;
+}
+    .contact-preview__heading {
+        margin: 0 auto;
+        max-width: 600px;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 32px;
+        line-height: 36px;
+        color: var(--text-dark);
+        letter-spacing: 0.2px;
+    }
+
+    .contact-preview__link {
+        margin-top: 30px;
+        width: 200px;
+    }
+
+
+@media (min-width: 576px) {
+
+    .contact-preview {
+        padding-bottom: 90px;
+    }
+        .contact-preview__heading {
+            max-width: 500px;
+        }
+
+        .contact-preview__link {
+
+        }
+}

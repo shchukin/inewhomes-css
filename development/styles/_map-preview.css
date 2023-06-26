@@ -1,0 +1,330 @@
+.map-preview {
+    padding-top: 27px;
+}
+
+.map-preview--state {
+
+}
+
+.map-preview--cities {
+
+}
+    .map-preview__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .map-preview__navigation {
+        margin-top: 17px;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+
+    .map-preview__body {
+        margin-top: 18px;
+    }
+        .map-preview__content {
+
+        }
+            .map-preview__list {
+                margin-top: -7px;
+                margin-bottom: -9px;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+            }
+                .map-preview__ribbon {
+                    display: inline-flex;
+                    align-items: flex-start;
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                    padding-top: 7px;
+                    padding-bottom: 9px;
+                }
+
+                @media (min-width: 576px) {
+                    .map-preview__ribbon {
+                        padding-left: var(--container-padding-larger);
+                        padding-right: var(--container-padding-larger);
+                    }
+                }
+                    .map-preview__item {
+                        margin-left: 15px;
+                    }
+
+                    .map-preview__item:first-child {
+                        margin-left: 0;
+                    }
+
+                    .map-preview--cities .map-preview__item {
+                        width: 202px;
+                    }
+
+                    .map-preview--complexes .map-preview__item {
+                        width: 292px;
+                    }
+
+                    @media (max-width: 359px) {
+                        .map-preview--complexes .map-preview__item {
+                            width: 260px;
+                        }
+                    }
+
+            .map-preview__more-tiles {
+                margin-top: 17px;
+                display: block;
+                font-size: 17px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                text-align: center;
+            }
+
+        .map-preview__sidebar {
+            position: relative;
+            margin-top: 32px;
+            height: 360px;
+        }
+            .map-preview__action {
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 264px;
+            }
+
+
+@media (min-width: 768px) {
+
+    .map-preview {
+        padding-top: 55px;
+    }
+        .map-preview__heading {
+
+        }
+
+        .map-preview__navigation {
+            margin-top: 21px;
+        }
+
+        .map-preview__body {
+            margin-top: 40px;
+            display: flex;
+            align-items: stretch;
+        }
+            .map-preview__content {
+                width: 60%;
+                padding-bottom: 52px;
+            }
+                .map-preview__list {
+                    overflow: visible;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                    .map-preview__ribbon {
+                        display: flex;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        margin-left: -15px;
+                        margin-top: -15px;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                        .map-preview__item {
+                            margin: 0;
+                            padding: 15px 0 0 15px;
+                        }
+
+                        .map-preview--cities .map-preview__item {
+                            width: 50%;
+                        }
+
+                        .map-preview--complexes .map-preview__item {
+                            width: 50%;
+                        }
+
+                        .map-preview__item:nth-child(n+7) {
+                            display: none;
+                        }
+
+
+                .map-preview__more-tiles {
+                    margin-top: 27px;
+                }
+
+            .map-preview__sidebar {
+                margin-top: 0;
+                width: 40%;
+                height: auto;
+            }
+                .map-preview__action {
+
+                }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .map-preview {
+
+    }
+        .map-preview__heading {
+
+        }
+
+        .map-preview__body {
+
+        }
+            .map-preview__content {
+
+            }
+                .map-preview__list {
+
+                }
+                    .map-preview__ribbon {
+
+                    }
+                        .map-preview__item {
+                            display: block !important;
+                            width: 33.3333%;
+                        }
+
+                        .map-preview--cities .map-preview__item {
+                            width: 33.3333%;
+                        }
+
+                        .map-preview--complexes .map-preview__item {
+                            width: 33.3333%;
+                        }
+
+                        .map-preview__item:nth-child(n+10) {
+                            display: none !important;
+                        }
+
+
+                .map-preview__more-tiles {
+
+                }
+
+            .map-preview__sidebar {
+
+            }
+                .map-preview__action {
+                    width: 310px;
+                }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .map-preview {
+
+    }
+        .map-preview__heading {
+
+        }
+
+        .map-preview__body {
+
+        }
+            .map-preview__content {
+
+            }
+                .map-preview__list {
+
+                }
+                    .map-preview__ribbon {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                        .map-preview__item {
+
+                        }
+
+                        .map-preview__item:nth-child(n+10) {
+
+                        }
+
+
+                .map-preview__more-tiles {
+
+                }
+
+            .map-preview__sidebar {
+
+            }
+}
+
+
+
+.map-preview--map-only {
+
+}
+    .map-preview--map-only .map-preview__sidebar {
+        width: 100%;
+        height: 360px;
+    }
+
+    .map-preview--map-only .map-preview__action {
+        width: 200px;
+    }
+
+
+
+
+.map-preview--list-only {
+
+}
+    .map-preview--list-only .map-preview__body {
+        display: block;
+    }
+        .map-preview--list-only .map-preview__content {
+            width: 100%;
+        }
+            .map-preview--list-only .map-preview__list {
+                margin-left: calc(-1 * var(--container-padding));
+                margin-right: calc(-1 * var(--container-padding));
+            }
+
+            @media (min-width: 576px) {
+
+                .map-preview--list-only .map-preview__list {
+                    margin-left: calc(-1 * var(--container-padding-larger));
+                    margin-right: calc(-1 * var(--container-padding-larger));
+                }
+            }
+                .map-preview--list-only .map-preview__ribbon {
+
+                }
+                    @media (min-width: 768px) {
+
+                        .map-preview--list-only .map-preview__list {
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                            .map-preview--list-only .map-preview__ribbon {
+                                padding-left: 0 !important;
+                                padding-right: 0 !important;
+                                margin-left: -20px;
+                                margin-top: -20px;
+                            }
+                                .map-preview--list-only .map-preview__item {
+                                    width: 33.3333%;
+                                    padding-left: 20px;
+                                    padding-top: 20px;
+                                }
+                    }
+
+
+                    @media (min-width: 992px) {
+
+                        .map-preview--list-only .map-preview__item {
+                            width: 25%;
+                        }
+                    }
+
+

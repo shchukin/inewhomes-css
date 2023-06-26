@@ -1,0 +1,40 @@
+@keyframes content-placeholder-animation {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(300%); }
+}
+
+.content-placeholder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    user-select: none;
+    color: transparent;
+}
+    /* background */
+    .content-placeholder::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2px;
+        bottom: 2px;
+        background-color: var(--neutral-color-3);
+        border-radius: 2px;
+    }
+
+    /* Moving part */
+    .content-placeholder::after {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        bottom: 2px;
+        content: "";
+        display: block;
+        width: 70%;
+        background-image: linear-gradient(to right, var(--neutral-color-3) 0%, #E8E8F4 50%, var(--neutral-color-3) 100%);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: content-placeholder-animation 1.5s linear infinite;
+        will-change: transform;
+    }

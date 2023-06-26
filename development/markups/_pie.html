@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.pie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Yeseva+One" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div style="max-width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.pie</h1>
+
+            <div class="pie">
+                <svg class="pie__chart" width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <g transform="rotate(180 48 48)">
+                        <ellipse                                                                                    cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="212"   transform="rotate(-2.4913 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="217"                                     cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="248.5" transform="rotate(42.9757 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="252.5" transform="rotate(45.4671 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                    </g>
+                </svg>
+                <div class="pie__counter">3,345</div>
+                <div class="pie__label">projects</div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Rings and fill</h2>
+            <p>
+                Everything about rings and arc (which is technically the same thing) being done via SVG.
+                Unfortunately, it is not that easy with SVG.
+                We can't simply specify a value from 0 to 100%.
+                Gotta dig into the SVG code and the mathematics of circles.
+            </p>
+            <p>
+                There are five ring in the pie: 3 colored arcs and 2 white rings around that works as separators.
+                Separating SVG part from the pie we are getting this:
+            </p>
+
+
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g transform="rotate(180 48 48)">
+                    <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                </g>
+            </svg>
+
+            <br>
+            <br>
+            <h2>Step by step code</h2>
+            <p>
+                1) Creating SVG. Size is 96x96.
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+
+&lt;/svg&gt;
+</pre>
+            <br>
+            <p>
+                2) Rings are drawn with a <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse">&lt;ellipse&gt;</a> tag, and filled with
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes">stroke</a> attribute.
+                -- this is sort of a border being drawn on both sides of the circle.
+            </p>
+            <p>
+                At the point (48,48) we draw such a circle with a radius of 46px
+                (two pixels less than the image itself). Then add <b>stroke="#69A818"</b>
+                and <b>stroke-width="4"</b> -- two pixels on each side of the circle outline.
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    <b>&lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;</b>
+&lt;/svg&gt;
+</pre>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+            </svg>
+
+            <br>
+            <br>
+            <br>
+            <p>
+                3) Draw the second purple ring on top of it:
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+    <b>&lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4"/&gt;</b>
+&lt;/svg&gt;
+</pre>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4"/>
+            </svg>
+            <p>
+                Things are getting complicated with the purple ring since it must be filled only partially.
+                First we need to catch up with
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dashoffset">stroke-dashoffset</a>
+                and <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray">stroke-dasharray</a> attributes.
+                We will code something similar to the animation of the loading indicator or the animation of filling the curves:
+                <a href="https://css-tricks.com/svg-line-animation-works/">https://css-tricks.com/svg-line-animation-works/</a>.
+            <p>
+            <p>
+                In our case, the curve is a circle of <b>46px</b> of radius.
+                Circumference <b>C = 2πr</b>.
+                <br>So <b>C = 2*π*46 = 289px</b>.
+            </p>
+            <p>
+                <i>Normally in code I round all calculations in SVG to four decimal places, but in this demo we will cut off the decimal part for simplicity.</i>
+            </p>
+            <p>
+                We can say for sure this one and all following rings will be <b>stroke-dasharray="289"</b> long. Always.
+                But <b>stroke-dashoffset="i"</b> will be counted dynamically. Here <b>i</b> is a value
+                from&nbsp;0&nbsp;to&nbsp;289px. Actually it's opposite to be precise. Zero is <b>100%</b> of filling, and 289px is <b>0%</b>.
+            </p>
+            <p>
+                Let's fill in a quarter (i.e. 25% of purple progress).
+                <br>It will be a <b>stroke-dasharray="289-(289*25/100)"</b> or <b>stroke-dasharray="217"</b>
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+    &lt;ellipse <b>stroke-dasharray="289" stroke-dashoffset="217"</b> cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4"/&gt;
+&lt;/svg&gt;
+</pre>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                <ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4"/>
+            </svg>
+            <br>
+            <br>
+            <p>
+                If we want filling to start from the leftmost point (as in the Figma), we need rotate the entire circle by 180 degrees:
+                <b>transform="rotate(180 48 48)"</b>.
+            </p>
+            <p>
+                Let's also add <b>stroke-linecap="round"</b>:
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+    &lt;ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4"<b> transform="rotate(180 48 48)" stroke-linecap="round"</b>/&gt;
+&lt;/svg&gt;
+</pre>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                <ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" transform="rotate(180 48 48)" stroke-linecap="round"/>
+            </svg>
+
+            <br>
+            <br>
+            <p>
+                4) Now drawing 3rd, grey ring. Let's fill 10% of it.
+                <br>Then <b>stroke-dasharray="289-(289*10/100)"</b> or <b>stroke-dasharray="260"</b>
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+    &lt;ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" transform="rotate(180 48 48)" stroke-linecap="round"/&gt;
+    <b>&lt;ellipse stroke-dasharray="289" stroke-dashoffset="260" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" transform="rotate(180 48 48)" stroke-linecap="round"/&gt;</b>
+&lt;/svg&gt;
+</pre>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                <ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" transform="rotate(180 48 48)" stroke-linecap="round"/>
+                <ellipse stroke-dasharray="289" stroke-dashoffset="260" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" transform="rotate(180 48 48)" stroke-linecap="round"/>
+            </svg>
+
+            <p>
+                Now we need to move the grey arc clockwise so that it looks like it is extending the purple one. In other words it starts where purple one ends.
+                We want to use <b>transform="rotate..."</b>, but we already have this a transformation on the rings (from the moment when we moved the starting point of the arcs).
+                So let's wrap all the rings in <b>&lt;g&gt;</b> and use original transformation once on all arcs:
+            </p>
+
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    <b>&lt;g transform="rotate(180 48 48)"&gt;</b>
+        &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/&gt;
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="260" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/&gt;
+    <b>&lt;/g&gt;</b>
+&lt;/svg&gt;
+</pre>
+
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g transform="rotate(180 48 48)">
+                    <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217" cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                </g>
+            </svg>
+
+            <p>
+                Now back to the shifting gray arc. It needs to be moved clockwise by 15% (25% blue arc minus 10% gray arc).
+                We need to convert 15 percents to degrees.
+            </p>
+<pre>
+15     x
+--- = ---   ⇒   x = 15*360/100 = 54
+100   360
+
+</pre>
+            <p>
+                So we need to rotate the third ring by 54 degree:
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;g transform="rotate(180 48 48)"&gt;
+        &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/&gt;
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="260" <b>transform="rotate(54 48 48)"</b> cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g transform="rotate(180 48 48)">
+                    <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                </g>
+            </svg>
+
+
+            <br>
+            <br>
+            <p>
+                5) Now drawing white rings around colored ones. These white rings work like shadow: they are a little wider and a little
+                longer. So we duplicate code of the purple and gray rings, color them white and increase the <b>stroke-width</b> to 10:
+            </p>
+<pre>
+&lt;svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none"&gt;
+    &lt;g transform="rotate(180 48 48)"&gt;
+        &lt;ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/&gt;
+        <b>&lt;ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/&gt;</b>
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/&gt;
+        <b>&lt;ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/&gt;</b>
+        &lt;ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+
+
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g transform="rotate(180 48 48)">
+                    <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                    <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                </g>
+            </svg>
+
+            <br>
+            <br>
+            <p>
+                --- ℱ𝒾𝓃 ---
+            </p>
+
+
+            <br>
+            <br>
+            <h2>
+                Back to .pie
+            </h2>
+            <p>
+                Placing resulting SVG back, with <b>.pie__chart</b> class:
+            </p>
+
+
+            <div class="pie">
+                <svg class="pie__chart" width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <g transform="rotate(180 48 48)">
+                        <ellipse cx="48" cy="48" rx="46" ry="46" stroke="#69A818" stroke-width="4"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="217"                              cx="48" cy="48" rx="46" ry="46" stroke="#523EA7" stroke-width="4" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+                        <ellipse stroke-dasharray="289" stroke-dashoffset="260" transform="rotate(54 48 48)" cx="48" cy="48" rx="46" ry="46" stroke="#E1E1F5" stroke-width="4" stroke-linecap="round"/>
+                    </g>
+                </svg>
+                <div class="pie__counter">3,345</div>
+                <div class="pie__label">projects</div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js"></script>
+        <script src="../scripts/_dropdown.js"></script>
+        <script src="../scripts/_options.js"></script>
+        <script src="../scripts/_results.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_gallery.js"></script>
+        <script src="../scripts/_clipped.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_share.js"></script>
+        <script src="../scripts/_strut.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_jumbotron.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_morph.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_menu.js"></script>
+
+    </body>
+</html>

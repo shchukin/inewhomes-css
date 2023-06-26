@@ -1,0 +1,201 @@
+.types-list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden; /* cut negative margins */
+}
+
+/* By default, on the states and city pages, this block goes at the beginning of the page and the 5px paddings are based in it. */
+/* But on the Zip page, it moves after the .map-preview map and the paddings there are different: */
+.map-preview + .types-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .map-preview + .types-list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* And if the is .explore block after, then we also need to change padding there: */
+@media (max-width: 767px) {
+    .map-preview + .types-list + .explore {
+        padding-top: 0;
+    }
+}
+
+    .types-list__wrap,
+    .types-list__wrap.container {
+        border-left: none;
+        border-right: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+        .types-list__wrap {
+
+        }
+
+        .types-list__ribbon {
+            display: inline-flex;
+            align-self: stretch;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+            @media (min-width: 576px) {
+
+                .types-list__ribbon {
+                    padding-left: var(--container-padding-larger);
+                    padding-right: var(--container-padding-larger);
+                }
+            }
+
+            .types-list__item {
+                flex-shrink: 0;
+                margin-left: 10px;
+            }
+
+            .types-list__item:first-child {
+                margin-left: 0;
+            }
+                .types-list__link {
+                    display: block;
+                    min-width: 150px;
+                    height: 63px;
+                    border: 1px solid var(--neutral-color-2);
+                    padding: 14px 20px 15px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    text-align: center;
+                    transition: background-color var(--transition-hover),
+                                border-color var(--transition-hover);
+                }
+
+                .types-list__link:hover {
+                    border-color: var(--neutral-color-3);
+                    background-color: var(--neutral-color-3);
+                }
+                    .types-list__label {
+                        display: block;
+                        font-family: var(--font-primary);
+                        font-weight: var(--font-primary-bold);
+                        font-size: 15px;
+                        line-height: 17px;
+                        color: var(--text-primary);
+                        letter-spacing: 0.2px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .types-list__note {
+                        margin-top: 2px;
+                        display: block;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: var(--text-dark-60pct);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+
+@media (min-width: 768px) {
+
+    .types-list {
+
+    }
+        .types-list__wrap {
+
+        }
+            .types-list__ribbon {
+
+            }
+                .types-list__item {
+
+                }
+                    .types-list__link {
+                        min-width: 217px;
+                        height: 90px;
+                        padding: 22px 32px 23px;
+                    }
+                        .types-list__label {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+
+                        .types-list__note {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+}
+
+
+@media (min-width: 992px) {
+
+    .types-list {
+
+    }
+        .types-list__wrap,
+        .types-list__wrap.container {
+            overflow: visible;
+        }
+            .types-list__ribbon {
+                padding-left: 0;
+                padding-right: 0;
+                display: flex;
+                margin-left: -7px;
+                margin-right: -7px;
+            }
+                .types-list__item {
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    margin-left: 0;
+                    width: 20%;
+                }
+                    .types-list__link {
+                        width: auto;
+                        min-width: 0;
+                    }
+                        .types-list__label {
+
+                        }
+
+                        .types-list__note {
+
+                        }
+}
+
+
+@media (min-width: 1200px) {
+
+    .types-list {
+
+    }
+        .types-list__wrap {
+
+        }
+            .types-list__ribbon {
+
+            }
+                .types-list__item {
+
+                }
+                    .types-list__link {
+                        /*width: 217px;*/
+                        /*height: 90px;*/
+                        /*padding: 22px 40px 23px;*/
+                    }
+                        .types-list__label {
+                            /*font-size: 18px;*/
+                            /*line-height: 21px;*/
+                        }
+
+                        .types-list__note {
+                            /*font-size: 14px;*/
+                            /*line-height: 20px;*/
+                        }
+}
+
+

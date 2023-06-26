@@ -1,0 +1,79 @@
+.zoom {
+    display: flex;
+    flex-direction: column;
+}
+    .zoom__action {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 34px;
+        height: 34px;
+        border: none;
+        padding: 0;
+        background-color: #ffffff;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        transition: var(--transition-hover);
+    }
+
+    @media (hover: hover) {
+        .zoom__action:hover {
+            background-color: #eeeef5;
+        }
+    }
+        .zoom__action::before,
+        .zoom__action::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: var(--color-theme-primary-normal);
+            transition: var(--transition-hover);
+        }
+
+
+    .zoom__action--plus {
+
+    }
+        .zoom__action--plus::before {
+            width: 15px;
+            height: 3px;
+        }
+
+        .zoom__action--plus::after {
+            width: 3px;
+            height: 15px;
+        }
+
+    .zoom__action--minus {
+        box-sizing: content-box;
+        border-top: 1px solid #eeeeee;
+    }
+        .zoom__action--minus::before {
+            width: 15px;
+            height: 3px;
+        }
+
+        .zoom__action--minus::after {
+            display: none;
+        }
+
+
+    .zoom__action:disabled {
+        background-color: #eeeef5;
+        cursor: default;
+    }
+
+    .zoom__action--minus:disabled {
+        border-top-color: #dddce2;
+    }
+
+    .zoom__action:disabled::before,
+    .zoom__action:disabled::after {
+        background-color: #dddce2;
+    }

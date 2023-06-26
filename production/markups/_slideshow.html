@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.slideshow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687670085">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687670085">
+        <link rel="stylesheet" href="../styles/style.css?1687670085">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body style="background-color: #E3DEFA;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.slideshow</h1>
+            <p>
+                Manipulate following classes to make whole thing work:
+                <br><b>.slideshow__item--current</b>
+                <br><b>.slideshow__dot--current</b>
+                <br><b>.slideshow__control--disabled</b>
+            </p>
+            <p>
+                Ideally, keep content inside of different slides with the same width
+            </p>
+            <p>
+                There are skins:
+                <br><b>.slideshow--jumbotron</b> -- slightly different navigation
+                <br><b>.slideshow--trusted</b> -- Identical to default one
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="slideshow">
+                <button class="slideshow__control slideshow__control--prev slideshow__control--disabled" type="button">
+                    Prev
+                </button>
+                <button class="slideshow__control slideshow__control--next" type="button">
+                    Next
+                </button>
+                <div class="slideshow__navigation">
+                    <button class="slideshow__dot slideshow__dot--current" type="button">Slide 1</button>
+                    <button class="slideshow__dot" type="button">Slide 2</button>
+                    <button class="slideshow__dot" type="button">Slide 3</button>
+                    <button class="slideshow__dot" type="button">Slide 4</button>
+                    <button class="slideshow__dot" type="button">Slide 5</button>
+                    <button class="slideshow__dot" type="button">Slide 6</button>
+                </div>
+                <div class="slideshow__body">
+                    <div class="slideshow__item slideshow__item--current">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed diam turpis. Aliquam placerat dictum aliquet. In fermentum quam non turpis commodo, eget euismod ex malesuada. Nunc vulputate, elit eu gravida aliquet, justo urna faucibus purus, et ullamcorper mi nibh eu ex. Proin dictum maximus orci a tempus. Fusce in interdum orci. Donec sollicitudin, neque non finibus sagittis, nulla mauris feugiat libero, nec congue est metus ac odio. Sed eleifend felis dolor, at iaculis turpis volutpat in. Sed sollicitudin pellentesque justo, a scelerisque mi tincidunt sed. Phasellus nec nunc ac mi porta ornare at id nunc. Donec aliquam sollicitudin pretium. Suspendisse quis nulla ac justo mattis ullamcorper.
+                        Phasellus tincidunt ullamcorper rutrum. Nulla eu porta diam, vel vulputate turpis. Pellentesque eleifend ac eros vitae efficitur. Nunc accumsan ipsum libero, et dapibus mi tristique non. Nullam ac cursus dolor. Duis ut dolor semper, mattis leo vitae, lobortis enim. Nam vulputate sed dui in varius. Vivamus aliquet accumsan libero ut lacinia. Donec vel neque nibh. Vivamus leo velit, commodo id viverra eleifend, tempus in magna. In ligula elit, dignissim ac iaculis nec, fermentum et nunc. In cursus lobortis finibus. Praesent dictum elit vestibulum lectus cursus aliquam. Donec at vulputate enim, scelerisque semper massa. Vivamus auctor aliquet risus, vel ultricies sapien porttitor ut.
+                        Donec a bibendum ligula, sit amet ultricies leo. Sed ac est dolor. Proin quis gravida urna. Aliquam euismod libero ut aliquam bibendum. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent ut fringilla arcu. Proin sollicitudin, nunc et rutrum semper, velit mi efficitur enim, eu volutpat dui augue id nisi. Nunc leo nunc, congue in rhoncus eu, volutpat at quam. Aenean vulputate semper neque vel posuere.
+                    </div>
+                    <div class="slideshow__item">
+                        Proin laoreet ante ac lacus elementum pulvinar. Morbi sodales, tortor ac hendrerit semper, justo sapien gravida est, non viverra mi lorem blandit lectus. Praesent maximus nisi eu sapien egestas luctus. Etiam et interdum mauris, a dignissim arcu. Maecenas sagittis tempus sollicitudin. Nam lobortis suscipit orci, vehicula mollis nulla scelerisque sit amet. Sed pulvinar magna diam, nec eleifend sem consectetur ut.
+                        Phasellus varius aliquet erat, ac scelerisque lacus tincidunt nec. Maecenas id nulla placerat, ultrices metus eget, ornare lectus. Maecenas sed mi at elit scelerisque scelerisque. Suspendisse non ultricies justo. Aliquam tempus nisl nisi, non facilisis ante facilisis eu. Aliquam eleifend ligula ut ligula venenatis, a convallis sapien interdum. Mauris porta orci in tristique dictum.
+                        Etiam mollis purus vitae ipsum commodo eleifend. Vivamus sapien turpis, cursus a fringilla non, placerat et urna. Fusce ac magna dui. In lobortis tortor quam, quis fringilla metus imperdiet at. Aliquam erat volutpat. Praesent tempor augue ut feugiat molestie. Fusce vel sapien venenatis, cursus sapien et, varius sem. In sed neque et est aliquet sagittis. Maecenas non urna condimentum, commodo nisi sit amet, venenatis mauris. Praesent luctus ullamcorper dui ac aliquam. Maecenas vel mollis mauris, vitae egestas nunc.
+                    </div>
+                    <div class="slideshow__item">
+                        Nam gravida risus felis, sed egestas justo sollicitudin et. Proin et maximus erat, ac interdum nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. In feugiat massa finibus, bibendum ligula ut, cursus justo. Nullam eu sem commodo purus lobortis rutrum et posuere lectus. Vestibulum facilisis diam diam, sit amet semper eros tincidunt eu. Donec eleifend, mi et venenatis volutpat, ante magna sagittis diam, non lacinia massa lacus bibendum magna. Phasellus pretium egestas nunc ac rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse pharetra mi eget malesuada feugiat. Phasellus pulvinar libero in diam accumsan molestie. Maecenas vulputate, nulla vel vestibulum lobortis, enim quam malesuada felis, quis venenatis mi nibh vitae leo. Proin ultrices, mauris sit amet dapibus tincidunt, risus lorem dapibus orci, non ultrices ligula elit sit amet libero. Nulla erat purus, tincidunt sit amet diam vitae, commodo tempus urna.
+                        Sed porta facilisis tincidunt. Vestibulum consequat aliquet eros sed interdum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam tincidunt turpis vitae sollicitudin mollis. Sed rutrum orci vel sapien tincidunt, sed semper dui ornare. Phasellus ut finibus mi. Donec ultrices purus nec tincidunt semper. Sed et lectus mi. Aenean ac metus malesuada, suscipit nibh id, tempor augue. Pellentesque purus metus, porta non dapibus in, efficitur id tortor. Sed in magna hendrerit, condimentum libero ut, interdum ipsum. Nulla facilisi. Vivamus ultricies mattis enim, non condimentum lorem accumsan at. Vestibulum vel justo aliquam, blandit tortor non, scelerisque lectus.
+                    </div>
+                    <div class="slideshow__item">
+                        Fusce vulputate nisl augue, ut finibus magna pretium in. In aliquam euismod rutrum. Vestibulum in lacus varius, interdum ante in, lacinia leo. Aenean mauris velit, interdum non turpis id, auctor ornare ex. Proin pellentesque dolor eu augue accumsan posuere. Quisque in faucibus eros, sit amet elementum libero. Mauris lacinia euismod lacus sodales efficitur. Aliquam vestibulum ligula ligula, mollis ultricies tellus ultricies non. Donec luctus diam vel orci vulputate, in porttitor ex porta. Integer non lacus facilisis, auctor mi eu, tincidunt nulla.
+                        Morbi bibendum lacinia sapien sit amet ultricies. Morbi finibus neque vitae tellus scelerisque laoreet. Sed imperdiet risus dui, a varius sem ultricies ut. Nulla id cursus leo. Curabitur vitae nibh a neque rhoncus rhoncus eget in tellus. Donec blandit sem eu nulla congue ultricies. Duis dignissim, velit vitae lobortis fringilla, sapien enim ornare diam, at mattis diam lacus at justo. Curabitur hendrerit in eros ut tincidunt. Donec auctor, mauris vitae iaculis vulputate, elit lectus cursus mauris, ac dapibus nulla ipsum sit amet erat. Sed in magna mi. Phasellus eu arcu volutpat, ultrices augue ut, scelerisque turpis. Etiam ante magna, mollis eu dignissim ac, rhoncus sed felis. Phasellus eget volutpat orci. Aenean sit amet gravida magna. Suspendisse vel aliquet lacus. Cras sit amet tellus fringilla, volutpat urna ultricies, gravida sapien.
+                        Duis in diam nec lectus varius elementum sed ut tortor. Sed consectetur purus eu arcu pulvinar, id vehicula nulla commodo. Nam mattis est at sapien placerat, sit amet porttitor sem maximus. Sed pretium dui nisl, vel rhoncus velit consectetur id. Nunc rutrum aliquet molestie. Nullam molestie magna nunc, eget commodo eros accumsan ut. Ut lobortis enim quam, et porta leo fermentum ut. Cras sed fringilla nisl. Pellentesque libero nibh, consectetur eget mi at, faucibus pharetra ligula. Donec eget neque pretium, vestibulum nisl ac, aliquam lacus. Nulla facilisi.
+                    </div>
+                    <div class="slideshow__item">
+                        Vestibulum nisl nisl, consectetur in lectus ac, porttitor fringilla neque. Curabitur ornare hendrerit porttitor. Sed tempor pharetra erat in placerat. Proin vitae lacinia augue. In malesuada ipsum a erat finibus, non efficitur neque dapibus. Suspendisse potenti. Nulla non dui luctus, luctus libero eget, mattis quam. Vivamus erat massa, condimentum in sem in, vestibulum hendrerit orci. Vestibulum a libero vitae velit egestas aliquet. Sed vitae consectetur ligula. Proin vitae metus a nisi imperdiet malesuada. Morbi pellentesque elit vel elit tincidunt, aliquam porttitor nisl dignissim. Praesent eleifend, turpis ac vestibulum tincidunt, urna dui condimentum purus, sit amet aliquam orci mi eget risus. In et velit laoreet, pretium lectus in, hendrerit magna.
+                        Cras porta ex non ullamcorper viverra. Proin iaculis odio est, sed feugiat sem vehicula ac. Etiam bibendum ultrices lobortis. In a libero sed velit mattis condimentum ac sit amet mauris. Donec a dapibus felis. Phasellus tempor eu purus eu pretium. Mauris sed tellus consequat, rutrum augue vitae, egestas velit. Ut diam turpis, molestie sit amet arcu quis, condimentum luctus leo. In bibendum hendrerit nisl vitae aliquet.
+                        Curabitur ornare egestas tellus cursus malesuada. Maecenas posuere est ac neque aliquam bibendum. Mauris nisl turpis, eleifend ut nunc sit amet, mattis consequat ligula. Ut ac neque non lacus tincidunt dignissim. Proin ac magna diam. Vivamus consectetur ex a leo vestibulum, vitae ornare quam fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras eget ultrices felis. Nullam blandit quam eu tellus consequat eleifend. Morbi porttitor mauris posuere nisl accumsan, eget consectetur arcu eleifend. Quisque vehicula ante vitae eleifend ornare. Morbi lacus diam, cursus id finibus a, rhoncus sodales elit.
+                    </div>
+                    <div class="slideshow__item">
+                        Fusce luctus auctor nisi eget elementum. Nunc nec eleifend arcu. Donec consectetur fermentum sapien, eget pellentesque arcu ultricies vitae. Vivamus tincidunt nisl at nulla tempor, nec congue neque consectetur. Quisque cursus consectetur augue lacinia scelerisque. Phasellus suscipit, justo ac dapibus volutpat, sem tortor tempus lacus, eu dictum magna sem vel nisi. Phasellus nulla neque, egestas sit amet justo vitae, semper iaculis orci. Proin iaculis ante ut neque consectetur dictum.
+                        Duis convallis commodo augue. Mauris porttitor consectetur tincidunt. Praesent in lobortis eros, et porta mauris. Duis laoreet lectus vitae urna lacinia, sed rutrum nibh fermentum. Ut quis tortor id ante semper ultricies at at ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ultricies semper condimentum.
+                        Ut facilisis, urna non aliquet egestas, mi neque sodales dui, eu euismod quam dui at felis. Donec et tempus urna. Phasellus ultrices lorem ac tristique venenatis. Vestibulum eget ipsum hendrerit ipsum commodo commodo nec vitae neque. Praesent accumsan ullamcorper lectus. Maecenas non dui accumsan orci lacinia mattis vel nec nisl. Mauris quis tellus dignissim ligula fermentum semper vel sed ante. In sed tellus id nisi luctus suscipit id et nibh. Pellentesque accumsan cursus sollicitudin. Nulla eu nunc porttitor, tempus justo eget, tincidunt ligula. Donec viverra tincidunt velit non mollis. Nulla varius auctor tortor, non feugiat nulla sodales vitae. Fusce vitae vulputate diam, eget volutpat elit. Vivamus egestas commodo leo id sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js?1687670085"></script>
+        <script src="../scripts/_dropdown.js?1687670085"></script>
+        <script src="../scripts/_options.js?1687670085"></script>
+        <script src="../scripts/_results.js?1687670085"></script>
+        <script src="../scripts/_search.js?1687670085"></script>
+        <script src="../scripts/_gallery.js?1687670085"></script>
+        <script src="../scripts/_clipped.js?1687670085"></script>
+        <script src="../scripts/_popup.js?1687670085"></script>
+        <script src="../scripts/_share.js?1687670085"></script>
+        <script src="../scripts/_strut.js?1687670085"></script>
+        <script src="../scripts/_slideshow.js?1687670085"></script>
+        <script src="../scripts/_jumbotron.js?1687670085"></script>
+        <script src="../scripts/_carousel.js?1687670085"></script>
+        <script src="../scripts/_morph.js?1687670085"></script>
+        <script src="../scripts/_anchor.js?1687670085"></script>
+        <script src="../scripts/_faq.js?1687670085"></script>
+        <script src="../scripts/_sticky-subhead.js?1687670085"></script>
+        <script src="../scripts/_menu.js?1687670085"></script>
+
+    </body>
+</html>
+
+
+

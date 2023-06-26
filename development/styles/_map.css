@@ -1,0 +1,48 @@
+.map {
+    position: relative;
+    height: 100%;
+    background-color: #9eccee;
+}
+    .map__results {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 900;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        padding: 10px 15px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 10px 0 rgba(48, 41, 78, 0.4);
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--color-faded);
+    }
+        .map__results--active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    .map__loading {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 900;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        background-color: #ffffff !important; /* Override default */
+        color: var(--color-faded) !important; /* button with loader */
+        box-shadow: 2px 2px 10px 0 rgba(48, 41, 78, 0.4);
+    }
+
+    .map__loading--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .map__navigation {
+        z-index: 900;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }

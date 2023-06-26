@@ -1,0 +1,320 @@
+.footer {
+    margin-top: 100px;
+    background-color: var(--color-brand-primary);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-light);
+}
+
+.subscribe + .footer {
+    margin-top: 0;
+}
+
+.contact-preview + .footer {
+    margin-top: 0;
+}
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+        .footer__summary {
+            order: 2;
+            border-top: 1px solid var(--color-ghost-normal);
+            padding-top: 30px;
+            padding-bottom: 31px;
+        }
+            .footer__emblem {
+
+            }
+
+            .footer__description {
+                margin-top: 16px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .footer__media {
+                margin-top: 16px;
+            }
+                .footer__social {
+                    width: 24px;
+                    height: 24px;
+                }
+                    .footer__social::before {
+                        display: none;
+                    }
+
+            .footer__copyright {
+                margin-top: 29px;
+                font-size: 12px;
+                line-height: 15px;
+                color: var(--text-light-50pct);
+            }
+
+
+        .footer__data {
+            order: 1;
+            padding-top: 40px;
+            padding-bottom: 41px;
+        }
+            .footer__columns {
+
+            }
+                .footer__section {
+                    margin-top: 31px;
+                }
+
+                .footer__section:first-child {
+                    margin-top: 0;
+                }
+
+                    .footer__heading {
+                        font-family: var(--font-heading);
+                        font-weight: var(--font-heading-bold);
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+
+                    .footer__widget {
+                        margin-top: 15px;
+                    }
+                        .footer__menu {
+                            column-count: 2;
+                            column-gap: 20px;
+                        }
+                            .footer__item {
+
+                            }
+                                .footer__link {
+
+                                }
+                                .footer__link.link {
+
+                                }
+
+                            .footer__contact-column {
+
+                            }
+                                .footer__channel {
+
+                                }
+
+                        .footer__contacts {
+                            display: flex;
+                            align-items: flex-start;
+                            margin-left: -10px;
+                            margin-right: -10px;
+                        }
+                            .footer__contact-column {
+                                flex-shrink: 0;
+                                width: 50%;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                                .footer__contact-column .address-details {
+                                    margin-top: 10px;
+                                }
+
+
+@media (min-width: 768px) {
+
+    .footer {
+        padding-top: 67px;
+        padding-bottom: 46px;
+    }
+        .footer__wrap {
+            display: flex;
+            flex-direction: row;
+        }
+            .footer__summary {
+                order: 1;
+                width: 25%;
+                border-top: 0;
+                padding-right: 10px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+                .footer__emblem {
+
+                }
+
+                .footer__description {
+                    margin-top: 21px;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                .footer__media {
+                    margin-top: 29px;
+                }
+                    .footer__social {
+
+                    }
+
+                .footer__copyright {
+                    margin-top: 19px;
+                }
+
+
+            .footer__data {
+                order: 2;
+                width: 75%;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 10px;
+            }
+                .footer__columns {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+                    .footer__section {
+                        flex-shrink: 0;
+                        width: 33.3333%;
+                        margin-top: 0;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                        .footer__heading {
+
+                        }
+
+                        .footer__widget {
+
+                        }
+                            .footer__menu {
+                                column-count: inherit;
+                                column-gap: 0;
+                            }
+                                .footer__item {
+
+                                }
+                                    .footer__link {
+
+                                    }
+
+                                .footer__contact-column {
+
+                                }
+                                    .footer__channel {
+                                        margin-top: 5px;
+                                    }
+
+                                    .footer__channel:first-child {
+                                        margin-top: 0;
+                                    }
+
+                                        .footer__link {
+
+                                        }
+
+                            .footer__contacts {
+                                display: block;
+                                margin-left: 0;
+                                margin-right: 0;
+                            }
+                                .footer__contact-column {
+                                    width: 100%;
+                                    margin-top: 30px;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                }
+
+                                .footer__contact-column:first-child {
+                                    margin-top: 0;
+                                }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .footer {
+        margin-top: 50px;
+        padding-bottom: 31px;
+    }
+
+    .subscribe + .footer {
+        margin-top: 0;
+    }
+        .footer__wrap {
+
+        }
+            .footer__summary {
+                padding-right: 20px;
+            }
+                .footer__emblem {
+
+                }
+
+                .footer__description {
+
+                }
+
+                .footer__media {
+                    margin-top: 51px;
+                }
+                    .footer__social {
+
+                    }
+
+                .footer__copyright {
+
+                }
+
+
+            .footer__data {
+                padding-left: 20px;
+            }
+                .footer__columns {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+                    .footer__section {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                        .footer__heading {
+
+                        }
+
+                        .footer__widget {
+
+                        }
+                            .footer__menu {
+
+                            }
+                                .footer__item {
+
+                                }
+                                    .footer__link {
+
+                                    }
+
+                                .footer__contact-column {
+
+                                }
+                                    .footer__channel {
+
+                                    }
+
+                                    .footer__channel:first-child {
+
+                                    }
+
+                                        .footer__link {
+
+                                        }
+
+                            .footer__contacts {
+
+                            }
+                                .footer__contact-column {
+
+                                }
+
+                                .footer__contact-column:first-child {
+
+                                }
+}

@@ -1,0 +1,150 @@
+.ready {
+    position: relative;
+    background-color: #eaeaf2;
+    text-align: center;
+    margin-bottom: -41px; /* overlapping border in footer */
+}
+
+.ready--developers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ready--agents {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+    .ready::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -1000px;
+        right: -1000px;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background-color: #eaeaf2;
+    }
+
+    .ready__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 25px;
+        line-height: 30px;
+        color: var(--heading-font-color);
+        letter-spacing: 0.2px;
+    }
+
+    .ready__note {
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 24px;
+        color: var(--heading-font-color);
+    }
+
+    .ready__submit {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+        .ready--developers .ready__submit {
+            margin-top: 30px;
+        }
+
+        .ready--agents .ready__submit {
+            margin-top: 20px;
+        }
+
+
+@media (min-width: 576px) {
+
+    .ready {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+        .ready__heading {
+
+        }
+
+        .ready__note {
+
+        }
+
+        .ready__submit {
+
+        }
+            .ready--developers .ready__submit {
+                margin-top: 30px;
+            }
+
+            .ready--agents .ready__submit {
+                margin-top: 30px;
+            }
+}
+
+
+@media (min-width: 768px) {
+
+    .ready {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+        .ready__heading {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.2px;
+        }
+
+        .ready__note {
+            margin-top: 20px;
+        }
+
+        .ready__submit {
+
+        }
+            .ready--developers .ready__submit {
+
+            }
+
+            .ready--agents .ready__submit {
+
+            }
+}
+
+
+@media (min-width: 992px) {
+
+    .ready {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+        .ready::before {
+            display: none;
+        }
+
+        .ready__heading {
+
+        }
+
+        .ready__note {
+
+        }
+
+        .ready__submit {
+
+        }
+}
+
+@media (min-width: 1200px) {
+
+    .ready {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

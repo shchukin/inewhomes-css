@@ -1,0 +1,76 @@
+.type {
+    position: relative;
+    display: block;
+    padding: 23px 15px 26px 25px;
+    background-color: #FFF5F3;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
+}
+
+.type:hover {
+    background-color: #FFEEEB;
+}
+
+    .type::before {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 47px;
+        background-size: 45px 47px;
+        background-repeat: no-repeat;
+    }
+
+    .type--single-family::before { background-image: url("../sprites/type-family-house.png"); }
+    .type--condo::before        { background-image: url("../sprites/type-condo.png"); }
+    .type--townhouses::before   { background-image: url("../sprites/type-townhouse.png"); }
+    .type--apartments::before   { background-image: url("../sprites/type-apartment.png"); }
+
+    @media (min-resolution: 2dppx) {
+
+        .type--single-family::before { background-image: url("../sprites/type-family-house@2x.png"); }
+        .type--condo::before        { background-image: url("../sprites/type-condo@2x.png"); }
+        .type--townhouses::before   { background-image: url("../sprites/type-townhouse@2x.png"); }
+        .type--apartments::before   { background-image: url("../sprites/type-apartment@2x.png"); }
+    }
+
+
+    .type__title {
+        display: block;
+        margin-top: 9px;
+        margin-bottom: 0;
+        font-weight: var(--font-primary-bold);
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--text-dark);
+    }
+
+    .type__amount {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--text-dark-60pct);
+    }
+
+
+@media (min-width: 1200px) {
+
+    .type {
+        padding-top: 24px;
+        padding-bottom: 26px;
+        padding-left: 96px;
+    }
+        .type::before {
+            position: absolute;
+            left: 30px;
+            top: 26px;
+        }
+
+        .type__title {
+            margin-top: 0;
+        }
+
+        .type__amount {
+
+        }
+}

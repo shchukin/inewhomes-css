@@ -1,0 +1,31 @@
+.readmore {
+    position: relative;
+    display: inline-block !important;
+    vertical-align: top;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    width: auto !important;
+}
+    .readmore::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        display: block;
+        width: 16px;
+        padding-left: 4px;
+        background-image: url("../vectors/read-more.svg");
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: right 9px;
+    }
+
+    .readmore--more::after {
+
+    }
+
+    .readmore--less::after {
+        transform: scaleY(-1);
+        background-position: right 6px;
+    }

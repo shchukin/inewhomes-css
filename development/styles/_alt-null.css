@@ -1,0 +1,40 @@
+.alt-null {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-faded);
+    text-align: center;
+}
+    .alt-null::before {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 64px;
+        height: 64px;
+        background-image: url("../images/null.svg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .alt-null__heading {
+
+    }
+
+    .alt-null__note {
+        margin-top: 1px;
+    }
+
+
+@media (min-width: 768px) {
+
+    .alt-null {
+        padding-top: 43px;
+    }
+}

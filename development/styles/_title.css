@@ -1,0 +1,86 @@
+.title {
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-bold);
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--text-dark);
+    letter-spacing: 0.2px;
+}
+
+
+@media (min-width: 768px) {
+
+    .title {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.2px;
+    }
+}
+
+
+
+
+.title--non-responsive {
+
+}
+
+
+@media (min-width: 768px) {
+
+    .title--non-responsive {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+
+
+
+
+
+.title--less-important {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@media (min-width: 768px) {
+
+    .title--less-important {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+}
+
+
+
+
+.title--more-important {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+@media (min-width: 768px) {
+
+    .title--more-important {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+
+
+.title--alternate {
+    font-family: var(--font-primary);
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.title--basic {
+    font-size: 25px;
+    line-height: 30px;
+}

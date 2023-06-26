@@ -1,0 +1,29 @@
+.feed {
+
+}
+    .feed__item {
+        position: relative;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .feed__item:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+        .feed__item::before {
+            content: "";
+            position: absolute;
+            right: 15px;
+            top: -1px;
+            left: 149px;
+            display: block;
+            height: 1px;
+            background-color: #f0f0f0;
+        }
+
+        .feed__item:first-child::before {
+            display: none;
+        }
+

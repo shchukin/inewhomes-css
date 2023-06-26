@@ -1,0 +1,36 @@
+.strut {
+    position: relative;
+}
+    .strut__loader,
+    .strut__loader.loading-bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.1s ease,
+                    visibility 0.1s ease;
+    }
+
+    .strut__action {
+        width: 100%;
+        transition: opacity 0.1s ease,
+                    visibility 0.1s ease;
+    }
+
+
+.strut--loading-in-progress {
+
+}
+    .strut--loading-in-progress .strut__loader {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .strut--loading-in-progress .strut__action {
+        opacity: 0;
+        visibility: hidden;
+    }

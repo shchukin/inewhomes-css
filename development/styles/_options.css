@@ -1,0 +1,369 @@
+.options {
+    position: relative;
+    z-index: 12000;
+    height: var(--options-mobile-height);
+}
+    .options__panel {
+
+    }
+        .options__panel--city {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .options__related {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            top: var(--header-height);
+            height: var(--options-mobile-height);
+            padding: 10px var(--container-padding);
+            background-color: #ffffff;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+
+            .options__related {
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+
+            .options__listing {
+
+            }
+
+            .options__handler {
+                flex-shrink: 0;
+                margin-left: auto;
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: top;
+                border: none;
+                width: var(--filters-button-width);
+                height: 40px;
+                padding: 0 calc(var(--button-pading-default) + 17px) 0 var(--button-pading-default);
+                background-color: #FFFFFF;
+                box-shadow: var(--shadow-low);
+                border-radius: 2px;
+                font-family: inherit;
+                font-size: 14px;
+                line-height: 16px;
+                color: var(--text-dark);
+                white-space: nowrap;
+                cursor: pointer;
+                transition: background-color var(--transition-hover),
+                            color var(--transition-hover);
+            }
+                .options__handler::after {
+                    content: "";
+                    position: absolute;
+                    right: var(--button-pading-default);
+                    top: 17px;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    background-image: url("../vectors/options-handler.svg");
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: opacity var(--transition-hover);
+                }
+
+
+
+        .options__filters {
+            display: none;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+            padding-top: var(--options-mobile-height);
+            padding-bottom: calc(var(--apply-filter-height) + 50px);
+        }
+
+
+        @media (min-width: 576px) and (max-width: 767px) {
+
+            .options__filters {
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+
+            .options__bar {
+
+            }
+                .options__list {
+
+                }
+                    .options__container {
+
+                    }
+                        .options__ribbon {
+                            padding-top: 6px;
+                        }
+
+                    .options__more {
+
+                    }
+
+
+            .options__actions {
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: var(--apply-filter-height);
+                background-color: #ffffff;
+                box-shadow: 0 -1px 4px 0 rgba(48, 41, 78, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: var(--container-padding);
+                padding-right: var(--container-padding);
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+
+                .options__actions {
+                    padding-left: var(--container-padding-larger);
+                    padding-right: var(--container-padding-larger);
+                }
+            }
+
+                .options__reset {
+                    position: relative;
+                    flex-shrink: 0;
+                    white-space: nowrap;
+                    margin-right: var(--container-padding);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    vertical-align: top;
+                    height: 38px;
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    font-family: inherit;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: var(--link-color);
+                    cursor: pointer;
+                    transition: color var(--transition-hover),
+                                opacity var(--transition-hover);
+                }
+
+                .options__reset:hover {
+                    color: #55488D;
+                }
+
+                .options__reset:active {
+                    color: #887eaf;
+                }
+                    .options__reset::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 27px;
+                        background-color: #ffc8c0;
+                        display: block;
+                        height: 1px;
+                        transition: background-color var(--transition-hover);
+                    }
+
+                    .options__reset:hover::after {
+                        background-color: #dddae8;
+                    }
+
+
+                @media (min-width: 576px) and (max-width: 767px) {
+
+                    .options__reset {
+                        margin-right: var(--container-padding-larger);
+                    }
+                }
+
+                .options__apply {
+                    flex-grow: 1;
+                    max-width: 280px;
+                }
+
+
+.filter-active {
+
+}
+    .filter-active .options__filters {
+        display: block;
+    }
+
+
+.filter-active .options__handler {
+    background-color: #eeeef5;
+    color: #30294E;
+}
+
+.filter-active .options__handler:hover {
+
+}
+
+.filter-active .options__handler:active {
+    background-color: #E1E1EE;
+}
+    .filter-active .options__handler::before {
+        content: "Close";
+    }
+
+    .filter-active .options__handler::after {
+        background-image: url("../vectors/options-handler-expanded.svg");
+    }
+
+    .filter-active .options__handler-label {
+        display: none;
+    }
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .options {
+        height: var(--options-desktop-height);
+    }
+        .options__panel {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: var(--options-desktop-height);
+            display: flex;
+            align-items: flex-start;
+            padding: 12px var(--container-padding-larger);
+            background-color: #ffffff;
+        }
+            .options__related {
+                position: static;
+                display: block;
+                padding: 0;
+                width: auto;
+                height: auto;
+                background-color: transparent;
+            }
+                .options__handler {
+                    display: none;
+                }
+
+            .options__filters {
+                position: static;
+                display: block;
+                padding: 0;
+            }
+                .options__bar {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-right: 96px; /* when .options__bar is 100% width we want reset button to touch right edge */
+                    max-width: 100%;
+                }
+                    .options__list {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                        .options__container {
+                            display: flex;
+                            align-items: flex-start;
+                            width: 100%;
+                        }
+                            .options__ribbon {
+                                flex-shrink: 0;
+                                display: inline-flex;
+                                align-items: flex-start;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                            }
+
+                        .options__more {
+                            flex-shrink: 0;
+                            margin-left: 10px;
+                        }
+
+                        .options__more--disabled {
+                            display: none;
+                        }
+
+                .options__actions {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    left: auto;
+                    bottom: auto;
+                    display: block;
+                    height: auto;
+                    padding-left: 0;
+                    padding-right: 0;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+                    .options__reset {
+                        width: 93px;
+                        height: 40px;
+                        padding-top: 2px; /* need to move text one pixel down to match larger button baseline */
+                        margin-right: -12px;
+                    }
+                        .options__reset::after {
+                            top: 29px;
+                            left: 13px;
+                            right: 13px;
+                        }
+
+
+                    .options__apply {
+                        display: none;
+                    }
+}
+
+
+
+@media (min-width: 992px) {
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+.fixed-head {
+
+}
+
+    @media (min-width: 768px) {
+
+        .fixed-head .options__panel {
+            position: fixed;
+            top: var(--header-height);
+        }
+    }
+
+.search-visible-on-mobile {
+
+}
+
+@media (max-width: 767px) {
+
+    .search-visible-on-mobile .options {
+        display: none;
+    }
+}

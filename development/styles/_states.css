@@ -1,0 +1,120 @@
+.states {
+
+}
+    .states__heading {
+
+    }
+
+    @media (max-width: 991px) {
+
+        /* hide for smartphones but keep for screen readers */
+        .states__heading {
+            border: 0;
+            clip: rect(0 0 0 0);
+            -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap; /* 1 */
+        }
+    }
+
+    .states__default {
+
+    }
+
+    .states__unfolded {
+        display: none;
+    }
+
+
+
+
+@media (min-width: 992px) {
+
+    .states {
+        border: 1px solid #ededf4;
+        padding: 30px 30px 40px;
+    }
+        .states__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: var(--heading-font-color);
+        }
+
+        .states__default {
+            display: none;
+        }
+
+        .states__unfolded {
+            display: block;
+            margin-top: 20px;
+        }
+            .states__item {
+                position: relative;
+                display: block;
+                padding: 9px 36px 9px 9px;
+                margin-top: -1px;
+                border-top: 1px solid #eeeef4;
+                border-bottom: 1px solid #eeeef4;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 24px;
+                color: inherit;
+                cursor: pointer;
+                transition: background-color 0.1s ease;
+            }
+                .states__item::after {
+                    content: "";
+                    opacity: 0.25;
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    margin-top: -6px;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url("../vectors/states-item.svg");
+                    background-size: 12px 12px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: opacity 0.1s ease;
+                }
+
+            .states__item:hover {
+                background-color: #fcfcfd;
+            }
+                .states__item:hover::after {
+                    opacity: 1;
+                }
+
+
+            .states__item--selected {
+                background-color: #fcfcfd;
+                color: var(--color-theme-secondary-normal);
+            }
+
+            .states__item--disabled {
+                color: var(--color-note);
+                cursor: default;
+            }
+                .states__item--disabled:hover {
+                    background-color: inherit;
+                }
+                .states__item--disabled:hover::after {
+                    opacity: 0.25;
+                }
+
+            .states__item:first-child {
+                margin-top: 0;
+            }
+}

@@ -1,0 +1,95 @@
+.alert {
+    padding: 40px 30px 43px;
+    text-align: center;
+}
+    .alert__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: -0.2px;
+    }
+        .alert__icon {
+            vertical-align: top;
+            margin-bottom: 32px;
+        }
+
+
+    .alert__note {
+        margin-top: 11px;
+        padding-bottom: 9px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .alert__operations {
+        margin-top: 10px;
+    }
+        .alert__action {
+            margin-top: 20px;
+        }
+
+        .alert__action:first-child {
+            margin-top: 0;
+        }
+
+        .alert__action.button,
+        .alert__action > .button,
+        .alert__action.button,
+        .alert__action > .button {
+            width: 100%;
+        }
+
+.alert--positive {
+
+}
+
+.alert--negative {
+
+}
+    .alert--negative .alert__heading {
+        color: #FF492D;
+    }
+
+
+@media (min-width: 576px) {
+
+    .alert {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+        .alert__heading {
+
+        }
+            .alert__icon {
+
+            }
+
+        .alert__note {
+
+        }
+
+        .alert__operations {
+
+        }
+            .alert__action {
+                margin-top: 0;
+                margin-left: 12px;
+            }
+
+            .alert__action:first-child {
+                margin-left: 0;
+            }
+
+            .alert__action.button,
+            .alert__action > .button,
+            .alert__action.button,
+            .alert__action > .button {
+                width: auto;
+                min-width: 119px;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+}

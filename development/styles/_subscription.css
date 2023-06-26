@@ -1,0 +1,34 @@
+.subscription {
+    position: relative;
+}
+    .subscription__widget {
+        width: 100%;
+        height: 60px;
+        vertical-align: top;
+        padding: 18px 130px 18px 16px;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 4px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-dark);
+    }
+
+    .subscription__submit {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 120px;
+        height: 50px;
+    }
+
+    .subscription__submit:hover {
+        background-color: var(--color-theme-primary-hover);
+    }
+
+    .subscription__submit:active {
+        background-color: var(--color-theme-primary-active);
+    }

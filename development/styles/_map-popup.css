@@ -1,0 +1,27 @@
+.map-popup.leaflet-popup {
+    margin-bottom: 0;
+}
+
+.map-popup .leaflet-popup-content-wrapper,
+.map-popup .leaflet-popup-tip {
+    background: transparent;
+    box-shadow: none;
+    color: transparent;
+}
+
+.map-popup .leaflet-popup-content {
+    margin: 0;
+}
+
+.map-popup .leaflet-popup-tip-container {
+    display: none;
+}
+
+/*
+* Enable iOS popup click for GoogleMutant
+* https://gitlab.com/IvanSanchez/Leaflet.GridLayer.GoogleMutant/issues/42
+*/
+.gm-style iframe {
+    width: 0 !important;
+    height: 0 !important;
+}

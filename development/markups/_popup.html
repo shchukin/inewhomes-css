@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.popup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css">
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.popup</h1>
+            <p>
+                See also <a href="_alert.html">.alert</a>
+            </p>
+            <p>
+                In the end we decided to not use any libraries for popups and coded our own.
+            </p>
+            <p>
+                Layout of this is just 4 divs.
+            </p>
+            <p>
+                Better place it in the end of the document.
+            </p>
+            <p>
+                JS code is <a href="../scripts/_popup.js">../scripts/_popup.js</a>
+                We solve two tasks here:<br>
+                1) Show/hide popup using fadeIn / fadeOut. We use JS functions here to control
+                timing and callbacks.<br>
+                2) Lock scrollbar when modal window is show. Calculate its width and
+                add it as padding-right to &lt;html&gt; together with <b>.scroll-lock</b> class.
+            </p>
+            <p>
+                 <button data-popup="#foobar" type="button">Demo</button>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.popup--visible-on-desktop</h2>
+            <p>
+                In some cases modal window is needed only on smartphones while on desktop it becomes normal, visible part of pages.
+                Contacts form for example. It is being solved with <b>.popup--visible-on-desktop</b> class and
+                on 992+ all styles will be overwritten and scripts won't do any effects.
+            </p>
+            <p>
+                Here we can't place modal window at the end of the page. So beware of z-index conflicts
+            </p>
+            <p>
+                <button data-popup="#foobaz" type="button">Demo</button> (make screen smaller)
+            </p>
+
+            <div class="popup popup--visible-on-desktop" id="foobaz">
+                <div class="popup__container">
+                    <div class="popup__viewport">
+                        <div class="popup__slot">
+
+                            <!-- temp -->
+                            <div style="height: 350px; background: linear-gradient(45deg, green, pink);"></div>
+                            <!--/temp -->
+
+                            <button class="popup__close" title="Close modal window" type="button">
+                                <img class="popup__cross" src="../symbols/popup-cross.svg" width="24" height="24" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.popup--contacts</h2>
+            <p>
+                In one specific case we have an addition of sticking styles. See it on <a href="../layouts/complex.html">complex.html</a>.
+            </p>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <div class="popup" id="foobar">
+            <div class="popup__container">
+                <div class="popup__viewport">
+                    <div class="popup__slot">
+
+                        <!-- temp -->
+                        <div style="height: 350px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+
+                        <button class="popup__close" title="Close modal window" type="button">
+                            <img class="popup__cross" src="../symbols/popup-cross.svg" width="24" height="24" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js"></script>
+        <script src="../scripts/_dropdown.js"></script>
+        <script src="../scripts/_options.js"></script>
+        <script src="../scripts/_results.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_gallery.js"></script>
+        <script src="../scripts/_clipped.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_share.js"></script>
+        <script src="../scripts/_strut.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_jumbotron.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_morph.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_sticky-subhead.js"></script>
+        <script src="../scripts/_menu.js"></script>
+
+    </body>
+</html>

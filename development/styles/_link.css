@@ -1,0 +1,200 @@
+.link,
+.wysiwyg a {
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffdbd5;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color var(--transition-hover),
+                border-color var(--transition-hover),
+                opacity var(--transition-hover);
+}
+
+
+.link--brand {
+    color: var(--text-dark);
+    border-bottom-color: #D9D9F6;
+}
+
+
+.link:hover,
+.wysiwyg a:hover {
+    border-bottom-color: #dddae8;
+    color: #55488D;
+}
+
+.link:active,
+.wysiwyg a:active {
+    color: #887eaf;
+}
+
+
+.link--brand {
+    color: var(--text-dark);
+    border-bottom-color: #D9D9F6;
+}
+
+.link--brand:hover {
+    color: var(--color-theme-primary-normal);
+    border-bottom-color: currentColor;
+}
+
+
+.link--has-icon {
+    position: relative;
+    margin-right: 19px;
+}
+    .link__icon {
+        position: absolute;
+        left: 100%;
+        top: 60%;
+        margin-top: -9px;
+        box-sizing: content-box;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 7px solid transparent;
+        fill: var(--text-secondary-60pct);
+        transition: fill var(--transition-hover);
+    }
+
+    .link__icon[width="16"] {
+        border-left-width: 5px;
+    }
+
+    .link__icon[height="16"] {
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+    }
+
+    .link:hover .link__icon {
+        fill: currentColor;
+    }
+
+.link--has-left-icon {
+    position: relative;
+    margin-left: 19px;
+}
+    .link--has-left-icon .link__icon {
+        left: auto;
+        right: 100%;
+        border-left: none;
+        border-right: 7px solid transparent;
+    }
+
+    .link--has-left-icon .link__icon[width="16"] {
+        border-right-width: 5px;
+    }
+
+
+
+.link--inverted {
+    border-bottom-color: transparent;
+    color: var(--link-color);
+}
+
+.link--inverted:hover {
+    border-bottom-color: transparent;
+    color: var(--link-color);
+    opacity: 0.8;
+}
+
+.link--inverted:active {
+    border-bottom-color: transparent;
+    color: var(--link-color);
+    opacity: 0.7;
+}
+
+
+.link--inverted-hover {
+    border-bottom-color: transparent;
+    color: var(--link-color);
+}
+
+.link--inverted-hover:hover {
+    border-bottom-color: transparent;
+    color: #55488D;
+}
+
+.link--inverted-hover:active {
+    border-bottom-color: transparent;
+    color: #55488D;
+    opacity: 0.7;
+}
+
+
+
+
+.link--fake,
+.link--fake:hover,
+.link--fake:active {
+    text-decoration: none;
+    border-bottom-color: transparent;
+    color: inherit;
+}
+
+
+
+.link--text-alike {
+    color: inherit;
+    border-bottom-color: transparent;
+}
+
+
+.link--dotted {
+    text-decoration: none;
+    background-color: transparent;
+    border-image: repeating-linear-gradient(to right, #ffdbd5, #ffdbd5 1px, transparent 1px, transparent 3px) 1 0;
+    border-width: 0 0 1px;
+}
+.link--brand.link--dotted {
+    border-image: repeating-linear-gradient(to right, #D9D9F6, #D9D9F6 1px, transparent 1px, transparent 3px) 1 0;
+}
+
+.link--dashed {
+    text-decoration: none;
+    background-color: transparent;
+    border-image: repeating-linear-gradient(to right, #ffdbd5, #ffdbd5 2px, transparent 2px, transparent 4px) 1 0;
+    border-width: 0 0 1px;
+}
+.link--brand.link--dashed {
+    border-image: repeating-linear-gradient(to right, #D9D9F6, #D9D9F6 2px, transparent 2px, transparent 4px) 1 0;
+}
+
+
+.link--faded {
+    color: inherit;
+    border-bottom-color: #e7e6e9;
+}
+
+.link--faded:hover {
+    color: inherit;
+    border-bottom-color: #e7e6e9;
+}
+
+
+.link--whitened {
+    color: var(--text-light);
+    border-bottom-color: rgba(169, 138, 255, 0.25);
+}
+    .link--whitened .link__icon {
+        fill: currentColor;
+    }
+
+.link--whitened:hover {
+    color: #FFFFFF;
+    border-bottom-color: rgba(169, 138, 255, 0.25);
+}
+
+
+.link--alt-brand {
+    border-bottom-color: transparent;
+    color: #55488D;
+}
+

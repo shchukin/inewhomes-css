@@ -1,0 +1,7 @@
+.hidden-behind {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: fixed !important;
+    right: -100% !important;
+    bottom: -100% !important;
+}

@@ -1,0 +1,21 @@
+.cats {
+
+}
+    .cats__link {
+        margin: 0 10px 10px;
+        display: block;
+        font-family: var(--body-font-family);
+        font-size: 17px;
+        line-height: 20px;
+        color: var(--text-dark);
+        transition: color var(--transition-hover);
+        text-decoration: none;
+    }
+
+    .cats__link:hover {
+        text-decoration: underline;
+    }
+
+    .cats__link--current {
+        color: var(--color-brand-accent);
+    }

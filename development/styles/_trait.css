@@ -1,0 +1,204 @@
+.trait {
+    text-align: center;
+}
+    .trait__preview {
+        vertical-align: top;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .trait__body {
+        margin-top: 30px;
+        text-align: left;
+    }
+        .trait__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-heading-bold);
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: var(--heading-font-color);
+        }
+
+        .trait__content {
+            margin-top: 11px;
+            color: var(--heading-font-color);
+        }
+
+
+@media (min-width: 576px) {
+
+    .trait {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+        .trait__preview {
+            flex-shrink: 0;
+            width: calc(50% - 10px);
+            max-width: none;
+        }
+
+        .trait__body {
+            flex-shrink: 0;
+            width: calc(50% - 20px);
+            margin-left: 30px;
+            margin-top: 0;
+        }
+            .trait__heading {
+
+            }
+
+            .trait__content {
+
+            }
+
+    .trait--inverted {
+
+    }
+        .trait--inverted .trait__preview {
+
+        }
+
+        .trait--inverted .trait__body {
+            order: -1;
+            margin-left: 0;
+            margin-right: 30px;
+        }
+            .trait--inverted .trait__heading {
+
+            }
+
+            .trait--inverted .trait__content {
+
+            }
+}
+
+@media (min-width: 768px) {
+
+    .trait {
+
+    }
+        .trait__preview {
+            width: calc(50% - 34px);
+        }
+
+        .trait__body {
+            width: calc(50% - 6px);
+            margin-left: 40px;
+        }
+            .trait__heading {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            .trait__content {
+                margin-top: 17px;
+            }
+
+    .trait--inverted {
+
+    }
+        .trait--inverted .trait__preview {
+
+        }
+
+        .trait--inverted .trait__body {
+            margin-left: 0;
+            margin-right: 40px;
+        }
+            .trait--inverted .trait__heading {
+
+            }
+
+            .trait--inverted .trait__content {
+
+            }
+}
+
+@media (min-width: 992px) {
+
+    .trait {
+
+    }
+        .trait__preview {
+            width: 417px;
+        }
+
+        .trait__body {
+            width: 443px;
+            margin-left: 40px;
+        }
+            .trait__heading {
+
+            }
+
+            .trait__content {
+                margin-top: 24px;
+            }
+
+    .trait--inverted {
+
+    }
+        .trait--inverted .trait__preview {
+
+        }
+
+        .trait--inverted .trait__body {
+            margin-left: 0;
+            margin-right: 40px;
+        }
+            .trait--inverted .trait__heading {
+
+            }
+
+            .trait--inverted .trait__content {
+
+            }
+}
+
+@media (min-width: 1200px) {
+
+    .trait {
+
+    }
+        .trait__preview {
+            width: 417px;
+            margin-left: 40px;
+        }
+
+        .trait__body {
+            width: 510px;
+            margin-right: 60px;
+            margin-left: 113px;
+        }
+            .trait__heading {
+
+            }
+
+            .trait__content {
+
+            }
+
+    .trait--inverted {
+
+    }
+        .trait--inverted .trait__preview {
+            margin-left: 0;
+            margin-right: 40px;
+        }
+
+        .trait--inverted .trait__body {
+            margin-left: 0;
+            margin-right: 173px;
+        }
+            .trait--inverted .trait__heading {
+
+            }
+
+            .trait--inverted .trait__content {
+
+            }
+}

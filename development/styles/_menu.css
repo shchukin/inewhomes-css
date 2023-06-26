@@ -1,0 +1,104 @@
+.menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 575px) {
+
+    .menu {
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .menu {
+        margin-left: calc(-1 * var(--container-padding-larger));
+        margin-right: calc(-1 * var(--container-padding-larger));
+    }
+}
+    .menu__ribbon {
+        display: inline-flex;
+        align-items: stretch;
+    }
+        .menu__item {
+
+        }
+            .menu__link {
+            }
+
+            .menu__link {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                align-items: center;
+                padding: 14px 15px 15px;
+                font-weight: var(--font-primary-bold);
+                font-size: 15px;
+                line-height: 24px;
+                color: var(--text-dark);
+                white-space: nowrap;
+                text-decoration: none;
+                transition: background-color var(--transition-hover),
+                            color var(--transition-hover);
+            }
+
+            @media (max-width: 575px) {
+                .menu__item:first-child .menu__link { padding-left: var(--container-padding); }
+                .menu__item:last-child  .menu__link { padding-right: var(--container-padding); }
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                .menu__item:first-child .menu__link { padding-left: var(--container-padding-larger); }
+                .menu__item:last-child  .menu__link { padding-right: var(--container-padding-larger); }
+            }
+
+            .menu__link:hover {
+                color: var(--color-theme-secondary-normal);
+            }
+
+            .menu__link--current,
+            .menu__link--current:hover {
+                color: var(--color-theme-secondary-normal);
+            }
+                .menu__link--current::after {
+                    content: "";
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 0;
+                    height: 3px;
+                    background-color: var(--color-theme-secondary-normal);
+                    border-radius: 1px;
+                }
+
+
+@media (min-width: 768px) {
+
+    .menu {
+
+    }
+        .menu__ribbon {
+
+        }
+            .menu__item {
+
+            }
+
+            .menu__item:first-child {
+
+            }
+
+            .menu__item:last-child {
+
+            }
+                .menu__link {
+
+                }
+
+                .menu__link--current {
+
+                }
+}

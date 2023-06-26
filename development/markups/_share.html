@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.share</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css">
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div class="container">
+            <br>
+            <br>
+            <h1>.share</h1>
+            <p>
+                Button with dropdown. On desktop dropdown is being shown when hovering.
+                On smartphones we toggle <b>.share--visible</b>
+            </p>
+            <p>
+                Also, we need to cover the case when the page is scrolled down enough
+                to cur dropdown on the top.
+                <br>In this case, add a modifier <b>.share--to-bottom</b>
+            </p>
+            <p>
+                See sample here: <a href="../scripts/_share.js">scrips/_share.js</a>
+            </p>
+            <p>
+                The default <b>.share</b> is designed to be placed on the right.
+                The dropout is styled to move left when there is no enough space on the right.
+                Previously, this was done by JS (see commented piece of code) and done via CSS.
+            </p>
+
+            <div style="text-align: right">
+
+                <div class="share">
+                    <a class="share__handler" href="#">
+                        <img class="share__icon" src="../symbols/complex-share.svg" width="16" height="16" alt="">
+                        Share
+                    </a>
+                    <section class="share__dropdown">
+                        <h2 class="visuallyhidden">Share</h2>
+                        <a class="share__link net net--rounded" href="https://www.facebook.com/dialog/share?app_id=314779292531429&display=popup&href=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            Facebook
+                            <img class="net__icon" src="../symbols/net-facebook.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://twitter.com/intent/tweet?url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html&text=Check out this development: Voda Waterfront Residences Apartments" target="_blank">
+                            Twitter
+                            <img class="net__icon" src="../symbols/net-twitter.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://www.linkedin.com/shareArticle?mini=true&url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            LinkedIn
+                            <img class="net__icon" src="../symbols/net-linked-in.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://wa.me/send?text=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            WhatsApp
+                            <img class="net__icon" src="../symbols/net-whatsapp.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="mailto:?subject=Voda Waterfront Residences Apartments - iNewHomes&body=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            Send email
+                            <img class="net__icon" src="../symbols/net-email.svg" width="24" height="24" alt="">
+                        </a>
+                    </section>
+                </div>
+
+
+            </div>
+
+            <p>
+                On the company page it works different. It is located on the left from the first place. Please use <b>.share--left-on-mobile</b> modifier:
+            </p>
+
+            <style>
+                @media (max-width: 575px) {
+                    #temp-container-right-on-tablets {
+                        text-align: left !important;
+                    }
+                }
+            </style>
+            <div id="temp-container-right-on-tablets" style="text-align: right;">
+
+
+                <div class="share share--left-on-mobile">
+                    <a class="share__handler" href="#">
+                        <img class="share__icon" src="../symbols/complex-share.svg" width="16" height="16" alt="">
+                        Share
+                    </a>
+                    <section class="share__dropdown">
+                        <h2 class="visuallyhidden">Share</h2>
+                        <a class="share__link net net--rounded" href="https://www.facebook.com/dialog/share?app_id=314779292531429&display=popup&href=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            Facebook
+                            <img class="net__icon" src="../symbols/net-facebook.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://twitter.com/intent/tweet?url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html&text=Check out this development: Voda Waterfront Residences Apartments" target="_blank">
+                            Twitter
+                            <img class="net__icon" src="../symbols/net-twitter.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://www.linkedin.com/shareArticle?mini=true&url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            LinkedIn
+                            <img class="net__icon" src="../symbols/net-linked-in.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="https://wa.me/send?text=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            WhatsApp
+                            <img class="net__icon" src="../symbols/net-whatsapp.svg" width="24" height="24" alt="">
+                        </a>
+                        <a class="share__link net net--rounded" href="mailto:?subject=Voda Waterfront Residences Apartments - iNewHomes&body=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
+                            Send email
+                            <img class="net__icon" src="../symbols/net-email.svg" width="24" height="24" alt="">
+                        </a>
+                    </section>
+                </div>
+
+
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js"></script>
+        <script src="../scripts/_dropdown.js"></script>
+        <script src="../scripts/_options.js"></script>
+        <script src="../scripts/_results.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_gallery.js"></script>
+        <script src="../scripts/_clipped.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_share.js"></script>
+        <script src="../scripts/_strut.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_jumbotron.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_morph.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+
+    </body>
+</html>

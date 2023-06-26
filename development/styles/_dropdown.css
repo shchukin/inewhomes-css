@@ -1,0 +1,191 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .dropdown__handler {
+        cursor: pointer;
+    }
+        .dropdown__handler::after {
+            display: inline-block;
+            vertical-align: top;
+            content: "∨";
+        }
+
+    .dropdown__menu {
+        opacity: 0;
+        position: absolute;
+        z-index: 17000;
+        left: 0;
+        top: 100%;
+        visibility: hidden;
+    }
+
+
+.dropdown--expanded {
+
+}
+    .dropdown--expanded > .dropdown__handler::after {
+
+    }
+
+    .dropdown--expanded > .dropdown__menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
+
+
+.dropdown--default-skin {
+
+}
+    .dropdown--default-skin .dropdown__handler {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        border: none;
+        height: 40px;
+        padding: 0 calc(var(--button-pading-default) + 17px) 0 var(--button-pading-default);
+        background-color: #FFFFFF;
+        box-shadow: var(--shadow-low);
+        border-radius: 2px;
+        font-family: inherit;
+        font-weight: var(--font-primary-bold);
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--text-dark);
+        cursor: pointer;
+        transition: background-color var(--transition-hover),
+                    box-shadow var(--transition-hover),
+                    color var(--transition-hover);
+    }
+
+    .dropdown--default-skin .dropdown__handler:hover {
+        box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .dropdown--default-skin .dropdown__handler:active {
+        box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.12);
+    }
+
+        .dropdown--default-skin .dropdown__handler::before,
+        .dropdown--default-skin .dropdown__handler::after {
+            content: "";
+            position: absolute;
+            right: var(--button-pading-default);
+            top: 19px;
+            display: block;
+            width: 7px;
+            height: 4px;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: opacity var(--transition-hover);
+        }
+
+        .dropdown--default-skin .dropdown__handler::before {
+            background-image: url("../vectors/dropdown-default-skin.svg");
+            opacity: 1;
+        }
+
+        .dropdown--default-skin .dropdown__handler::after {
+            background-image: url("../vectors/dropdown-default-skin-expanded.svg");
+            opacity: 0;
+        }
+
+    .dropdown--default-skin .dropdown__menu {
+        padding: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 25px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+        transition: visibility var(--transition-hover),
+                    opacity var(--transition-hover);
+    }
+
+
+.dropdown--default-skin.dropdown--expanded {
+
+}
+    .dropdown--default-skin.dropdown--expanded > .dropdown__handler {
+        background-color: var(--color-theme-primary-normal);
+        box-shadow: none;
+        color: #FFFFFF;
+    }
+
+    .dropdown--default-skin.dropdown--expanded > .dropdown__handler:hover {
+        background-color: var(--color-theme-primary-hover);
+    }
+
+    .dropdown--default-skin.dropdown--expanded > .dropdown__handler:active {
+        background-color: var(--color-theme-primary-active); /* in the new design, get rid of the color on click */
+    }
+
+        .dropdown--default-skin.dropdown--expanded > .dropdown__handler::before {
+            opacity: 0;
+        }
+
+        .dropdown--default-skin.dropdown--expanded > .dropdown__handler::after {
+            opacity: 1;
+        }
+
+    .dropdown--default-skin.dropdown--expanded > .dropdown__menu {
+
+    }
+
+
+
+
+
+
+.dropdown--as-filter {
+
+}
+    /* dropdowns in main area on mobile  */
+    @media (max-width: 767px) {
+        .dropdown--as-filter {
+            display: block;
+        }
+            .dropdown--as-filter .dropdown__handler {
+                display: none;
+            }
+
+            .dropdown--as-filter .dropdown__menu {
+                position: static;
+                visibility: visible;
+                opacity: 1;
+                padding: 0;
+                background-color: transparent;
+                box-shadow: none;
+            }
+    }
+
+/* dropdowns in "more filters" */
+
+/* use .dropdown--as-filter twice to go one level deeper
+   to avoid More Filters dropdown itslef */
+
+/* use .dropdown--expanded for visibility: visible; to avoid
+   visibility conflict: goo.gl/RSYn99
+*/
+
+.options__more .dropdown--as-filter .dropdown--as-filter {
+    display: block;
+}
+
+    .options__more .dropdown--as-filter .dropdown--as-filter .dropdown__handler {
+        display: none;
+    }
+
+    .options__more .dropdown--as-filter .dropdown--as-filter .dropdown__menu {
+        position: static;
+        visibility: inherit;
+        opacity: 1;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }

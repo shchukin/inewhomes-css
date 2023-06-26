@@ -1,0 +1,57 @@
+.range {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+}
+    .range__widget {
+        width: 145px;
+        flex-shrink: 0;
+    }
+
+    .range__widget:first-child {
+        padding-right: 15px;
+    }
+
+    .range__widget:last-child {
+        padding-left: 15px;
+    }
+
+    .range::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -1px;
+        margin-left: -4px;
+        display: block;
+        width: 8px;
+        height: 1px;
+        background-color: #c7c5cd;
+    }
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .range {
+
+    }
+        .range__widget {
+            width: 220px;
+        }
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .range {
+
+    }
+        .range__widget {
+            width: 155px;
+        }
+}
+
+
+

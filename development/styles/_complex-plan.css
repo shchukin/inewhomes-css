@@ -1,0 +1,160 @@
+.complex__plan {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 80px 1fr;
+    padding: 5px 0;
+    border-top: 1px solid #ededf4;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.2s;
+}
+
+.complex__plan:first-child {
+    border-top: none;
+}
+
+.complex__plan:hover {
+    background: #f6f6ff;
+}
+
+.complex__plan-image {
+    padding: 1px;
+    border: 1px solid #ededf4;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.complex__plan-image img {
+    max-width: 100%;
+}
+
+.complex__plan-description {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+.complex__plan-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.complex__plan-inner-wrapper {
+    margin-bottom: 10px;
+}
+
+.complex__plan-name {
+    font-size: 16px;
+    font-weight: var(--font-primary-bold);
+    margin-bottom: 7px;
+    color: var(--text-dark);
+    display: block;
+}
+
+.complex__plan-type {
+    font-size: 14px;
+}
+
+.complex__plan-info {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.complex__plan-icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.complex__plan-price {
+    font-size: 16px;
+    color: #55488d;
+    padding-right: 5px;
+    display: flex;
+}
+
+.complex__plan-price .price {
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    box-shadow: none;
+    font-weight: var(--font-primary-bold);
+}
+
+.complex__plan-price .price,
+.complex__plan-price .price-sqft {
+    margin-bottom: 10px;
+}
+
+.complex__plan-price .price-sqft {
+    font-weight: normal;
+}
+
+.plan-info {
+    margin-right: 10px;
+    display: flex;
+}
+
+.plan-info:last-child {
+    margin-right: 0;
+}
+
+.plan-info img {
+    margin-right: 7px;
+}
+
+@media (min-width: 576px) {
+    .complex__plan-price {
+        display: block;
+        text-align: right;
+    }
+
+    .complex__plan-type {
+        font-size: 15px;
+    }
+
+    .complex__plan-info {
+        font-size: 15px;
+        margin-top: -3px;
+    }
+
+    .complex__plan {
+        grid-template-columns: 90px 1fr;
+    }
+
+    .complex__plan-image {
+        height: 90px;
+    }
+
+    .complex__plan-description {
+        grid-template-columns: 1fr 125px;
+        grid-gap: 10px;
+    }
+
+    .complex__plan-price .price {
+        margin-right: 0;
+    }
+
+    .complex__plan-inner-wrapper {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .plan-info {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .complex__plan-info {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

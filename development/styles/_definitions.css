@@ -1,0 +1,36 @@
+.definitions {
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 24px;
+}
+    .definitions__row {
+
+    }
+        .definitions__cell {
+            padding: 3px 0;
+            vertical-align: top;
+        }
+
+        .definitions__cell--term {
+            padding-right: 20px;
+            font-weight: inherit;
+            text-align: left;
+            color: var(--color-faded);
+        }
+
+@media (min-width: 768px) {
+
+    .definitions {
+
+    }
+        .definitions__row {
+
+        }
+            .definitions__cell {
+
+            }
+
+            .definitions__cell--term {
+                padding-right: 46px;
+            }
+}

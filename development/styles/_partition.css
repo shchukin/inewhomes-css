@@ -1,0 +1,53 @@
+.partition {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+    .partition__item {
+        width: 292px;
+        margin-left: 15px;
+    }
+
+    @media (max-width: 359px) {
+        .partition__item {
+            width: 270px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .partition__item {
+            margin-left: 20px;
+        }
+    }
+
+    .partition__item:first-child {
+        margin-left: 0;
+    }
+
+@media (min-width: 768px) {
+
+    .partition__item {
+        width: 344px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .partition {
+        height: auto;
+        margin-left: -20px;
+        flex-wrap: wrap;
+    }
+        .partition__item {
+            margin: 0;
+            width: 25%;
+            flex-shrink: 0;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .partition__item:nth-child(-n+4) { /* First 4 items */
+            padding-top: 0;
+        }
+}

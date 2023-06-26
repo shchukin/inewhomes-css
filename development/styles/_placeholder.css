@@ -1,0 +1,21 @@
+.placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F5F5FB;
+    border: 6px solid #FFFFFF;
+    border-bottom: none;
+    background-image: url("../images/placeholder.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.placeholder--more-squared {
+    background-image: url("../images/placeholder-more-squared.svg");
+}

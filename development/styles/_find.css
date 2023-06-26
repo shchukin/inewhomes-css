@@ -1,0 +1,64 @@
+.find {
+    position: relative;
+}
+    .find__field {
+
+    }
+        .find__field .input__widget {
+            padding-right: 44px;
+        }
+
+    .find__submit {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 44px;
+        height: 44px;
+        background-color: transparent;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+        .find__submit::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            bottom: 10px;
+            width: 1px;
+            background-color: #EBEBEB;
+        }
+
+        .find__submit::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            transition: background-color var(--transition-hover);
+        }
+
+        .find__submit:hover::after {
+            background-color: #E9E9FF;
+        }
+
+        .find__submit:active::after {
+            background-color: #DDDDFF;
+        }
+
+        .find__magnifier {
+            position: relative;
+            z-index: 10;
+            vertical-align: top;
+            fill: var(--text-dark);
+        }

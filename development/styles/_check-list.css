@@ -1,0 +1,48 @@
+.check-list {
+    column-count: 2;
+    column-gap: 0;
+    margin-bottom: -10px;
+    padding-right: 20px;
+}
+    .check-list__item {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+        .check-list .choice {
+            display: block;
+        }
+
+
+@media (min-width: 576px) {
+
+    .check-list {
+        padding-right: 0;
+        column-count: 1;
+        display: flex;
+        align-items: flex-start;
+        margin-left: -30px;
+    }
+        .check-list__item {
+            width: auto;
+            margin-left: 30px;
+            min-width: 84px;
+        }
+}
+
+
+@media (min-width: 768px) {
+
+    .check-list {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        column-count: inherit;
+        display: block;
+        margin-left: 0;
+    }
+        .check-list__item {
+            margin-left: 0;
+            min-width: 84px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+}

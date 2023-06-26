@@ -1,0 +1,35 @@
+.category {
+
+}
+
+@media (min-width: 992px) {
+
+    .category__body {
+        display: flex;
+        align-items: flex-start;
+        gap: 36px;
+    }
+        .category__content {
+            flex-grow: 1;
+        }
+
+        .category__sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+}
+
+
+@media (min-width: 1200px) {
+
+    .category__body {
+        gap: 50px;
+    }
+        .category__content {
+
+        }
+
+        .category__sidebar {
+            width: 350px;
+        }
+}

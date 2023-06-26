@@ -1,0 +1,135 @@
+.trusted {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: calc(40px + 280px); /* 40px is original padding and 10px going under .best (next section) */
+    background-color: #E4DFF9;
+}
+    .trusted__wrap {
+
+    }
+        .trusted__body {
+
+        }
+            .trusted__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                text-align: center;
+            }
+
+            .trusted__note {
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+            .trusted__content {
+                margin-top: 26px;
+            }
+
+
+
+
+@media (min-width: 576px) {
+
+    .trusted {
+        padding-bottom: calc(80px + 97px); /* 80px is original padding and 97px going under .best (next section) */
+    }
+        .trusted__wrap {
+
+        }
+            .trusted__body {
+
+            }
+                .trusted__heading {
+
+                }
+
+                .trusted__note {
+
+                }
+
+                .trusted__content {
+
+                }
+}
+
+
+
+@media (min-width: 768px) {
+
+    .trusted {
+
+    }
+        .trusted__wrap {
+
+        }
+            .trusted__body {
+
+            }
+                .trusted__heading {
+
+                }
+
+                .trusted__note {
+
+                }
+
+                .trusted__content {
+
+                }
+}
+
+
+
+
+@media (min-width: 992px) {
+
+    .trusted {
+        padding-bottom: calc(80px + 188px); /* 80px is original padding and 97px going under .best (next section) */
+    }
+        .trusted__wrap {
+
+        }
+            .trusted__body {
+
+            }
+                .trusted__heading {
+
+                }
+
+                .trusted__note {
+                    max-width: 900px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .trusted__content {
+                    margin-top: 50px;
+                }
+}
+
+
+@media (min-width: 1200px) {
+
+    .trusted {
+
+    }
+        .trusted__wrap {
+
+        }
+            .trusted__body {
+
+            }
+                .trusted__heading {
+
+                }
+
+                .trusted__note {
+
+                }
+
+                .trusted__content {
+
+                }
+}

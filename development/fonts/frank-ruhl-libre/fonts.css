@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  src: url("frank-ruhl-libre-bold.woff2") format("woff2"),
+       url("frank-ruhl-libre-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+

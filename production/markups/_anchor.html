@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.anchor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687670085">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687670085">
+        <link rel="stylesheet" href="../styles/style.css?1687670085">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.anchor</h1>
+            <p>
+                This is JS based component. Making scrolling smooth.
+            </p>
+            <p>
+                See <a href="../scripts/_anchor.js">../scripts/_anchor.js</a> for details
+            </p>
+            <p>
+                The task is to catch HTML anchor (link targeting to the id=""), cancel the default browser behavior (quick jump to the anchor) and smoothly scroll to the target, manually.
+            </p>
+            <ul>
+                <li>
+                    Animating <b>$('html, body')</b>
+                </li>
+                <li>
+                    Animation duration is relative to distance but not less than <b>300ms</b>.
+                </li>
+                <li>
+                    If there is a fixed header, then the distance to the target should be reduced equally to the height of the header.
+                </li>
+                <li>
+                    Using <b>data-anchor-gap=""</b> we can manually add extra pixels to the distance.
+                </li>
+                <li>
+                    If possible, we could try adding an easing function like this one:
+                    <a href="https://easings.net/#easeOutQuint">https://easings.net/#easeOutQuint</a>
+                    but we may need a JS library for that.
+                </li>
+                <li>
+                    The target can be any tag with id="":
+                    <b>&ltdiv id="foobar"&gt;...&lt;/div&gt;</b>. Or,
+                    the empty link with the name="" attribute:
+                    <br><b>&lt;a name="foobar"&gt;&lt;/a&gt;</b>
+                    (href can be removed in this case).
+                </li>
+            </ul>
+
+            <hr>
+            <p>
+                Example:
+            </p>
+            <p>
+                <a class="anchor" href="#foobar">Anchor to #foo</a>
+            </p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula felis ac tristique vestibulum. Maecenas fermentum feugiat dui aliquam euismod. Quisque dapibus nisi ac nunc mattis, vel tincidunt purus feugiat. Curabitur varius erat consequat urna consequat pulvinar. Suspendisse porta leo eu velit consequat, vel convallis urna sodales. Sed eget turpis eros. Sed tempus blandit urna, nec mattis leo lacinia blandit. Donec at efficitur neque, condimentum consectetur turpis. Aliquam erat volutpat.
+            Aliquam tempor est euismod, tincidunt mi vitae, egestas ante. Aliquam pretium quis enim eu consequat. Fusce a felis malesuada, eleifend massa in, vehicula lorem. Sed convallis sagittis risus in aliquam. Nulla nec varius nisi, quis imperdiet tellus. Phasellus auctor enim eu lacus dictum rhoncus. Aenean finibus lectus nec tortor rhoncus euismod. Pellentesque non feugiat arcu. Aliquam faucibus, ligula nec fringilla faucibus, sapien lectus tempor nunc, eget euismod ante nibh sed velit. Quisque nec ante non justo ultricies gravida quis vel quam. Aliquam non ultrices quam, at posuere velit. Sed vel metus sit amet risus accumsan lacinia. Ut vestibulum mattis nulla, a laoreet eros varius vitae. Quisque eu ex ex. Vestibulum consectetur sit amet mi non efficitur.
+            Donec eget ante porta, malesuada risus vitae, facilisis lectus. Cras et sagittis ligula. In varius massa velit, quis cursus diam pulvinar at. Integer porttitor arcu convallis ornare hendrerit. Nullam malesuada diam quis aliquet posuere. Duis at turpis venenatis arcu sagittis imperdiet at id nulla. Maecenas tempus interdum nunc, vitae vehicula quam auctor non. Pellentesque et finibus mauris, eu fermentum ipsum. Mauris pellentesque urna vehicula augue placerat consequat. Vestibulum hendrerit nunc in mattis bibendum. Curabitur sit amet sem condimentum, ultrices nulla in, varius diam. Pellentesque laoreet, odio vel pulvinar tincidunt, risus libero tempus felis, sit amet semper augue leo quis tellus. Nullam libero purus, commodo et eleifend ut, elementum eu odio.
+
+            <div id="foobar" style="height: 200px; display: flex; align-items: center; justify-content: center; background: purple; color: white;">
+                #foo
+            </div>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula felis ac tristique vestibulum. Maecenas fermentum feugiat dui aliquam euismod. Quisque dapibus nisi ac nunc mattis, vel tincidunt purus feugiat. Curabitur varius erat consequat urna consequat pulvinar. Suspendisse porta leo eu velit consequat, vel convallis urna sodales. Sed eget turpis eros. Sed tempus blandit urna, nec mattis leo lacinia blandit. Donec at efficitur neque, condimentum consectetur turpis. Aliquam erat volutpat.
+            Aliquam tempor est euismod, tincidunt mi vitae, egestas ante. Aliquam pretium quis enim eu consequat. Fusce a felis malesuada, eleifend massa in, vehicula lorem. Sed convallis sagittis risus in aliquam. Nulla nec varius nisi, quis imperdiet tellus. Phasellus auctor enim eu lacus dictum rhoncus. Aenean finibus lectus nec tortor rhoncus euismod. Pellentesque non feugiat arcu. Aliquam faucibus, ligula nec fringilla faucibus, sapien lectus tempor nunc, eget euismod ante nibh sed velit. Quisque nec ante non justo ultricies gravida quis vel quam. Aliquam non ultrices quam, at posuere velit. Sed vel metus sit amet risus accumsan lacinia. Ut vestibulum mattis nulla, a laoreet eros varius vitae. Quisque eu ex ex. Vestibulum consectetur sit amet mi non efficitur.
+            Donec eget ante porta, malesuada risus vitae, facilisis lectus. Cras et sagittis ligula. In varius massa velit, quis cursus diam pulvinar at. Integer porttitor arcu convallis ornare hendrerit. Nullam malesuada diam quis aliquet posuere. Duis at turpis venenatis arcu sagittis imperdiet at id nulla. Maecenas tempus interdum nunc, vitae vehicula quam auctor non. Pellentesque et finibus mauris, eu fermentum ipsum. Mauris pellentesque urna vehicula augue placerat consequat. Vestibulum hendrerit nunc in mattis bibendum. Curabitur sit amet sem condimentum, ultrices nulla in, varius diam. Pellentesque laoreet, odio vel pulvinar tincidunt, risus libero tempus felis, sit amet semper augue leo quis tellus. Nullam libero purus, commodo et eleifend ut, elementum eu odio.
+
+
+
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js?1687670085"></script>
+        <script src="../scripts/_dropdown.js?1687670085"></script>
+        <script src="../scripts/_options.js?1687670085"></script>
+        <script src="../scripts/_results.js?1687670085"></script>
+        <script src="../scripts/_search.js?1687670085"></script>
+        <script src="../scripts/_gallery.js?1687670085"></script>
+        <script src="../scripts/_clipped.js?1687670085"></script>
+        <script src="../scripts/_popup.js?1687670085"></script>
+        <script src="../scripts/_share.js?1687670085"></script>
+        <script src="../scripts/_strut.js?1687670085"></script>
+        <script src="../scripts/_slideshow.js?1687670085"></script>
+        <script src="../scripts/_jumbotron.js?1687670085"></script>
+        <script src="../scripts/_carousel.js?1687670085"></script>
+        <script src="../scripts/_morph.js?1687670085"></script>
+        <script src="../scripts/_anchor.js?1687670085"></script>
+        <script src="../scripts/_faq.js?1687670085"></script>
+        <script src="../scripts/_sticky-subhead.js?1687670085"></script>
+        <script src="../scripts/_menu.js?1687670085"></script>
+
+    </body>
+</html>
+
+
+

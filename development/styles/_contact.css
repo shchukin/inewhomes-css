@@ -1,0 +1,150 @@
+.contact {
+    padding: 30px;
+}
+    .contact__avatar {
+        vertical-align: top;
+        border-radius: 50%;
+        background-color: var(--image-fallback);
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .contact__avatar {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .contact__company-logo {
+        width: auto;
+        height: 54px;
+        margin-bottom: 14px;
+    }
+
+    .contact__name {
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 25px;
+        line-height: 30px;
+        color: var(--heading-font-color);
+    }
+
+    .contact__note {
+        margin-top: 3px;
+        font-size: 13px;
+        line-height: 17px;
+        color: var(--color-faded);
+    }
+
+    .contact__links {
+        margin-top: 13px;
+    }
+        .contact__channel {
+            margin-top: 6px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+    .contact__search {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 18px -5px -5px;
+    }
+        .contact__looking {
+            margin: 5px;
+            display: block;
+            font-weight: inherit;
+            font-size: 15px;
+            line-height: 24px;
+            white-space: nowrap;
+        }
+
+        .contact__type {
+            margin: 5px;
+            flex-grow: 1;
+        }
+            .contact__type .switch__item {
+                min-width: 70px;
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+
+    .contact__fieldset {
+        margin-top: 21px;
+    }
+        .contact__field {
+            margin-top: 10px;
+        }
+
+        .contact__field:first-child {
+            margin-top: 0;
+        }
+
+    .contact__submit {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .contact__agreement {
+        margin-top: 12px;
+    }
+
+
+@media (min-width: 360px) and (max-width: 767px),
+       (min-width: 1200px) {
+
+    .contact {
+
+    }
+        .contact__avatar {
+            float: left;
+            margin: -2px 25px 11px -2px;
+        }
+
+        .contact__name {
+            margin-top: 0;
+        }
+
+        .contact__note {
+        }
+
+        .contact__links {
+
+        }
+            .contact__channel {
+
+            }
+
+        .contact__search {
+            clear: left;
+            flex-wrap: nowrap;
+        }
+            .contact__looking {
+
+            }
+
+            .contact__type {
+
+            }
+
+        .contact__fieldset {
+            margin-top: 10px;
+        }
+            .contact__field {
+
+            }
+
+            .contact__field:first-child {
+
+            }
+
+        .contact__submit {
+
+        }
+
+        .contact__agreement {
+
+        }
+}

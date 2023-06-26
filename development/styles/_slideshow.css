@@ -1,0 +1,527 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+    .slideshow__body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+        .slideshow__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity var(--transition-slideSlow),
+                        visibility var(--transition-slideSlow);
+        }
+
+        .slideshow__item--current {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+    .slideshow__control {
+        display: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+    @media (min-width: 992px) {
+
+        .slideshow--initialized .slideshow__control {
+            display: block;
+        }
+    }
+
+    .slideshow__control--disabled {
+        opacity: 0;
+        visibility: hidden;
+        cursor: default;
+    }
+
+    .slideshow__navigation {
+        margin-top: 40px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+        .slideshow__dot {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            display: none;
+        }
+
+        .slideshow--initialized .slideshow__dot {
+            display: block;
+        }
+
+            /* hover effect */
+            .slideshow__dot::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 15px;
+                height: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                opacity: 0;
+                transition: opacity var(--transition-hover);
+            }
+
+            /* dot itself */
+            .slideshow__dot::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                display: block;
+                width: 5px;
+                height: 5px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                transition: background-color var(--transition-slideSlow),
+                            transform var(--transition-slideSlow);
+            }
+
+            /* hover */
+            .slideshow__dot:not(.slideshow__dot--current):hover::before {
+                opacity: 1;
+            }
+                .slideshow__dot:not(.slideshow__dot--current):hover::after {
+                    background-color: rgba(255, 255, 255, 0.9);
+                    transition: background-color var(--transition-hover);
+                }
+
+
+            /* press */
+            .slideshow__dot:not(.slideshow__dot--current):active::before {
+                opacity: 0;
+                transition: none;
+            }
+                .slideshow__dot:not(.slideshow__dot--current):active::after {
+                    background-color: #FFFFFF;
+                    transition: none;
+                }
+
+            /* current */
+            .slideshow__dot--current::after {
+                background-color: #523EA7;
+                transform: scale(1.4);
+            }
+
+
+
+
+.slideshow--jumbotron {
+
+}
+    .slideshow--jumbotron .slideshow__control {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: calc(50% - 330px);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .slideshow--jumbotron .slideshow__control:hover {
+        opacity: 1;
+    }
+
+        .slideshow--jumbotron .slideshow__control::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+    .slideshow--jumbotron .slideshow__control--next {
+        left: 50%;
+        margin-left: 330px;
+        background-image: linear-gradient(to right, rgba(18, 14, 37, 0), rgba(18, 14, 37, 0.53));
+    }
+        .slideshow--jumbotron .slideshow__control--next::after {
+            right: 40px;
+            background-image: url("../vectors/slider-jumbotron-next.svg");
+        }
+
+    .slideshow--jumbotron .slideshow__control--prev {
+        right: 50%;
+        margin-right: 330px;
+        background-image: linear-gradient(to left, rgba(18, 14, 37, 0), rgba(18, 14, 37, 0.53));
+    }
+        .slideshow--jumbotron .slideshow__control--prev::after {
+            left: 40px;
+            background-image: url("../vectors/slider-jumbotron-prev.svg");
+        }
+
+    @media (min-width: 1260px) { /* Unusual breakpoint, (because of arrows width) */
+
+        .slideshow--jumbotron .slideshow__control {
+            width: 300px;
+        }
+
+        .slideshow--jumbotron .slideshow__control--next {
+            left: auto;
+            margin-left: 0;
+            right: 0;
+        }
+            .slideshow--jumbotron .slideshow__control--next::after {
+                right: 60px;
+            }
+
+        .slideshow--jumbotron .slideshow__control--prev {
+            right: auto;
+            margin-right: 0;
+            left: 0;
+        }
+            .slideshow--jumbotron .slideshow__control--prev::after {
+                left: 60px;
+            }
+    }
+
+
+
+
+    .slideshow--jumbotron .slideshow__navigation {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
+
+    @media (max-height: 559px) {
+
+        .slideshow--jumbotron .slideshow__navigation {
+            bottom: 16px;
+        }
+    }
+        .slideshow--jumbotron .slideshow__dot--current::after {
+            background-color: #FF492D;
+        }
+
+
+
+.slideshow--trusted {
+
+}
+    .slideshow--trusted .slideshow__control {
+        position: absolute;
+        top: calc(50% - 32px); /* -32px half of height combined from margin and dots (64px) */
+        margin-top: -30px;
+        width: 60px;
+        height: 60px;
+        background-color: #F4F4FB;
+        background-size: 8px 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-shadow: var(--shadow-theme-primary-high);
+        border-radius: 50%;
+    }
+
+    .slideshow--trusted .slideshow__control:hover {
+        box-shadow: var(--shadow-theme-primary-medium);
+    }
+
+    .slideshow--trusted .slideshow__control:active {
+        box-shadow: var(--shadow-theme-primary-low);
+    }
+
+    .slideshow--trusted .slideshow__control--next {
+        right: 12px;
+        background-image: url("../vectors/slider-next.svg");
+    }
+
+    .slideshow--trusted .slideshow__control--prev {
+        left: 12px;
+        background-image: url("../vectors/slider-prev.svg");
+    }
+
+
+
+.slideshow--popular {
+
+}
+    .slideshow--popular .slideshow__control {
+        position: absolute;
+        bottom: -13px;
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        background-size: 8px 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-shadow: var(--shadow-theme-primary-high);
+        border-radius: 50%;
+    }
+
+    .slideshow--popular .slideshow__control:hover {
+        box-shadow: var(--shadow-theme-primary-medium);
+    }
+
+    .slideshow--popular .slideshow__control:active {
+        box-shadow: var(--shadow-theme-primary-low);
+    }
+
+    .slideshow--popular .slideshow__control--next {
+        left: 50%;
+        margin-left: 97px;
+        background-image: url("../vectors/slider-carousel-next.svg");
+    }
+
+    .slideshow--popular .slideshow__control--prev {
+        right: 50%;
+        margin-right: 97px;
+        background-image: url("../vectors/slider-carousel-prev.svg");
+    }
+
+
+    .slideshow--popular .slideshow__navigation {
+
+    }
+        .slideshow--popular .slideshow__dot {
+
+        }
+            /* hover */
+            .slideshow--popular .slideshow__dot::before {
+                border-color: var(--color-brand-primary);
+            }
+
+            /* dot itself */
+            .slideshow--popular .slideshow__dot::after {
+                background-color: var(--neutral-color-1);
+            }
+
+        /* hover */
+        .slideshow--popular .slideshow__dot:not(.slideshow__dot--current):hover::before {
+
+        }
+            .slideshow--popular .slideshow__dot:not(.slideshow__dot--current):hover::after {
+                background-color: var(--color-brand-primary);
+            }
+
+
+        /* press */
+        .slideshow--popular .slideshow__dot:not(.slideshow__dot--current):active::before {
+
+        }
+            .slideshow--popular .slideshow__dot:not(.slideshow__dot--current):active::after {
+
+            }
+
+        /* current */
+        .slideshow--popular .slideshow__dot--current::after {
+            background-color: var(--color-brand-accent);
+        }
+
+
+.slideshow--popular .companies__item.companies__item {
+    border-color: var(--neutral-color-3) !important;
+}
+
+
+
+
+.slideshow--developers {
+
+}
+    .slideshow--developers .slideshow__control {
+        position: absolute;
+        top: 9px;
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        background-size: 8px 14px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-shadow: var(--shadow-theme-primary-high);
+        border-radius: 50%;
+    }
+
+    .slideshow--developers .slideshow__control:hover {
+        box-shadow: var(--shadow-theme-primary-medium);
+    }
+
+    .slideshow--developers .slideshow__control:active {
+        box-shadow: var(--shadow-theme-primary-low);
+    }
+
+    .slideshow--developers .slideshow__control--next {
+        right: 0;
+        background-image: url("../vectors/slider-carousel-next.svg");
+    }
+
+    .slideshow--developers .slideshow__control--prev {
+        left: 0;
+        background-image: url("../vectors/slider-carousel-prev.svg");
+    }
+
+
+    .slideshow--developers .slideshow__navigation {
+        margin-top: 30px;
+    }
+
+    @media (min-width: 768px) {
+        .slideshow--developers .slideshow__navigation {
+            margin-top: 10px;
+        }
+    }
+
+    .slideshow--developers .slideshow__dot {
+
+        }
+            /* hover */
+            .slideshow--developers .slideshow__dot::before {
+                border-color: var(--color-brand-primary);
+            }
+
+            /* dot itself */
+            .slideshow--developers .slideshow__dot::after {
+                background-color: var(--neutral-color-1);
+            }
+
+        /* hover */
+        .slideshow--developers .slideshow__dot:not(.slideshow__dot--current):hover::before {
+
+        }
+            .slideshow--developers .slideshow__dot:not(.slideshow__dot--current):hover::after {
+                background-color: var(--color-brand-primary);
+            }
+
+
+        /* press */
+        .slideshow--developers .slideshow__dot:not(.slideshow__dot--current):active::before {
+
+        }
+            .slideshow--developers .slideshow__dot:not(.slideshow__dot--current):active::after {
+
+            }
+
+        /* current */
+        .slideshow--developers .slideshow__dot--current::after {
+            background-color: var(--color-brand-accent);
+        }
+
+@media (max-width: 1199px) {
+
+    .slideshow--developers .slideshow__control {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+    /* disable carousel, enable scrolling */
+    .slideshow--scroll-on-mobile {
+        width: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+    }
+
+    @media (min-width: 576px) {
+
+        .slideshow--scroll-on-mobile {
+            margin-left: calc(-1 * var(--container-padding-larger));
+            margin-right: calc(-1 * var(--container-padding-larger));
+        }
+    }
+
+        .slideshow--scroll-on-mobile .slideshow__body {
+            width: auto;
+            display: inline-flex;
+            align-items: stretch;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+
+        @media (min-width: 576px) {
+
+            .slideshow--scroll-on-mobile .slideshow__body {
+                padding-left: var(--container-padding-larger);
+                padding-right: var(--container-padding-larger);
+            }
+        }
+            .slideshow--scroll-on-mobile .slideshow__item {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                width: auto;
+                margin-left: 15px;
+            }
+
+            @media (min-width: 576px) {
+
+                .slideshow--scroll-on-mobile .slideshow__item {
+                    margin-left: 20px;
+                }
+            }
+
+            .slideshow--scroll-on-mobile .slideshow__item:first-child {
+                margin-left: 0;
+            }
+
+
+
+        .slideshow--scroll-on-mobile .slideshow__navigation {
+            display: none;
+        }
+
+        .slideshow--scroll-on-mobile .slideshow__control {
+            display: none;
+        }
+
+
+    .slideshow--skin-venue {
+        margin-top: -7px;
+        margin-bottom: -9px;
+    }
+        .slideshow--skin-venue .slideshow__body {
+            padding-top: 7px;
+            padding-bottom: 9px;
+        }
+}

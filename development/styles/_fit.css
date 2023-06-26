@@ -1,0 +1,26 @@
+.fit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .fit__image {
+        width: auto;
+        height: calc(100% + 40px); /* no object fit support stretch image to make sure even squared case covered */
+        background-color: var(--image-fallback);
+    }
+
+    /* if object fit supported: */
+    @supports (object-fit: cover) {
+        .fit__image {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            object-fit: cover;
+        }
+    }

@@ -1,0 +1,176 @@
+.choice {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 18px;
+    min-height: 36px; /* 18px of icon + 2x9 of padding area */
+    cursor: pointer;
+}
+
+.choice--checkbox {
+
+}
+
+.choice--radio {
+
+}
+
+.choice--hidden-label {
+
+}
+    .choice__input {
+        opacity: 0;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+    }
+
+    .choice__icon {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ccccda;
+        border-radius: 2px;
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover);
+    }
+
+    .choice:hover .choice__icon {
+        background-color: #f7f6fb;
+        border-color: #c0c0d1;
+    }
+
+    .choice:active .choice__icon {
+        background-color: #ffffff;
+        border-color: #776da4;
+    }
+        .choice__icon::after {
+            content: "";
+            transition: background-color var(--transition-hover),
+                        opacity var(--transition-hover);
+        }
+
+    .choice__input:focus ~ .choice__icon {
+        outline: auto;
+    }
+
+
+    .choice__label {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 9px 0 9px 33px;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--text-dark);
+    }
+
+    .choice--hidden-label .choice__label {
+        display: none;
+    }
+
+    .choice__input:disabled ~ .choice__label {
+        cursor: default;
+        color: #d6d4dc;
+    }
+
+
+
+    /* checkbox */
+
+    .choice--checkbox .choice__input:checked + .choice__icon {
+        background-color: var(--color-theme-primary-normal);
+        border-color: var(--color-theme-primary-normal);
+    }
+
+    .choice--checkbox:hover .choice__input:checked + .choice__icon {
+        background-color: #6c5cb4;
+        border-color: #6c5cb4;
+    }
+
+    .choice--checkbox:active .choice__input:checked + .choice__icon {
+        background-color: #30294e;
+        border-color: #30294e;
+    }
+        .choice--checkbox .choice__icon::after {
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url("../vectors/choice-checkbox.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0;
+        }
+
+
+        .choice--checkbox .choice__input:checked + .choice__icon::after {
+            opacity: 1;
+        }
+
+    /* disabled */
+
+    .choice--checkbox .choice__input:disabled ~ .choice__icon {
+        border-color: #eaeaf2;
+    }
+        .choice--checkbox .choice__input:disabled:checked ~ .choice__icon {
+            background-color: #eaeaf2;
+            border-color: #eaeaf2;
+        }
+
+        .choice--checkbox .choice__input:disabled:checked ~ .choice__icon::after {
+            background-image: url("../vectors/choice-checkbox-disabled.svg");
+        }
+
+
+
+    /* radio */
+
+    .choice--radio .choice__icon {
+        border-radius: 50%;
+    }
+
+    .choice--radio .choice__input:checked + .choice__icon {
+
+    }
+        .choice--radio .choice__icon::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 6px;
+            height: 6px;
+            margin: -3px 0 0 -3px;
+            border-radius: 50%;
+        }
+
+        .choice--radio .choice__input:checked + .choice__icon {
+            border-color: var(--color-theme-primary-normal);
+        }
+            .choice--radio .choice__input:checked + .choice__icon::after {
+                background-color: var(--color-theme-primary-normal);
+            }
+
+        .choice--radio .choice__input:checked + .choice__icon,
+        .choice--radio .choice__input:checked + .choice__icon + .choice__label {
+            cursor: default;
+        }
+
+
+    /* disabled */
+
+    .choice--radio .choice__input:disabled ~ .choice__icon {
+        border-color: #eaeaf2;
+    }
+
+    .choice--radio .choice__input:disabled:checked + .choice__icon {
+        border-color: #eaeaf2;
+    }
+        .choice--radio .choice__input:disabled:checked + .choice__icon::after {
+            background-color: #eaeaf2;
+        }
+
+
+
+

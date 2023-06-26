@@ -1,0 +1,32 @@
+.sales {
+    font-size: var(--body-font-size);
+    line-height: var(--body-font-line);
+}
+
+@media (max-width: 767px) {
+
+    .sales {
+        font-size: var(--body-mobile-font-size);
+        line-height: var(--body-mobile-font-line);
+    }
+}
+    .sales__row {
+        margin-top: 8px;
+    }
+
+    .sales__row:first-child {
+        margin-top: 0;
+    }
+
+
+
+@media (min-width: 768px) {
+
+    .sales {
+        font-size: 15px;
+        line-height: 24px;
+    }
+        .sales__row {
+            margin-top: 10px;
+        }
+}

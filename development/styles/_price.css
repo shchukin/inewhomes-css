@@ -1,0 +1,184 @@
+.price {
+    padding-top: 5px;
+}
+    .price__tag {
+        margin: 0 0 0 -5px;
+        font-weight: inherit;
+    }
+
+    .price__heading + .price__tag {
+        margin-top: 20px;
+    }
+
+    .price__heading {
+        margin-top: 10px;
+        margin-bottom: 0;
+        display: block;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: var(--text-dark);
+    }
+
+    .price__data {
+        margin-top: 20px;
+        border-top: 1px solid #EDEDF4;
+        padding-top: 20px;
+        font-size: var(--body-mobile-font-size);
+        line-height: var(--body-mobile-font-line);
+    }
+        .price__sheet {
+            width: 100%;
+            vertical-align: top;
+            border-collapse: collapse;
+        }
+            .price__tbody {
+
+            }
+                .price__row {
+                    border-top: 9px solid transparent;
+                }
+
+                .price__row:first-child {
+                    border-top: none;
+                }
+                    .price__term {
+                        vertical-align: top;
+                        padding: 0 20px 0 0;
+                        width: 130px;     /* same as с .details__term */
+                        max-width: 130px; /* same as с .details__term */
+                        font-weight: normal;
+                        text-align: left;
+                        color: var(--text-dark-60pct);
+                    }
+
+                    @media (min-width: 576px) {
+
+                        .price__term {
+                            width: 210px;     /* same as с .details__term */
+                            max-width: 210px; /* same as с .details__term */
+                        }
+                    }
+
+                    .price__description {
+                        vertical-align: top;
+                        padding: 0;
+                        font-weight: normal;
+                        text-align: left;
+                    }
+                        .price__link {
+                            margin-top: 10px;
+                        }
+
+                        .price__link:first-child {
+                            margin-top: 0;
+                        }
+
+@media (min-width: 768px) {
+
+    .price {
+        padding: 20px 30px 29px;
+        box-shadow: var(--shadow-normal);
+        border-radius: 6px;
+    }
+        .price__tag {
+            margin-left: -10px;
+        }
+
+        .price__heading {
+
+        }
+
+        .price__data {
+            font-size: var(--body-font-size);
+            line-height: calc(var(--body-font-line) - 2px);
+        }
+            .price__sheet {
+                width: 100%;
+                vertical-align: top;
+                border-collapse: collapse;
+            }
+                .price__tbody {
+
+                }
+                    .price__row {
+                        border-top-width: 12px;
+                    }
+                        .price__term {
+
+                        }
+
+                        .price__details{
+
+                        }
+                            .price__link {
+
+                            }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .price {
+
+    }
+        .price__tag {
+            margin-left: -10px;
+        }
+
+        .price__heading {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .price__data {
+
+        }
+            .price__sheet {
+                display: block;
+            }
+                .price__tbody {
+                    display: block;
+                }
+                    .price__row {
+                        display: block;
+                        border-top-width: 14px;
+                    }
+                        .price__term {
+                            display: block;
+                            padding-right: 0;
+                        }
+
+                        .price__description {
+                            display: block;
+                            padding-top: 2px;
+                        }
+}
+
+
+
+@media (min-width: 992px) {
+
+    .price__term {
+        padding-right: 16px;
+        width: 110px;
+        max-width: 110px;
+    }
+        .price__row {
+            border-top-width: 10px;
+        }
+}
+
+@media (min-width: 1200px) {
+
+    .price__term {
+        width: 150px;
+        max-width: 150px;
+    }
+}
+
+
+
+

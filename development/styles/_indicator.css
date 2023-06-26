@@ -1,0 +1,9 @@
+/* If you wan set sizes for indicator please do it using width & height attributes in the HTML code. */
+
+.indicator {
+    animation: indicator 0.6s steps(8) infinite;
+}
+
+@keyframes indicator {
+    to { transform: rotate(360deg); }
+}

@@ -1,0 +1,39 @@
+.city-locations__list {
+    font-size: var(--body-font-size);
+    margin-top: 21px;
+    column-gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.city-locations__list .counter__link {
+    color: #23212c;
+    border-bottom: none;
+}
+
+.city-locations__item {
+    margin-bottom: 10px;
+}
+
+.city-locations__icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+    .city-locations__list {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .city-locations__list {
+        column-count: 4;
+    }
+}

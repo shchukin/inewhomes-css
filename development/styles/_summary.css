@@ -1,0 +1,39 @@
+.summary {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+    .summary__verification {
+        width: 100%;
+        margin-bottom: 33px;
+    }
+
+    .summary__data {
+        width: calc(100% - 115px);
+    }
+
+    .summary__map {
+        flex-shrink: 0;
+        margin-top: 4px;
+        margin-left: 15px;
+    }
+
+
+
+@media (min-width: 576px) {
+
+    .summary {
+        align-items: center;
+    }
+        .summary__verification {
+            margin-bottom: 9px;
+        }
+
+        .summary__data {
+
+        }
+
+        .summary__map {
+            margin-top: 0;
+        }
+}

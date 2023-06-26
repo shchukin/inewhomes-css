@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.clipped</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687670085">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687670085">
+        <link rel="stylesheet" href="../styles/style.css?1687670085">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.clipped</h1>
+            <p>
+                The task here is to cut what is below a certain height without breaking what is inside.
+            </p>
+            <p>
+                We can't just animate height. Some cases like CSS columns can be broken.
+                So we first measure the height of the component as it is and the set the value as
+                <b>style="height: ...";</b> on <b>.clipped__content</b><br>
+            </p>
+            <p>
+                Next, on the <b>.clipped__viewport</b> wrapping div, we run the height animation from a certain canonical height that we set earlier to the value that we got. Actually we just change the height values here. The animation will be run by CSS when value changed.
+            </p>
+            <br>
+            <hr>
+
+
+            <div class="clipped" data-canonical-height="205">
+                <div class="clipped__viewport">
+                    <div class="clipped__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium nisl neque, hendrerit eleifend leo auctor a. Ut a nulla at leo posuere tristique at at velit. Nulla ut lobortis sem. Mauris interdum lacus eget lorem auctor, eu imperdiet ex euismod. Ut dictum nibh non blandit molestie. Morbi quis massa in tellus suscipit fermentum. Curabitur id elit nunc. Pellentesque consequat varius turpis nec semper. Integer dui mi, convallis in tellus nec, suscipit molestie massa. Nunc sed consectetur ipsum.
+                        Proin nec tortor id ex cursus lobortis. Vivamus eget felis quis libero pellentesque semper. In egestas neque non ultricies finibus. Ut quis hendrerit purus. Donec in orci nec velit semper consequat eget vestibulum ante. Pellentesque efficitur dolor a faucibus tempor. Etiam eu urna elementum, posuere risus eu, cursus nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam rutrum nulla a orci dapibus tristique. Nulla turpis leo, dapibus eget vehicula sed, auctor id eros. Donec dictum dapibus diam dictum bibendum. Sed iaculis sapien tortor, et mattis nisl sodales at. Mauris tristique odio at nibh tristique, id finibus enim porttitor. Pellentesque id urna sit amet tellus pellentesque sagittis ut vitae nunc. Fusce eget aliquam eros.
+                        Aliquam venenatis sapien at augue congue tincidunt. Suspendisse dictum tempus viverra. Quisque odio eros, tristique rhoncus iaculis at, faucibus at nulla. Vivamus sodales, ex at dignissim congue, nunc orci sagittis ipsum, vitae pellentesque ipsum nunc sed elit. Curabitur rutrum a elit ac interdum. Nullam in vehicula urna, a finibus ligula. Curabitur sit amet libero ut lorem vestibulum interdum. Vestibulum pretium, ante at fermentum molestie, nulla mauris pharetra sem, et malesuada massa nunc sed tortor. Ut non mauris vel massa sagittis varius vel a arcu. Vestibulum mollis nisi sodales, feugiat elit sit amet, rhoncus metus. Phasellus blandit, nisi id viverra consequat, neque urna bibendum mi, sit amet porttitor magna odio eget urna. Quisque et sodales odio.
+                    </div>
+                    <button class="clipped__handler link link--dotted" type="button">
+                        Read
+                        <span class="clipped__more">more</span>
+                        <span class="visuallyhidden">pr</span>
+                        <span class="clipped__less">less</span>
+                    </button>
+                </div>
+            </div>
+
+            <hr>
+            <br>
+            <br>
+            <br>
+            <h2>Details</h2>
+            <p>
+                <b>data-canonical-height</b> -- height we want to see on the page when clipped.
+            </p>
+            <p>
+                <b>data-actual-height</b> -- height of content inside.
+            </p>
+            <p>
+                <b>.clipped--expandable</b> -- this class is being added if we need clipping from the first place.
+                If this class is not presented, no JS will be run. Also <b>read more</b> button visibility depends on this class.
+            </p>
+            <p>
+                <b>.clipped--open</b> -- when expanded. We need to know what animation to run:
+                from canonical height to actual or vise versa. Also read more button appearance is based on it
+                (more/less, angle).
+            </p>
+            <p>
+                See sample: <a href="../scripts/_clipped.js">../scripts/_clipped.js</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js?1687670085"></script>
+        <script src="../scripts/_dropdown.js?1687670085"></script>
+        <script src="../scripts/_options.js?1687670085"></script>
+        <script src="../scripts/_results.js?1687670085"></script>
+        <script src="../scripts/_search.js?1687670085"></script>
+        <script src="../scripts/_gallery.js?1687670085"></script>
+        <script src="../scripts/_clipped.js?1687670085"></script>
+        <script src="../scripts/_popup.js?1687670085"></script>
+        <script src="../scripts/_share.js?1687670085"></script>
+        <script src="../scripts/_strut.js?1687670085"></script>
+        <script src="../scripts/_slideshow.js?1687670085"></script>
+        <script src="../scripts/_jumbotron.js?1687670085"></script>
+        <script src="../scripts/_carousel.js?1687670085"></script>
+        <script src="../scripts/_morph.js?1687670085"></script>
+        <script src="../scripts/_anchor.js?1687670085"></script>
+        <script src="../scripts/_faq.js?1687670085"></script>
+        <script src="../scripts/_sticky-subhead.js?1687670085"></script>
+        <script src="../scripts/_menu.js?1687670085"></script>
+
+    </body>
+</html>
+
+
+

@@ -1,0 +1,32 @@
+.price-history {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.price-history__row {
+    margin-top: 8px;
+}
+
+.price-history__row:first-child {
+    margin-top: 0;
+}
+
+.price-history__dt {
+    display: inline;
+    vertical-align: baseline;
+    font-weight: inherit;
+    color: var(--color-faded);
+}
+
+
+@media (min-width: 768px) {
+
+    .price-history {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .price-history__row {
+        margin-top: 10px;
+    }
+}

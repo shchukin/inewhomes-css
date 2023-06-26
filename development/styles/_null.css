@@ -1,0 +1,164 @@
+.null {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+    .null__heading {
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--color-faded);
+    }
+
+    .null__note {
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 15px;
+        color: var(--color-faded);
+    }
+
+@media (min-width: 576px) {
+
+    .null {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+        .null__heading {
+
+        }
+
+        .null__note {
+
+        }
+}
+
+@media (min-width: 768px) {
+
+    .null {
+        padding: 10px 0 14px;
+    }
+        .null__heading {
+
+        }
+
+        .null__note {
+
+        }
+}
+
+
+
+
+.null--advanced {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+    .null--advanced::before {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 64px;
+        height: 64px;
+        background-image: url("../images/null.svg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .null--advanced .null__heading {
+        margin-top: 20px;
+        font-family: var(--font-heading);
+        font-weight: var(--font-heading-bold);
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .null--advanced .null__note {
+        margin-top: 8px;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+
+
+/* Heights: */
+
+.null--search-results {
+
+}
+
+@media (min-width: 576px) {
+
+    .null--search-results {
+        min-height: calc(100vh - 322px); /* 322px is a combined height of header, footer, heading etc. */
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .null--search-results {
+        min-height: calc(100vh - 323px); /* 323px is a combined height of header, footer, heading etc. */
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .null--search-results {
+        min-height: calc(100vh - 302px); /* 302px is a combined height of header, footer, heading etc. */
+    }
+}
+
+
+
+.null--gallery {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+    .null--gallery::before {
+        width: 62px;
+        height: 34px;
+        background-image: url("../images/null-dummy.svg");
+    }
+
+    .null--gallery .null__heading {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .null--gallery .null__note {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+@media (min-width: 768px) {
+
+    .null--gallery {
+
+    }
+        .null--gallery::before {
+            width: 118px;
+            height: 64px;
+        }
+
+        .null--gallery .null__heading {
+            margin-top: 20px;
+            font-size: 21px;
+            line-height: 30px;
+        }
+
+        .null--gallery .null__note {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+}

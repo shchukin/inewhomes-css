@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.strut</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css">
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <!-- general -->
+        <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="314779292531429">
+        <meta property="og:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta property="og:image:width" content="1190">
+        <meta property="og:image:height" content="623">
+        <meta property="og:title" content="All new developments in one place - iNewHomes">
+        <meta property="og:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta property="og:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta property="og:site_name" content="iNewHomes">
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://shchukin.github.io/inewhomes-css/production">
+        <meta name="twitter:image" content="https://shchukin.github.io/inewhomes-css/production/favicon/meta-image.jpg">
+        <meta name="twitter:title" content="All new developments in one place - iNewHomes">
+        <meta name="twitter:description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
+        <meta name="twitter:site" content="@inewhomes">
+        <meta name="twitter:creator" content="@inewhomes">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://shchukin.github.io/inewhomes-css/production/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://shchukin.github.io/inewhomes-css/production/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://shchukin.github.io/inewhomes-css/production/site.webmanifest">
+        <link rel="mask-icon" href="https://shchukin.github.io/inewhomes-css/production/favicon/safari-pinned-tab.svg" color="#ff492d">
+        <meta name="apple-mobile-web-app-title" content="iNewHomes">
+        <meta name="application-name" content="iNewHomes">
+        <meta name="msapplication-TileColor" content="#ff492d">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.strut</h1>
+            <p>
+                A wrapper for an interactive element that can be replaced by a loader.
+                This block switches one thing to the other.
+            </p>
+
+            <p>
+                Use <b>.strut--loading-in-progress</b> class to go to loading state.
+            </p>
+
+            <br>
+            <br>
+            <h2>Example one</h2>
+            <p>
+                Buttons are usually replaced with <a href="_loading-bar.html">.loading-bar</a> and have a default blue spinner inside:
+            </p>
+
+            <div class="strut">
+                <div class="strut__loader loading-bar loading-bar--highlight" title="Loading in progress, please wait">
+                    <img class="loading-bar__spinner indicator" src="../symbols/indicator.svg" width="30" height="30" title="Loading..." alt="">
+                    <span class="loading-bar__label">Loading...</span>
+                </div>
+                <button class="strut__action button" type="button">
+                    Submit
+                </button>
+            </div>
+
+            <br>
+
+            <div class="strut">
+                <div class="strut__loader loading-bar loading-bar--highlight" title="Loading in progress, please wait">
+                    <img class="loading-bar__spinner indicator" src="../symbols/indicator.svg" width="30" height="30" title="Loading..." alt="">
+                </div>
+                <button class="strut__action button" type="button">
+                    Submit
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <h2>Example two:</h2>
+            <p>
+                Links are usually replaced with <a href="_loading-icon.html">.loading-icon</a> and orange spinner:
+            </p>
+
+            <div class="strut">
+                <img class="strut__loader loading-icon indicator" src="../symbols/indicator-accent.svg" width="24" height="24" title="Loading..." alt=""  title="Loading in progress, please wait">
+                <a class="strut__action link link--dotted" href="#">Load all cities</a>
+            </div>
+
+
+
+            <br>
+            <br>
+            <h2>Ширина</h2>
+
+            <p>
+                The default width here is 100%. This is necessary so that the buttons are stretched in width to fit the context.
+                Usually it's either a specific width (eg. 200px), or it's 100% of the entire width of the parent box.
+                See, for example, the <b>Send message</b> button on the <a href="../layouts/complex.html">complex page</a>.
+            </p>
+
+            <p>
+                The opposite case is when we need to make the button shrink
+                the width to the text inside. This has to be done via CSS. Gotta put it all (.button and .strut)
+                inside an inline-block or something with absolute position. See such an example
+                on <a href="../layouts/agent-application.html">form page</a>, see <b>Submit application</b> button.
+
+            </p>
+
+
+            <br>
+            <br>
+            <h2>Height</h2>
+            <p>
+                Height is being stretch to the height of block inside. For example, here are two different buttons:
+            </p>
+
+            <div class="strut">
+                <div class="strut__loader loading-bar loading-bar--highlight" title="Loading in progress, please wait">
+                    <img class="loading-bar__spinner indicator" src="../symbols/indicator.svg" width="30" height="30" title="Loading..." alt="">
+                    <span class="loading-bar__label">Loading...</span>
+                </div>
+                <button class="strut__action button" type="button">
+                    Submit
+                </button>
+            </div>
+
+            <br>
+
+            <div class="strut">
+                <div class="strut__loader loading-bar loading-bar--highlight" title="Loading in progress, please wait">
+                    <img class="loading-bar__spinner indicator" src="../symbols/indicator.svg" width="30" height="30" title="Loading..." alt="">
+                    <span class="loading-bar__label">Loading...</span>
+                </div>
+                <button class="strut__action button button--larger" type="button">
+                    Submit
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/modernizr/modernizr-appearance.js"></script>
+        <script src="../vendors/flickity/flickity.pkgd.min.js"></script>
+        <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
+        <script src="../vendors/hammer/hammer.min.js"></script>
+        <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="../scripts/_navigation.js"></script>
+        <script src="../scripts/_dropdown.js"></script>
+        <script src="../scripts/_options.js"></script>
+        <script src="../scripts/_results.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_gallery.js"></script>
+        <script src="../scripts/_clipped.js"></script>
+        <script src="../scripts/_popup.js"></script>
+        <script src="../scripts/_share.js"></script>
+        <script src="../scripts/_strut.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_jumbotron.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_morph.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_sticky-subhead.js"></script>
+        <script src="../scripts/_menu.js"></script>
+
+        <script src="../scripts/_strut.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_jumbotron.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_morph.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_faq.js"></script>
+        <script src="../scripts/_sticky-subhead.js"></script>
+        <script src="../scripts/_menu.js"></script>
+
+    </body>
+</html>

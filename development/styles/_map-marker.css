@@ -1,0 +1,87 @@
+.map-marker {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.map-marker--active {
+    width: 24px;
+    height: 24px;
+}
+
+.map-marker-cluster {
+    border-radius: 50%;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    font-family: var(--body-font-family);
+    font-size: 14px;
+}
+
+.map-marker-cluster--small {
+    width: 34px;
+    height: 34px;
+    line-height: 28px;
+}
+
+.map-marker-cluster--medium {
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+}
+
+.map-marker-cluster--large {
+    width: 46px;
+    height: 46px;
+    line-height: 40px;
+}
+
+.map-marker-cluster--xlarge {
+    width: 52px;
+    height: 52px;
+    line-height: 46px;
+}
+
+.map-marker-cluster--xxlarge {
+    width: 58px;
+    height: 58px;
+    line-height: 52px;
+}
+
+.map-marker--red,
+.map-marker-cluster--red {
+    background-color: #FF492D;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.map-marker--red.map-marker--active {
+    box-shadow: 0 0 0 10px #ff492d38;
+}
+
+.map-marker--green,
+.map-marker-cluster--green {
+    background-color: #008a33;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.map-marker--green.map-marker--active {
+    box-shadow: 0 0 0 10px #008a3339;
+}
+
+.map-marker--blue,
+.map-marker-cluster--blue {
+    background-color: #0078E8;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.map-marker--blue.map-marker--active {
+    box-shadow: 0 0 0 10px #0078E839;
+}

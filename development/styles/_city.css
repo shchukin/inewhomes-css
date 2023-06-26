@@ -1,0 +1,163 @@
+@media (min-width: 576px) {
+    .city {
+        padding-top: 8px;
+    }
+}
+
+.city .options__related {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 0;
+}
+
+.city .options__panel {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.city__summary {
+    margin-bottom: 50px;
+}
+
+.city__heading-wrapper {
+    border-bottom: 1px solid #eaeaf2;
+    margin-bottom: 5px;
+}
+
+.city-page.filter-active .city-wrapper,
+.city-page.filter-active .city__map {
+    display: none;
+}
+
+.city-page.filter-active .options {
+    height: auto;
+}
+
+.city__heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    font-weight: var(--font-heading-bold);
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--heading-font-color);
+    padding-bottom: 10px;
+}
+
+.city__recommended {
+    margin-bottom: 50px;
+}
+
+.city__recommended .recommended {
+    margin-top: 0;
+}
+
+.city__description {
+    margin-bottom: 23px;
+}
+
+.city__emptiness {
+    order: 3;
+    margin-top: 20px;
+    border-top: 1px solid #ededf4;
+    padding-top: 20px;
+}
+
+.city__list {
+    order: 3;
+    margin-top: 20px;
+    border-top: 1px solid #ededf4;
+    padding-top: 20px;
+}
+
+.city__infographic .info__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.city__list .index__item {
+    position: relative;
+    padding-left: 25px;
+}
+
+.city__list .index__item::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-theme-primary-normal);
+    border-radius: 50%;
+}
+
+.city__list .counter__link {
+    color: #23212c;
+    border-bottom: none;
+}
+
+.city__map {
+    position: relative;
+    height: 480px;
+    margin-bottom: 23px;
+}
+
+.city__locations {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #ededf4;
+}
+
+@media (min-width: 768px) {
+    .city {
+        padding-top: 17px;
+    }
+
+    .city__emptiness {
+        padding-top: 30px;
+    }
+
+    .city__list {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .city {
+        display: block;
+        padding-top: 7px;
+    }
+
+    .city__heading {
+        padding-top: 11px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.2px;
+    }
+
+    .city__description {
+        margin-top: 23px;
+    }
+
+    .city__emptiness {
+        margin-top: 41px;
+    }
+
+    .city__list {
+        margin-top: 41px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .city__emptiness {
+        margin-top: 31px;
+    }
+
+    .city__list {
+        margin-top: 31px;
+    }
+}
+

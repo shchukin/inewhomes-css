@@ -1,0 +1,44 @@
+.container {
+    border-left: var(--container-padding) solid transparent;
+    border-right: var(--container-padding) solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+
+    .container {
+        border-left-width: var(--container-padding-larger);
+        border-right-width: var(--container-padding-larger);
+        /* Controversial. It make sense on 940 - 991, but conflicting with carousel. Need to discuss */
+        /*max-width: calc(900px + 2 * var(--container-padding-larger));*/
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 900px;
+        max-width: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .container {
+
+    }
+}

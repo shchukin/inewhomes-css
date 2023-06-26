@@ -1,0 +1,46 @@
+.status {
+    vertical-align: top;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-dark);
+}
+
+@media (max-width: 767px) {
+
+    .status {
+        font-size: var(--body-mobile-font-size);
+        line-height: var(--body-mobile-font-line);
+    }
+}
+
+    .status__row {
+
+    }
+        .status__label {
+            font-weight: inherit;
+            white-space: nowrap;
+            text-align: left;
+            padding-right: 4px;
+        }
+            .status__label::before {
+                content: "";
+                display: inline-block;
+                vertical-align: top;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                margin-top: 10px;
+                margin-right: 11px;
+            }
+
+            .status__row--completed        .status__label::before { background-color: #69A818; }
+            .status__row--in-progress      .status__label::before { background-color: #523EA7; }
+            .status__row--pre-construction .status__label::before { background-color: #E1E1F5; }
+
+        .status__value {
+            text-align: right;
+            padding-left: 4px;
+        }
+

@@ -1,0 +1,29 @@
+.filter {
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+
+@media (min-width: 768px) {
+
+    .options__ribbon .filter {
+        flex-shrink: 0;
+        margin-left: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .options__ribbon .filter:first-child {
+        margin-left: 0;
+    }
+
+
+    .options__more .filter:first-child {
+        padding-top: 0;
+    }
+
+    .options__more .filter:last-child {
+        padding-bottom: 0;
+    }
+}

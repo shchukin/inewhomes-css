@@ -1,0 +1,177 @@
+.share {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .share__handler {
+        position: relative;
+        display: inline-flex;
+        align-items: flex-start;
+        height: 42px;
+        padding: 10px 16px 12px;
+        box-shadow: var(--shadow-low);
+        border-radius: 4px;
+        font-weight: var(--font-primary-bold);
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--neutral-neutral);
+        text-decoration: none;
+    }
+        .share__icon {
+            vertical-align: top;
+            margin-top: 3px;
+            margin-right: 8px;
+        }
+
+    @media (max-width: 575px) {
+
+        .share__handler {
+            display: block;
+            width: 42px;
+            padding: 0;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+            .share__icon {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+    }
+
+
+
+    .share__dropdown {
+        position: absolute;
+        z-index: 200;
+        right: -10px;
+        bottom: 100%;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 12px 0 rgba(79, 79, 102, 0.12); /* (1) shadow at the very bottom */
+        border-radius: 3px;
+        padding: 9px 9px 11px;
+        display: flex;
+        align-items: flex-start;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-hover),
+                    visibility var(--transition-hover);
+    }
+
+    @media (max-width: 575px) {
+        .share--left-on-mobile .share__dropdown {
+            right: auto;
+            left: -10px;
+        }
+    }
+
+        /* (3) White background -- Higher than peak and shadow */
+        .share__dropdown::before {
+            content: "";
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            border-radius: 3px;
+        }
+
+        /* (2) Peak -- higher than shadow */
+        .share__dropdown::after {
+            content: "";
+            position: absolute;
+            z-index: 50;
+            right: 50px;
+            top: 100%;
+            margin-top: -7px;
+            transform: rotate(45deg);
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 12px 0 rgba(79, 79, 102, 0.12);
+            pointer-events: none;
+        }
+
+        /* Button became smaller and squared */
+        @media (max-width: 575px) {
+
+            .share__dropdown::after {
+                right: 24px;
+            }
+            .share--left-on-mobile .share__dropdown::after {
+                right: auto;
+                left: 24px;
+            }
+        }
+
+
+
+    .share__link {
+        position: relative;
+        z-index: 150;
+    }
+
+    .share__link:first-of-type {
+        margin-left: 0;
+    }
+
+
+
+.share--visible {
+
+}
+    .share--visible .share__dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+@media (hover: hover) {
+
+    .share:hover .share__dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+
+.share--to-bottom {
+
+}
+    .share--to-bottom .share__dropdown {
+        bottom: auto;
+        top: 100%;
+    }
+        .share--to-bottom .share__dropdown::after {
+            top: auto;
+            margin-top: 0;
+            margin-bottom: -7px;
+            bottom: 100%;
+            border-top-color: transparent;
+            border-bottom-color: pink;
+        }
+
+/* When there is enough space on the right, we place dropdown in the center */
+@media (min-width: 1050px) and (max-width: 1199px),
+       (min-width: 1300px) {
+
+    /* Dropdown */
+    .share__dropdown {
+        right: 50%;
+        transform: translateX(50%);
+    }
+        /* Peak */
+        .share__dropdown::after {
+            right: 50%;
+            margin-right: -7px;
+        }
+}

@@ -1,0 +1,18 @@
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    box-sizing: content-box; /* so later you can add borders */
+    background-image: url("../images/logo.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo--white {
+    background-image: url("../images/logo-white.svg");
+}

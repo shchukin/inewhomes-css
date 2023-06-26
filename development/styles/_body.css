@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    line-height: var(--body-font-line);
+    color: var(--body-color);
+}
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: var(--body-mobile-font-size);
+        line-height: var(--body-mobile-font-line);
+    }
+}
+

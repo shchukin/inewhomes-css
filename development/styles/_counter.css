@@ -1,0 +1,46 @@
+.counter {
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .counter__link {
+        display: inline;
+        vertical-align: baseline;
+        border-bottom: 1px solid #ffdbd5;
+        color: var(--link-color);
+        transition: color var(--transition-hover),
+                    border-color var(--transition-hover);
+    }
+
+    .counter:hover .counter__link {
+        border-bottom-color: #dddae8;
+        color: #55488D;
+    }
+
+    .counter:active .counter__link {
+        color: #887eaf;
+    }
+
+    .counter__value {
+        margin-left: 4px;
+        font-size: 0.8em;
+        line-height: 1;
+        color: #fda093;
+    }
+
+
+
+.counter--brand {
+
+}
+    .counter--brand .counter__link {
+        color: var(--text-dark);
+        border-bottom-color: #D9D9F6;
+    }

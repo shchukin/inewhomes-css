@@ -1,0 +1,52 @@
+.params {
+    position: relative;
+}
+    .params__graph {
+        position: absolute;
+        left: -3px;
+        top: 0;
+    }
+
+    .params__stats {
+        margin-left: 120px;
+        padding-top: 18px;
+    }
+
+    .params__table {
+        margin-top: 38px;
+    }
+
+    .params__table:first-child {
+        margin-top: -15px;
+    }
+
+
+@media (max-width: 359px),
+       (min-width: 768px) and (max-width: 1199px) {
+
+    .params {
+        margin-top: -9px;
+        padding-top: 0;
+        text-align: center;
+    }
+        .params__graph {
+            position: static;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .params__stats {
+            margin-left: 0;
+            margin-top: 11px;
+            text-align: left;
+        }
+
+        .params__table {
+            margin-top: 31px;
+            text-align: left;
+        }
+
+        .params__table:first-child {
+            margin-top: 0;
+        }
+}

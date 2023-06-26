@@ -1,0 +1,162 @@
+.popup {
+    position: fixed;
+    z-index: 48000;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--overlay);
+}
+    .popup__container {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        height: 100%;
+    }
+        .popup__viewport {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        @media (min-width: 576px) {
+
+            .popup__viewport {
+                padding: 20px;
+            }
+        }
+            .popup__slot {
+                position: relative;
+                max-width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #ffffff;
+                border-radius: 4px;
+            }
+
+            @media (min-width: 576px) {
+
+                .popup__slot {
+                    max-width: none;
+                    width: 440px;
+                }
+            }
+
+            @media (min-width: 768px) {
+
+                .popup__slot {
+                    width: 600px;
+                }
+            }
+
+                .popup__close {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 54px;
+                    height: 54px;
+                    background-color: transparent;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                }
+                    .popup__cross {
+                        vertical-align: top;
+                    }
+
+
+@media (min-width: 768px) {
+
+    .popup--visible-on-desktop {
+        position: static;
+        z-index: 0;
+        top: auto;
+        left: auto;
+        display: block !important;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background-color: transparent;
+    }
+        .popup--visible-on-desktop .popup__container {
+            display: block;
+            width: auto;
+            height: auto;
+        }
+            .popup--visible-on-desktop .popup__viewport {
+                display: block;
+                width: auto;
+                height: auto;
+                padding: 0;
+            }
+                .popup--visible-on-desktop .popup__slot {
+                    position: static;
+                    max-width: none;
+                    width: auto;
+                    margin-left: 0;
+                    margin-right: 0;
+                    background-color: transparent;
+                    border-radius: 0;
+                }
+                    .popup--visible-on-desktop .popup__close {
+                        display: none;
+                    }
+}
+
+
+
+
+.popup--contacts {
+
+}
+    .popup--contacts .popup__container {
+
+    }
+        .popup--contacts .popup__viewport {
+
+        }
+            .popup--contacts .popup__slot {
+
+            }
+
+            @media (min-width: 576px) {
+
+                .popup--contacts .popup__slot {
+                    width: 350px;
+                }
+            }
+
+@media (min-width: 768px) {
+
+    .popup--contacts {
+        position: sticky;
+        top: calc(var(--menu-height) + 30px); /* 30px here is used when popup already stick */
+        transform: translate3d(0, 0, 0);
+        margin-top: 30px; /* 30px here is when popup is just inside of sidebar and didn't stick yet */
+        border: 1px solid #EDEDF4;
+        border-radius: 6px;
+    }
+
+    .fixed-head .popup--contacts {
+        top: calc(var(--header-height) + var(--menu-height) + 30px);
+    }
+        .popup--contacts .popup__container {
+
+        }
+            .popup--contacts .popup__viewport {
+
+            }
+                .popup--contacts .popup__slot {
+                    width: auto;
+                }
+}
+
+

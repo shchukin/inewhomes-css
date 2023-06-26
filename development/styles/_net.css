@@ -1,0 +1,99 @@
+.net {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .net__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        vertical-align: top;
+    }
+        #hoverable-path {
+            transition: fill var(--transition-hover);
+        }
+
+        #hoverable-background {
+            transition: fill var(--transition-hover);
+        }
+
+
+.net--faded {
+
+}
+    .net--faded:not(:hover) #hoverable-path {
+        fill: var(--neutral-color-1);
+    }
+
+    .net--faded:not(:hover) #hoverable-background {
+        fill: transparent;
+    }
+
+
+.net--whitened {
+
+}
+    .net--whitened:not(:hover) #hoverable-path {
+        fill: var(--neutral-color-2);
+    }
+    .net--whitened:not(:hover) #hoverable-background {
+        fill: transparent;
+    }
+
+    .net--whitened:hover #hoverable-path {
+        fill: #FFFFFF;
+    }
+    .net--whitened:hover #hoverable-background {
+        fill: transparent;
+    }
+
+
+
+
+.net--rounded {
+
+}
+    .net--rounded::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #EAEAF2;
+        background-color: #ffffff;
+        border-radius: 50%;
+        transition: border-color var(--transition-hover);
+    }
+
+    .net--rounded:hover::before {
+        border-color: #C0C0D1;
+    }
+
+
+
+.net--enlarged {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #EAEAF2;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: border-color var(--transition-hover),
+                box-shadow var(--transition-hover);
+}
+    .net--enlarged:hover {
+        border-color: transparent;
+        box-shadow: 1px 1px 8px rgba(23, 0, 120, 0.08);
+    }

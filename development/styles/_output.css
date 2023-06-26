@@ -1,0 +1,10 @@
+.output {
+    padding-top: 2px;
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--color-brand-accent);
+}
+
+.output + .output {
+    padding-top: 0;
+}
