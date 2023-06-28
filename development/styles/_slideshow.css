@@ -34,6 +34,9 @@
         background-color: transparent;
         padding: 0;
         cursor: pointer;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
         transition: opacity var(--transition-show),
                     visibility var(--transition-show);
     }
