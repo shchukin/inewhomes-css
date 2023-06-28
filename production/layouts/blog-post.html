@@ -6,12 +6,12 @@
         <title>Blog Post</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex, nofollow"> <!-- Do not add this tag on production -->
-        <link rel="stylesheet" href="../vendors/flickity/flickity.min.css?1687670085">
-        <link rel="stylesheet" href="../vendors/fancybox/jquery.fancybox.min.css?1687670085">
-        <link rel="stylesheet" href="../vendors/rateyo/jquery.rateyo.min.css?1687670085">
-        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687670085">
-        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687670085">
-        <link rel="stylesheet" href="../styles/style.css?1687670085">
+        <link rel="stylesheet" href="../vendors/flickity/flickity.min.css?1687921552">
+        <link rel="stylesheet" href="../vendors/fancybox/jquery.fancybox.min.css?1687921552">
+        <link rel="stylesheet" href="../vendors/rateyo/jquery.rateyo.min.css?1687921552">
+        <link rel="stylesheet" href="../fonts/frank-ruhl-libre/fonts.css?1687921552">
+        <link rel="stylesheet" href="../fonts/graphik/fonts.css?1687921552">
+        <link rel="stylesheet" href="../styles/style.css?1687921552">
 
         <!-- general -->
         <meta name="description" content="iNewHomes describes all new construction projects in USA and allows to get updated info for buyers, developers and brokers.">
@@ -65,6 +65,301 @@
                 </a>
             </div>
         </header>
+
+        <section class="search">
+            <button class="search__show" type="button">
+                <span class="visuallyhidden">Show</span>
+                search
+                <span class="visuallyhidden">form</span>
+            </button>
+            <button class="search__hide" type="button">
+                Cancel
+                <span class="visuallyhidden">search form</span>
+            </button>
+            <form class="search__body">
+                <input class="search__input" type="text" placeholder="Search City, Project, Developer, etc" autocomplete="off">
+                <svg class="search__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1687921552#search"></use>
+                </svg>
+                <button class="search__cleartype" type="button">Clear search query</button>
+            </form>
+            <div class="search__dropdown">
+                <div class="search__filter">
+                    <div class="search__ribbon">
+                        <button class="search__action search__action--current" type="button">All</button>
+                        <button class="search__action" type="button">Locations (135)</button>
+                        <button class="search__action" type="button">Developments (6)</button>
+                        <button class="search__action" type="button">Companies (2)</button>
+                    </div>
+                </div>
+                <div class="search__results">
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-developer"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Company</b></div>
+                        </div>
+                        <div class="suggest__type">
+                            Developer
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Slopes</b></div>
+                            <div class="suggest__location">in <b>California</b>, CA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Isles Beach</b></div>
+                            <div class="suggest__location">in <b>Florida</b>, FL</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-place"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">Sunny <b>Side</b></div>
+                            <div class="suggest__location">in Georgia, GA</div>
+                        </div>
+                        <div class="suggest__type">
+                            City
+                        </div>
+                    </a>
+                    <a class="suggest" href="#">
+                        <svg class="suggest__icon" width="16" height="16" role="presentation" aria-hidden="true">
+                            <use xlink:href="../symbols/symbols.svg?1687921552#suggest-building"></use>
+                        </svg>
+                        <div class="suggest__wrap">
+                            <div class="suggest__sub-heading">The Ritz-Carlton Residences Sunny Lorem Ipsum Dolor</div>
+                            <div class="suggest__location">in Georgia, GA 41094</div>
+                        </div>
+                        <div class="suggest__type">
+                            House
+                        </div>
+                    </a>
+
+                    <!-- temp -->
+                    <br><br>or:<br><br><br>
+                    <!--/temp -->
+
+                    <div class="nothing">
+                        <b class="nothing__heading">
+                            No matching results found for Small Isles.
+                        </b>
+                        <div class="nothing__suggest">
+                            Did you mean <a class="link" href="#">Small island</a>?
+                        </div>
+                        <div class="nothing__spelling">
+                            Please check the spelling, try clearing the search box, or try reformatting to match these examples:
+                        </div>
+                        <table class="nothing__sample spreadsheet">
+                            <tbody class="spreadsheet__body">
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">City:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Seattle</a> or <a class="link" href="#">Seattle, WA</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Address:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">123 Main St, Seattle, WA</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Zip:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">98115</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">County:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Miami Dade County</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">State:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Florida</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Project:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Aurora Sunny Isles Beach</a></td>
+                            </tr>
+                            <tr class="spreadsheet__row">
+                                <th class="spreadsheet__cell">Company:</th>
+                                <td class="spreadsheet__cell"><a class="link" href="#">Dezer Development Group</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="nothing__map">
+                            <a class="link" href="#">Search by map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="navigation">
             <div class="navigation__overlay" role="presentation">
@@ -177,31 +472,31 @@
                                 <a class="media__item net net--rounded" href="https://www.facebook.com/dialog/share?app_id=314779292531429&amp;display=popup&amp;href=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
                                     Facebook
                                     <svg class="net__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1687670085#net-facebook"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1687921552#net-facebook"></use>
                                     </svg>
                                 </a>
                                 <a class="media__item net net--rounded" href="https://twitter.com/intent/tweet?url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html&amp;text=Check out this development: Voda Waterfront Residences Apartments" target="_blank">
                                     Twitter
                                     <svg class="net__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1687670085#net-twitter"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1687921552#net-twitter"></use>
                                     </svg>
                                 </a>
                                 <a class="media__item net net--rounded" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
                                     LinkedIn
                                     <svg class="net__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1687670085#net-linked-in"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1687921552#net-linked-in"></use>
                                     </svg>
                                 </a>
                                 <a class="media__item net net--rounded" href="https://wa.me/send?text=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
                                     WhatsApp
                                     <svg class="net__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1687670085#net-whatsapp"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1687921552#net-whatsapp"></use>
                                     </svg>
                                 </a>
                                 <a class="media__item net net--rounded" href="mailto:?subject=Voda Waterfront Residences Apartments - iNewHomes&amp;body=Check out this development: Voda Waterfront Residences Apartments https://shchukin.github.io/inewhomes-css/productioncss2/layouts/complex.html" target="_blank">
                                     Send email
                                     <svg class="net__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1687670085#net-email"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1687921552#net-email"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -365,7 +660,7 @@
                                         </div>
                                         <a class="location-summary__action button button--smaller" href="search.html">
                                             <svg class="button__icon" width="24" height="24" role="presentation" aria-hidden="true">
-                                                <use xlink:href="../symbols/symbols.svg?1687670085#button-map"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1687921552#button-map"></use>
                                             </svg>
                                             View on map
                                         </a>
@@ -384,7 +679,7 @@
                                     </div>
                                     <button class="find__submit" type="submit">
                                         <svg class="find__magnifier" width="24" height="24">
-                                            <use xlink:href="../symbols/symbols.svg?1687670085#search-submit"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1687921552#search-submit"></use>
                                         </svg>
                                     </button>
                                 </form>
@@ -636,12 +931,12 @@
                             </div>
                             <button class="carousel__control carousel__control--prev carousel__control--disabled" type="button" title="Click to scroll best sellers  list backwards">
                                 <svg class="carousel__arrow" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1687670085#arrow-left"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1687921552#arrow-left"></use>
                                 </svg>
                             </button>
                             <button class="carousel__control carousel__control--next" type="button" title="Click to scroll best sellers list forward">
                                 <svg class="carousel__arrow" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1687670085#arrow-right"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1687921552#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
@@ -820,7 +1115,7 @@
                                                 <a class="link link--whitened link--has-icon" rel="nofollow" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=19790+West+Dixie+Highway+#1011,+Miami,+FL+33180,+United%20States">
                                                     Directions
                                                     <svg class="link__icon" width="12" height="12">
-                                                        <use xlink:href="../symbols/symbols.svg?1687670085#external"></use>
+                                                        <use xlink:href="../symbols/symbols.svg?1687921552#external"></use>
                                                     </svg>
                                                 </a>
                                             </div>
@@ -842,27 +1137,27 @@
         <script src="../vendors/fancybox/jquery.fancybox.min.js"></script>
         <script src="../vendors/hammer/hammer.min.js"></script>
         <script src="../vendors/rateyo/jquery.rateyo.min.js"></script>
-        <script src="../scripts/_navigation.js?1687670085"></script>
-        <script src="../scripts/_dropdown.js?1687670085"></script>
-        <script src="../scripts/_options.js?1687670085"></script>
-        <script src="../scripts/_results.js?1687670085"></script>
-        <script src="../scripts/_search.js?1687670085"></script>
-        <script src="../scripts/_gallery.js?1687670085"></script>
-        <script src="../scripts/_clipped.js?1687670085"></script>
-        <script src="../scripts/_popup.js?1687670085"></script>
-        <script src="../scripts/_share.js?1687670085"></script>
-        <script src="../scripts/_strut.js?1687670085"></script>
-        <script src="../scripts/_slideshow.js?1687670085"></script>
-        <script src="../scripts/_jumbotron.js?1687670085"></script>
-        <script src="../scripts/_carousel.js?1687670085"></script>
-        <script src="../scripts/_morph.js?1687670085"></script>
-        <script src="../scripts/_anchor.js?1687670085"></script>
-        <script src="../scripts/_faq.js?1687670085"></script>
-        <script src="../scripts/_sticky-subhead.js?1687670085"></script>
-        <script src="../scripts/_menu.js?1687670085"></script>
-        <script src="../scripts/_rating.js?1687670085"></script>
-        <script src="../scripts/_smooth-scroll.js?1687670085"></script>
-        <script src="../scripts/_company.js?1687670085"></script>
+        <script src="../scripts/_navigation.js?1687921552"></script>
+        <script src="../scripts/_dropdown.js?1687921552"></script>
+        <script src="../scripts/_options.js?1687921552"></script>
+        <script src="../scripts/_results.js?1687921552"></script>
+        <script src="../scripts/_search.js?1687921552"></script>
+        <script src="../scripts/_gallery.js?1687921552"></script>
+        <script src="../scripts/_clipped.js?1687921552"></script>
+        <script src="../scripts/_popup.js?1687921552"></script>
+        <script src="../scripts/_share.js?1687921552"></script>
+        <script src="../scripts/_strut.js?1687921552"></script>
+        <script src="../scripts/_slideshow.js?1687921552"></script>
+        <script src="../scripts/_jumbotron.js?1687921552"></script>
+        <script src="../scripts/_carousel.js?1687921552"></script>
+        <script src="../scripts/_morph.js?1687921552"></script>
+        <script src="../scripts/_anchor.js?1687921552"></script>
+        <script src="../scripts/_faq.js?1687921552"></script>
+        <script src="../scripts/_sticky-subhead.js?1687921552"></script>
+        <script src="../scripts/_menu.js?1687921552"></script>
+        <script src="../scripts/_rating.js?1687921552"></script>
+        <script src="../scripts/_smooth-scroll.js?1687921552"></script>
+        <script src="../scripts/_company.js?1687921552"></script>
 
 
     </body>
